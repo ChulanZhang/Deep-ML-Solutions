@@ -46,6 +46,10 @@ def matrix_multiply(A, B):
     Returns:
         C: list of lists, shape (m, p)
     """
+    # 验证矩阵非空
+    if not A or not A[0] or not B or not B[0]:
+        raise ValueError("矩阵不能为空 / Matrices cannot be empty")
+    
     # 获取矩阵维度
     m = len(A)
     n = len(A[0])

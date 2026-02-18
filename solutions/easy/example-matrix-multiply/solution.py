@@ -14,6 +14,10 @@ def matrix_multiply(A, B):
     Returns:
         C: list of lists, shape (m, p)
     """
+    # 验证矩阵非空
+    if not A or not A[0] or not B or not B[0]:
+        raise ValueError("矩阵不能为空 / Matrices cannot be empty")
+    
     # 获取矩阵维度
     m = len(A)
     n = len(A[0])
@@ -57,6 +61,13 @@ def test_matrix_multiply():
     expected3 = [[5, 6], [7, 8]]
     assert matrix_multiply(A3, B3) == expected3
     print("✓ Test 3 passed!")
+    
+    # Test Case 4: 空矩阵验证
+    try:
+        matrix_multiply([], [[1]])
+        assert False, "Should raise ValueError for empty matrix"
+    except ValueError as e:
+        print("✓ Test 4 passed! (Empty matrix validation)")
     
     print("\n所有测试通过！/ All tests passed!")
 
