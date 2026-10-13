@@ -6,13 +6,14 @@ class DropoutLayer:
         self.mask = None
 
     def forward(self, x: np.ndarray, training: bool = True) -> np.ndarray:
-        if training and self.p > 0.0:
-            # We scale during training to maintain expected value
+        """Generate mask during training, store in self.mask, and return scaled x."""
+        if training:
+            # probability of keeping is 1 - p
             self.mask = (np.random.rand(*x.shape) >= self.p).astype(float)
             return x * self.mask / (1.0 - self.p)
-        return x
+        else:
+            return x
 
     def backward(self, grad: np.ndarray) -> np.ndarray:
-        if self.mask is not None and self.p > 0.0:
-            return grad * self.mask / (1.0 - self.p)
-        return grad
+        """Apply stored self.mask to grad and return."""
+        return grad * self.mask / (1.0 - self.p)

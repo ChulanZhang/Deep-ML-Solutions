@@ -1,0 +1,140 @@
+- [NEW] 39: Implementation of Log Softmax Function
+- [NEW] 42: Implement ReLU Activation Function
+- [NEW] 44: Leaky ReLU Activation Function
+- [NEW] 49: Implement Adam Optimization Algorithm
+- [NEW] 54: Implementing a Simple RNN
+- [NEW] 59: Implement Long Short-Term Memory (LSTM) Network
+- [NEW] 70: Calculate Image Brightness
+- [NEW] 82: Grayscale Image Contrast Calculator
+- [NEW] 146: Momentum Optimizer
+- [NEW] 147: GeLU Activation Function
+- [NEW] 148: Adamax Optimizer
+- [NEW] 149: Adadelta Optimizer
+- [NEW] 151: Dropout Layer
+- [NEW] 156: Implement SwiGLU activation function
+- [NEW] 157: Implement the Bellman Equation for Value Iteration
+- [NEW] 158: Epsilon-Greedy Action Selection for n-Armed Bandit
+- [NEW] 159: Incremental Mean for Online Reward Estimation
+- [NEW] 161: Exponential Weighted Average of Rewards
+- [NEW] 162: Upper Confidence Bound (UCB) Action Selection
+- [NEW] 163: Gradient Bandit Action Selection
+- [NEW] 164: Gambler's Problem: Value Iteration
+- [NEW] 165: Compute Discounted Return
+- [NEW] 166: Evaluate Expected Value in a Markov Decision Process
+- [NEW] 167: Calculate the Discounted Return for a Given Trajectory
+- [NEW] 172: Muon Optimizer Update with Newton-Schulz Iteration
+- [NEW] 174: Train a Simple GAN on 1D Gaussian Data
+- [NEW] 177: Implement MuonClip (qk-clip) for Stabilizing Attention
+- [NEW] 178: Implement Position-wise Feed-Forward Block with Residual and Dropout
+- [NEW] 185: Optical Flow EPE with Masks (OmniWorld-style metric)
+- [NEW] 189: Implement Local Response Normalization (LRN)
+- [NEW] 190: Overlapping Max Pooling
+- [NEW] 191: PCA Color Augmentation
+- [NEW] 208: Flash Attention v1 - Forward Pass
+- [NEW] 216: Thanksgiving Feast Predictor: Softmax for Dish Selection
+- [NEW] 217: Derivatives of Activation Functions
+- [NEW] 218: Compute the Hessian Matrix
+- [NEW] 222: LoRA: Low-Rank Adaptation Forward Pass
+- [NEW] 223: QLoRA: Quantized Low-Rank Adaptation Forward Pass
+- [NEW] 229: Sparse MoE Top-K Routing
+- [NEW] 230: 3D CNN Forward Pass Implementation
+- [NEW] 231: Temperature Decay Scheduler
+- [NEW] 232: PTX Loss for Catastrophic Forgetting Prevention (RLHF)
+- [NEW] 233: Inference Head Pruning for Transformers
+- [NEW] 234: Block-wise FP8 Quantization
+- [NEW] 235: Implement the SGTM Parameter Update Step
+- [NEW] 236: Mean Ablation for Circuit Discovery
+- [NEW] 237: Convert RGB Image to Grayscale
+- [NEW] 238: Flip an Image Horizontally or Vertically
+- [NEW] 239: Apply Zero Padding to an Image
+- [NEW] 240: Bilinear Image Resizing
+- [NEW] 241: Sobel Edge Detection
+- [NEW] 242: Non-Maximum Suppression for Object Detection
+- [NEW] 262: Implement the Mish Activation Function
+- [NEW] 263: Implement Binary Cross-Entropy Loss
+- [NEW] 264: Implement the Tanh Activation Function
+- [NEW] 265: Implement 2D Average Pooling
+- [NEW] 266: Implement the Hardtanh Activation Function
+- [NEW] 267: Implement Neural Memory Update with Surprise and Momentum
+- [NEW] 271: Implement Gated Attention
+- [NEW] 287: Implement GRU Cell
+- [NEW] 289: Implement Xavier/Glorot Weight Initialization
+- [NEW] 290: Implement He Weight Initialization
+- [NEW] 291: Calculate Number of Parameters in Neural Network
+- [NEW] 292: Implement Gradient Clipping by Value
+- [NEW] 294: Implement INT8 Quantization
+- [NEW] 298: Implement mHC Forward Pass
+- [NEW] 302: Diffusion Reconstruction Loss
+- [NEW] 303: Forward Diffusion Process
+- [NEW] 304: Forward & Backward Diffusion Process
+- [NEW] 316: MMLU Log-Probability Scoring
+- [NEW] 317: Rubric-Based LLM Judge Evaluation
+- [NEW] 318: Boxed Answer Extraction for Math Benchmarks
+- [NEW] 319: Math Answer Verification with Equivalence Checking
+- [NEW] 323: Pairwise Preference Judge for LLM Comparison
+- [NEW] 324: Code Execution Verifier for Programming Benchmarks
+- [NEW] 327: Engram Context-Aware Gating
+- [NEW] 335: Train a Paris-Style Decentralized Expert Model
+- [NEW] 358: Implement Core MDN Residualization
+- [NEW] 360: MDN with Label Collinearity Control
+- [NEW] 369: Implement Xavier/Glorot Weight Initialization
+- [NEW] 370: Implement He Weight Initialization for Neural Networks
+- [NEW] 371: Calculate Number of Parameters in Neural Network
+- [NEW] 372: Implement RMSNorm (Root Mean Square Layer Normalization)
+- [NEW] 373: Implement the Square ReLU Activation Function
+- [NEW] 374: Character-Level Tokenizer (stoi/itos/BOS)
+- [NEW] 375: Learned Positional Embeddings
+- [NEW] 376: KV Cache for Efficient Autoregressive Attention
+- [NEW] 381: Rotary Positional Embeddings (RoPE)
+- [NEW] 382: Direct Preference Optimization (DPO) Loss
+- [NEW] 383: Top-p (Nucleus) Sampling
+- [NEW] 384: Contrastive Loss (InfoNCE / SimCLR-style)
+- [NEW] 386: Spectral Normalization
+- [NEW] 387: Triplet Margin Loss
+- [NEW] 388: Sliding Window Attention
+- [NEW] 390: Implement Multiquery Attention (MQA)
+- [NEW] 391: Implement Grouped Query Attention (GQA)
+- [NEW] 393: Implement Variational Autoencoder (VAE) Loss (ELBO)
+- [NEW] 394: Implement Speculative Decoding Verification
+- [NEW] 395: DDPM Noise Schedule (Linear Beta Schedule)
+- [NEW] 396: Implement DDPM Reverse Sampling Step
+- [NEW] 397: Classifier-Free Guidance for Conditional Diffusion
+- [NEW] 398: DDIM Deterministic Sampling Step
+- [NEW] 399: Diffusion Model U-Net Time Embedding
+- [NEW] 400: Noise Prediction Loss for Diffusion Training
+- [NEW] 401: Exponential Moving Average (EMA) for Diffusion Model Weights
+- [NEW] 402: Latent Diffusion Encoding and Decoding
+- [NEW] 403: Diffusion Cosine Noise Schedule
+- [NEW] 404: Implement Score Matching for Score-Based Diffusion
+- [NEW] 406: NoPE (No Positional Embedding) with iRoPE Attention
+- [NEW] 407: QK-Norm (Query-Key Normalization)
+- [NEW] 408: Pre-Norm vs Post-Norm Transformer Block
+- [NEW] 409: MoE with Shared Expert Forward Pass
+- [NEW] 410: Speculative Decoding End-to-End Simulation
+- [NEW] 414: Compute Arithmetic Intensity and Classify Bottleneck
+- [NEW] 415: Roofline Model Analysis for GPU Operations
+- [NEW] 416: Compute Attention Memory Traffic and FLOPs
+- [NEW] 417: Classify LLM Prefill vs Decode as Compute-Bound or Memory-Bound
+- [NEW] 418: Estimate KV Cache Size from Model Config
+- [NEW] 419: Combined Token Sampling Pipeline (Temperature + Top-k + Top-p)
+- [NEW] 420: Latent Space Patchification for Diffusion Transformers
+- [NEW] 421: GPU Ops:Byte Ratio Calculation from Spec Sheet
+- [NEW] 422: Multi-GPU Communication Overhead (NVLink vs InfiniBand)
+- [NEW] 423: Multi-Instance GPU (MIG) Resource Allocation
+- [NEW] 424: Kernel Fusion Memory Savings Calculator
+- [NEW] 425: Continuous Batching (In-Flight Batching) Simulator
+- [NEW] 426: Post-Training Quantization with Per-Channel Scale Factors
+- [NEW] 427: FP4 Quantization with Microscaling (MXFP4)
+- [NEW] 428: Number Format Precision Comparison (FP16 vs BF16 vs FP8 vs FP4)
+- [NEW] 431: EAGLE-Style Draft Model from Hidden States
+- [NEW] 435: KV Cache Memory Budget and Eviction Policy
+- [NEW] 438: Tensor Parallelism All-Reduce Communication Cost
+- [NEW] 442: VLM Visual Token Count from Image Resolution and Patch Size
+- [NEW] 446: Video Generation Latent Space Memory Estimation
+- [NEW] 447: Classifier-Free Guidance Skip Speedup Calculator
+- [NEW] 448: Context Parallelism with Ring Attention for Video Models
+- [NEW] 453: Implement Graph Convolution Network (GCN) Layer
+- [NEW] 454: Autoregressive Video Chunk FPS Calculator
+- [NEW] 455: Historical Context Compression Ratio
+- [NEW] 456: Multi-term Memory Patchification for Video
+- [NEW] 457: Implement Attention Sink Detection

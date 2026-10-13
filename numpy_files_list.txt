@@ -1,0 +1,258 @@
+1-Matrix-Vector Dot Product.py
+2-Transpose of a Matrix.py
+4-Calculate Mean by Row or Column.py
+5-Scalar Multiplication of a Matrix.py
+6-Calculate Eigenvalues of a Matrix.py
+8-Calculate 2x2 Matrix Inverse.py
+9-Matrix times Matrix.py
+10-Poisson Distribution Probability Calculator.py
+11-Binomial Distribution Probability.py
+12-Normal Distribution PDF Calculator.py
+13-Descriptive Statistics Calculator.py
+14-Calculate Covariance Matrix.py
+15-Linear Regression Using Gradient Descent.py
+16-Implement Gradient Descent Variants with MSE Loss.py
+17-Implement Adam Optimization Algorithm.py
+17-K-Means Clustering.py
+18-Implement K-Fold Cross-Validation.py
+18-Implement Lasso Regression using ISTA.py
+19-Principal Component Analysis (PCA) Implementation.py
+19-Softmax Activation Function Implementation.py
+20-Implementation of Log Softmax Function.py
+21-Sigmoid Activation Function Understanding.py
+22-Implement ReLU Activation Function.py
+23-Leaky ReLU Activation Function.py
+24-Implement the PReLU Activation Function.py
+25-Single Neuron.py
+25-Single Neuron with Backpropagation.py
+26-Implementing Basic Autograd Operations.py
+26-Implementing a Simple RNN.py
+27-Implement Long Short-Term Memory (LSTM) Network.py
+36-Calculate Accuracy Score.py
+39-Implementation of Log Softmax Function.py
+40-Linear Regression Using Normal Equation.py
+41-Simple Convolutional 2D Layer.py
+42-Implement ReLU Activation Function.py
+44-Leaky ReLU Activation Function.py
+46-Implement Precision Metric.py
+49-Implement Adam Optimization Algorithm.py
+52-Implement Recall Metric in Binary Classification.py
+53-Implement Self-Attention Mechanism.py
+54-Implementing a Simple RNN.py
+56-KL Divergence Between Two Normal Distributions.py
+59-Implement Long Short-Term Memory Network.py
+61-Implement F-Score Calculation for Binary Classification.py
+62-Implement a Simple RNN with Backpropagation Through Time (BPTT).py
+63-Binary Classification with Logistic Regression.py
+64-Pegasos Kernel SVM Implementation.py
+65-Implement AdaBoost Fit Method.py
+66-Calculate Jaccard Index for Binary Classification.py
+69-Calculate R-squared for Regression Analysis.py
+70-Calculate Image Brightness.py
+71-Calculate Root Mean Square Error (RMSE).py
+75-Generate a Confusion Matrix for Binary Classification.py
+76-Calculate Cosine Similarity Between Vectors.py
+77-Calculate Performance Metrics for a Classification Model.py
+82-Grayscale Image Contrast Calculator.py
+83-Dot Product Calculator Easy.py
+84-Convert Vector to Diagonal Matrix.py
+85-Find the column space of a matrix.py
+85-Positional Encoding Calculator.py
+86-Reshape Matrix.py
+87-Implement Compressed Row Sparse Matrix (CSR) Format Conversion.py
+88-GPT-2 Text Generation.py
+88-Implement Orthogonal Projection of a Vector onto a Line.py
+89-Implement Compressed Column Sparse Matrix Format.py
+89-The Pattern Weaver's Code.py
+90-Transformation Matrix from Basis B to C.py
+91-Matrix Transformation.py
+92-Implement Reduced Row Echelon Form (RREF) Function.py
+93-Calculate Mean Absolute Error (MAE).py
+93-Solve Linear Equations using Jacobi Method.py
+94-2D Translation Matrix Implementation.py
+94-Implement Multi-Head Attention.py
+95-Gauss-Seidel Method for Solving Linear Systems.py
+96-Singular Value Decomposition (SVD) of 2x2 Matrix.py
+97-Determinant of a 4x4 Matrix using Laplace's Expansion.py
+98-Overlapping Max Pooling.py
+99-Implement Local Response Normalization.py
+100-PCA Color Augmentation.py
+101-Dropout Layer.py
+102-Implement a Simple Residual Block with Shortcut Connection.py
+103-Implement Global Average Pooling.py
+104-Batch Normalization for BCHW Input.py
+105-Implement a Dense Block with 2D Convolutions.py
+106-Implement Group Normalization.py
+107-Implement Core MDN Residualization.py
+107-Implement Masked Self-Attention.py
+108-Label Collinearity Control.py
+109-Feature Deconfounder Lab.py
+109-Implement Layer Normalization for Sequence Data.py
+110-Distance Correlation Squared.py
+111-Implement Multi-Head Attention.py
+112-Implement Masked Self-Attention.py
+113-Implement Layer Normalization for Sequence Data.py
+114-Positional Encoding Calculator.py
+115-Character-Level Tokenizer.py
+116-Learned Positional Embeddings.py
+117-Language Modeling Tokenizer Lab.py
+118-RMSNorm.py
+119-RoPE.py
+120-KV Cache.py
+121-Implement Position-wise Feed-Forward Block with Residual and Dropout.py
+122-Implement the Square ReLU Activation Function.py
+123-Linear Learning Rate Decay.py
+124-Calculate Number of Parameters in Neural Network.py
+125-Build a Digit Classifier from Scratch.py
+126-Temperature Sampling.py
+127-Pre-Norm vs Post-Norm Transformer Block.py
+128-Grouped Query Attention.py
+129-Sliding Window Attention.py
+130-Mixture-of-Experts Gating.py
+131-Swish SwiGLU Activation.py
+132-Implement INT8 Quantization.py
+133-Block-wise FP8 Quantization.py
+134-FP4 Quantization with Microscaling.py
+135-Attention Sinks.py
+136-Implement GRPO Objective Function.py
+137-Group Relative Advantage for GRPO.py
+138-KL Divergence Estimator for GRPO.py
+139-LoRA Forward Pass.py
+140-QLoRA Forward Pass.py
+141-Calculate Perplexity.py
+142-Continuous Batching Simulator.py
+143-Flash Attention Forward.py
+144-Roofline Model Analysis.py
+145-Quantization Quality Check.py
+146-Momentum Optimizer.py
+147-GeLU Activation Function.py
+148-Adamax Optimizer.py
+149-Adadelta Optimizer.py
+151-Dropout Layer.py
+156-Implement SwiGLU activation function.py
+157-Implement the Bellman Equation for Value Iteration.py
+158-Epsilon-Greedy Action Selection for n-Armed Bandit.py
+159-Incremental Mean for Online Reward Estimation.py
+161-Exponential Weighted Average of Rewards.py
+162-Upper Confidence Bound (UCB) Action Selection.py
+163-Gradient Bandit Action Selection.py
+164-Gambler's Problem: Value Iteration.py
+165-Compute Discounted Return.py
+166-Evaluate Expected Value in a Markov Decision Process.py
+167-Calculate the Discounted Return for a Given Trajectory.py
+172-Muon Optimizer Update with Newton-Schulz Iteration.py
+174-Train a Simple GAN on 1D Gaussian Data.py
+177-Implement MuonClip (qk-clip) for Stabilizing Attention.py
+178-Implement Position-wise Feed-Forward Block with Residual and Dropout.py
+185-Optical Flow EPE with Masks (OmniWorld-style metric).py
+189-Implement Local Response Normalization (LRN).py
+190-Overlapping Max Pooling.py
+191-PCA Color Augmentation.py
+208-Flash Attention v1 - Forward Pass.py
+216-Thanksgiving Feast Predictor: Softmax for Dish Selection.py
+217-Derivatives of Activation Functions.py
+218-Compute the Hessian Matrix.py
+222-LoRA: Low-Rank Adaptation Forward Pass.py
+223-QLoRA: Quantized Low-Rank Adaptation Forward Pass.py
+229-Sparse MoE Top-K Routing.py
+230-3D CNN Forward Pass Implementation.py
+231-Temperature Decay Scheduler.py
+232-PTX Loss for Catastrophic Forgetting Prevention (RLHF).py
+233-Inference Head Pruning for Transformers.py
+234-Block-wise FP8 Quantization.py
+235-Implement the SGTM Parameter Update Step.py
+236-Mean Ablation for Circuit Discovery.py
+237-Convert RGB Image to Grayscale.py
+238-Flip an Image Horizontally or Vertically.py
+239-Apply Zero Padding to an Image.py
+240-Bilinear Image Resizing.py
+241-Sobel Edge Detection.py
+242-Non-Maximum Suppression for Object Detection.py
+262-Implement the Mish Activation Function.py
+263-Implement Binary Cross-Entropy Loss.py
+264-Implement the Tanh Activation Function.py
+265-Implement 2D Average Pooling.py
+266-Implement the Hardtanh Activation Function.py
+267-Implement Neural Memory Update with Surprise and Momentum.py
+271-Implement Gated Attention.py
+287-Implement GRU Cell.py
+289-Implement Xavier_Glorot Weight Initialization.py
+290-Implement He Weight Initialization.py
+291-Calculate Number of Parameters in Neural Network.py
+292-Implement Gradient Clipping by Value.py
+294-Implement INT8 Quantization.py
+298-Implement mHC Forward Pass.py
+302-Diffusion Reconstruction Loss.py
+303-Forward Diffusion Process.py
+304-Forward & Backward Diffusion Process.py
+316-MMLU Log-Probability Scoring.py
+317-Rubric-Based LLM Judge Evaluation.py
+318-Boxed Answer Extraction for Math Benchmarks.py
+319-Math Answer Verification with Equivalence Checking.py
+323-Pairwise Preference Judge for LLM Comparison.py
+324-Code Execution Verifier for Programming Benchmarks.py
+327-Engram Context-Aware Gating.py
+335-Train a Paris-Style Decentralized Expert Model.py
+358-Implement Core MDN Residualization.py
+360-MDN with Label Collinearity Control.py
+369-Implement Xavier_Glorot Weight Initialization.py
+370-Implement He Weight Initialization for Neural Networks.py
+371-Calculate Number of Parameters in Neural Network.py
+372-Implement RMSNorm (Root Mean Square Layer Normalization).py
+373-Implement the Square ReLU Activation Function.py
+374-Character-Level Tokenizer (stoi_itos_BOS).py
+375-Learned Positional Embeddings.py
+376-KV Cache for Efficient Autoregressive Attention.py
+381-Rotary Positional Embeddings (RoPE).py
+382-Direct Preference Optimization (DPO) Loss.py
+383-Top-p (Nucleus) Sampling.py
+384-Contrastive Loss (InfoNCE _ SimCLR-style).py
+386-Spectral Normalization.py
+387-Triplet Margin Loss.py
+388-Sliding Window Attention.py
+390-Implement Multiquery Attention (MQA).py
+391-Implement Grouped Query Attention (GQA).py
+393-Implement Variational Autoencoder (VAE) Loss (ELBO).py
+394-Implement Speculative Decoding Verification.py
+395-DDPM Noise Schedule (Linear Beta Schedule).py
+396-Implement DDPM Reverse Sampling Step.py
+397-Classifier-Free Guidance for Conditional Diffusion.py
+398-DDIM Deterministic Sampling Step.py
+399-Diffusion Model U-Net Time Embedding.py
+400-Noise Prediction Loss for Diffusion Training.py
+401-Exponential Moving Average (EMA) for Diffusion Model Weights.py
+402-Latent Diffusion Encoding and Decoding.py
+403-Diffusion Cosine Noise Schedule.py
+404-Implement Score Matching for Score-Based Diffusion.py
+406-NoPE (No Positional Embedding) with iRoPE Attention.py
+407-QK-Norm (Query-Key Normalization).py
+408-Pre-Norm vs Post-Norm Transformer Block.py
+409-MoE with Shared Expert Forward Pass.py
+410-Speculative Decoding End-to-End Simulation.py
+414-Compute Arithmetic Intensity and Classify Bottleneck.py
+415-Roofline Model Analysis for GPU Operations.py
+416-Compute Attention Memory Traffic and FLOPs.py
+417-Classify LLM Prefill vs Decode as Compute-Bound or Memory-Bound.py
+418-Estimate KV Cache Size from Model Config.py
+419-Combined Token Sampling Pipeline (Temperature + Top-k + Top-p).py
+420-Latent Space Patchification for Diffusion Transformers.py
+421-GPU Ops_Byte Ratio Calculation from Spec Sheet.py
+422-Multi-GPU Communication Overhead (NVLink vs InfiniBand).py
+423-Multi-Instance GPU (MIG) Resource Allocation.py
+424-Kernel Fusion Memory Savings Calculator.py
+425-Continuous Batching (In-Flight Batching) Simulator.py
+426-Post-Training Quantization with Per-Channel Scale Factors.py
+427-FP4 Quantization with Microscaling (MXFP4).py
+428-Number Format Precision Comparison (FP16 vs BF16 vs FP8 vs FP4).py
+431-EAGLE-Style Draft Model from Hidden States.py
+435-KV Cache Memory Budget and Eviction Policy.py
+438-Tensor Parallelism All-Reduce Communication Cost.py
+442-VLM Visual Token Count from Image Resolution and Patch Size.py
+446-Video Generation Latent Space Memory Estimation.py
+447-Classifier-Free Guidance Skip Speedup Calculator.py
+448-Context Parallelism with Ring Attention for Video Models.py
+453-Implement Graph Convolution Network (GCN) Layer.py
+454-Autoregressive Video Chunk FPS Calculator.py
+455-Historical Context Compression Ratio.py
+456-Multi-term Memory Patchification for Video.py
+457-Implement Attention Sink Detection.py
