@@ -1,0 +1,2944 @@
+[
+  {
+    "path": "pytorch/1-Matrix-Vector Dot Product.py",
+    "sha256": "4d96506b90f3bbccf01cc124e5e2ba7ef8acf0b379cb949c96efb0e8e6cd2af8",
+    "syntax": "pass",
+    "import": "fail",
+    "flags": [],
+    "error": "NameError: name 'torch' is not defined",
+    "functions": [
+      "matrix_dot_vector"
+    ]
+  },
+  {
+    "path": "pytorch/10-Calculate Covariance Matrix.py",
+    "sha256": "99d5d000d7852d56984103757295da98c882035d233e86901f44eac8bc32e863",
+    "syntax": "pass",
+    "import": "fail",
+    "flags": [],
+    "error": "NameError: name 'torch' is not defined",
+    "functions": [
+      "calculate_covariance_matrix"
+    ]
+  },
+  {
+    "path": "pytorch/100-PCA Color Augmentation.py",
+    "sha256": "906572d0a876c7797a426fbf89a4e5f390f185127ecc62341ce041433973679b",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "pca_color_augmentation"
+    ]
+  },
+  {
+    "path": "pytorch/104-Batch Normalization for BCHW Input.py",
+    "sha256": "c39f2deb37c76e692fd9e3f5f2dafa32da572de2624def16e71590699d2d8422",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "batch_normalization"
+    ]
+  },
+  {
+    "path": "pytorch/104-Binary Classification with Logistic Regression.py",
+    "sha256": "9b24237c15ef8d7ec9a88692bc4ad466c87044c2eabea368679d5ede75fc74cb",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "predict_logistic"
+    ]
+  },
+  {
+    "path": "pytorch/107-Implement Core MDN Residualization.py",
+    "sha256": "3718a5490c8a8d9a4a825e2fd64532ca79770a78f22a938fe4a9a2d5c48aed55",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "mdn_residualization"
+    ]
+  },
+  {
+    "path": "pytorch/107-Implement Masked Self-Attention.py",
+    "sha256": "bf3e3786690534d845dbae7e4a7bead5a75d49e76e638ecd20dc0c7cfea450ac",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "possible_scalar_torch_sqrt",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "compute_qkv",
+      "masked_attention"
+    ]
+  },
+  {
+    "path": "pytorch/108-Label Collinearity Control.py",
+    "sha256": "d5ffc6e8488f62d18cb17f7529d5f024ba2b9f2e167663bab7d0ce3c5459988d",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "mdn_with_collinearity"
+    ]
+  },
+  {
+    "path": "pytorch/109-Feature Deconfounder Lab.py",
+    "sha256": "d99b8f6cd17528e7374ab2f18faf505ca5047f75831be293c76a2b98d8970a4a",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "FeatureDeconfounder"
+    ]
+  },
+  {
+    "path": "pytorch/109-Implement Layer Normalization for Sequence Data.py",
+    "sha256": "a21a540bee6d8c97c17bc05cf4d93e80dce27b718142acc95bd4641235910951",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "layer_normalization"
+    ]
+  },
+  {
+    "path": "pytorch/11-Solve Linear Equations using Jacobi Method.py",
+    "sha256": "5ed3dc7c21041a5a18ec7a3bddaaa9a2aea3f7df8abe30e100a69d79769bf6ee",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "solve_jacobi"
+    ]
+  },
+  {
+    "path": "pytorch/110-Distance Correlation Squared.py",
+    "sha256": "9de42aa652596731cced4a037c3df470fe9ac003cc7e68943988fc4206503319",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "distance_correlation_squared"
+    ]
+  },
+  {
+    "path": "pytorch/113-Implement a Simple Residual Block with Shortcut Connection.py",
+    "sha256": "f68793f98b740b50e8b4d637ca29d1c6ab926cd8be2ef2ce4b8a653d128d23a4",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "residual_block"
+    ]
+  },
+  {
+    "path": "pytorch/114-Implement Global Average Pooling.py",
+    "sha256": "3be5161bedc8665e89556bc7d05d4f61148de0ad4af55abce550adb54548e5f9",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "global_average_pooling"
+    ]
+  },
+  {
+    "path": "pytorch/115-Character-Level Tokenizer.py",
+    "sha256": "51c7e9333f2e59a4f5ee1bf8ec7aa2fe9ab3f82609047b10a137b1b3b14bbea9",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "CharTokenizer"
+    ]
+  },
+  {
+    "path": "pytorch/116-Learned Positional Embeddings.py",
+    "sha256": "bcfd3266d23d7ddaa94ff573c5e6520690b1ecf485a6f6cf476a3c41ab994ad9",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "learned_positional_encoding"
+    ]
+  },
+  {
+    "path": "pytorch/117-Language Modeling Tokenizer Lab.py",
+    "sha256": "8d6aebbe901c4992fc3e290ff1289cd4ba4b13a886cfa30115c55829a243038c",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "train_tokenizer"
+    ]
+  },
+  {
+    "path": "pytorch/118-RMSNorm.py",
+    "sha256": "35114d1976485ba09c4f13d9bee266404429c005e259026bbbc0a80f82dfc9d1",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "rmsnorm"
+    ]
+  },
+  {
+    "path": "pytorch/119-RoPE.py",
+    "sha256": "9e539bf587e8bf8afadc441818440abeaf6d4307ff19142fd5b17edcd36f37d6",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "apply_rope"
+    ]
+  },
+  {
+    "path": "pytorch/12-Singular Value Decomposition (SVD) of 2x2 Matrix.py",
+    "sha256": "5c417bb226cc34394d7a8048dcc2189afa92f5b5c980e9564bbcd7670b89b63b",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "svd_2x2_singular_values"
+    ]
+  },
+  {
+    "path": "pytorch/120-KV Cache.py",
+    "sha256": "7b14945eeabb9b791733d314affb202bf490eaf47e743ccb4c8ad50cad87280b",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "possible_scalar_torch_sqrt",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "kv_cache_attention_step"
+    ]
+  },
+  {
+    "path": "pytorch/121-Implement Position-wise Feed-Forward Block with Residual and Dropout.py",
+    "sha256": "ff0a80f0e56a907d75a048b900685ceebdf80d1ff0febccba862ba198ec33711",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "ffn"
+    ]
+  },
+  {
+    "path": "pytorch/122-Implement the Square ReLU Activation Function.py",
+    "sha256": "ed718b6500b55c381ed873f59d60ca4cfbfaded46aa21558270024859df4af5d",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "square_relu"
+    ]
+  },
+  {
+    "path": "pytorch/123-Linear Learning Rate Decay.py",
+    "sha256": "14ae96012132bb661fd2fb46f55863afb82136c1b8884252b7b2dde99c5426ac",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "linear_lr_decay"
+    ]
+  },
+  {
+    "path": "pytorch/124-Calculate Number of Parameters in Neural Network.py",
+    "sha256": "88457f7979be16d383dc6c9d043e99fc0f776148e457d8ece18c655e23cd30b3",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "count_parameters"
+    ]
+  },
+  {
+    "path": "pytorch/125-Build a Digit Classifier from Scratch.py",
+    "sha256": "a290f75e773395af2a3dfd1dfc5bafac4d07423bcae887db6a76fdd058c3b91e",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "train"
+    ]
+  },
+  {
+    "path": "pytorch/126-Implement Group Normalization.py",
+    "sha256": "c601447454569e7cdbf41cc1bfde65dab2315ecc3f0177ddb9e28ee276ad3308",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "group_normalization"
+    ]
+  },
+  {
+    "path": "pytorch/126-Temperature Sampling.py",
+    "sha256": "6b8243efcc266bb99ae3ae27272d7f58e70106d1a25db7418f8368c2caaf4b6d",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "temperature_sampling"
+    ]
+  },
+  {
+    "path": "pytorch/127-Pre-Norm vs Post-Norm Transformer Block.py",
+    "sha256": "ede18abb47f5d88c4857101afb8f55e48261108fe1bc89c4a80e3d18245fc1a3",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "layer_norm",
+      "transformer_block"
+    ]
+  },
+  {
+    "path": "pytorch/128-Grouped Query Attention.py",
+    "sha256": "277b2b93abd3aaf60b56e02f65c87eb2feaa7a4c95b6121fe18e8e8194a81cfb",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "numpy_style_transpose",
+      "possible_scalar_torch_sqrt",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "grouped_query_attention"
+    ]
+  },
+  {
+    "path": "pytorch/129-Sliding Window Attention.py",
+    "sha256": "dca078bda1396a74a0debef94ced0ee21f85960cf93859a7d882f4058fa7d587",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "possible_scalar_torch_sqrt"
+    ],
+    "functions": [
+      "sliding_window_attention"
+    ]
+  },
+  {
+    "path": "pytorch/13-Determinant of a 4x4 Matrix using Laplace's Expansion.py",
+    "sha256": "b7895a30d30fc4c783ccb8b31b67ff9dc156ed9069ef00b8faff98515dc4e97c",
+    "syntax": "pass",
+    "import": "fail",
+    "flags": [],
+    "error": "NameError: name 'torch' is not defined",
+    "functions": [
+      "get_minor",
+      "determinant_recursive",
+      "determinant_4x4"
+    ]
+  },
+  {
+    "path": "pytorch/130-Mixture-of-Experts Gating.py",
+    "sha256": "e9dd9421bcbd606e79a45e011421b363fa49ad8b491e1c077ec744473c0195a9",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "noisy_top_k_gating"
+    ]
+  },
+  {
+    "path": "pytorch/131-Swish SwiGLU Activation.py",
+    "sha256": "f2e4670e578a61135954a32d0cdb43c8ebd898ab311aa725bcb30cf39065cd75",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "swiglu"
+    ]
+  },
+  {
+    "path": "pytorch/132-Implement INT8 Quantization.py",
+    "sha256": "aacaf7f7b486a64ad8b4c08ab60ff7a1b2dfd9ee826cd163c20202126196d0b8",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "int8_quantize"
+    ]
+  },
+  {
+    "path": "pytorch/133-Block-wise FP8 Quantization.py",
+    "sha256": "4cc122db9a9ad6daa6580ddb0bd86f92dedc49ca4c22f2344281e5580039b955",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "fp8_block_quantize"
+    ]
+  },
+  {
+    "path": "pytorch/134-FP4 Quantization with Microscaling.py",
+    "sha256": "90aae4a2f2e69600671cdd71b1092fcd8589e80aa3979ddff7ea7ce7196dab89",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "mxfp4_quantize"
+    ]
+  },
+  {
+    "path": "pytorch/135-Attention Sinks.py",
+    "sha256": "710e095a150dab6647cdc1ecbc5f2b3a940f85adb6dafa97ef90a683c0524944",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "detect_attention_sinks"
+    ]
+  },
+  {
+    "path": "pytorch/136-Implement GRPO Objective Function.py",
+    "sha256": "6bb80b75d6e13732782be9abafae8c2e99203e1a8f224b6bb09659e0e841ce1b",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "grpo_objective"
+    ]
+  },
+  {
+    "path": "pytorch/137-Group Relative Advantage for GRPO.py",
+    "sha256": "8097839f4cac080dd3d24e9d13bd431664e073232682c587a974018d9e0ae1e8",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "compute_group_relative_advantage"
+    ]
+  },
+  {
+    "path": "pytorch/137-Implement a Dense Block with 2D Convolutions.py",
+    "sha256": "640b96f6281558e6a80ad511521059d9d715911f1158d195427722e7b92e1c82",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "dense_net_block"
+    ]
+  },
+  {
+    "path": "pytorch/138-KL Divergence Estimator for GRPO.py",
+    "sha256": "571efef558f42377e5b36a4123946cbf89a2cf75e63bcc31978392a6fafecb2e",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "kl_divergence_estimator"
+    ]
+  },
+  {
+    "path": "pytorch/139-LoRA Forward Pass.py",
+    "sha256": "8ff448d22a6e1930ed508dc313be4266a4b5981c79dca0ace3f718c09b0ed847",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "lora_forward"
+    ]
+  },
+  {
+    "path": "pytorch/14-Linear Regression Using Normal Equation.py",
+    "sha256": "fe87f0b7322e8ba81d0a7a9a75de90a995b37ad01bbf22d850c925cecd4695b3",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "linear_regression_normal_equation"
+    ]
+  },
+  {
+    "path": "pytorch/140-QLoRA Forward Pass.py",
+    "sha256": "78f06571ca747be050020075cf77dd193dc8279326d6a946f312157a7894c7f5",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "qlora_forward"
+    ]
+  },
+  {
+    "path": "pytorch/141-Calculate Perplexity.py",
+    "sha256": "0e3b72ee26f1f94708c4ddfddcbe6258da46d3e061794403589c96bb689ba4e3",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "calculate_perplexity"
+    ]
+  },
+  {
+    "path": "pytorch/142-Continuous Batching Simulator.py",
+    "sha256": "e66cd24d86422bb76e9553ced7b597439d77467ef15d3b130153750fd40f7465",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "continuous_batching_sim"
+    ]
+  },
+  {
+    "path": "pytorch/143-Flash Attention Forward.py",
+    "sha256": "f339245b80ef391d025ebb6cd4c40925ddba810606bd4637b4b4a115d31aea33",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "possible_scalar_torch_sqrt",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "flash_attention_forward"
+    ]
+  },
+  {
+    "path": "pytorch/144-Roofline Model Analysis.py",
+    "sha256": "557906d61b0d9a5c7943dc138e39843d05fd4194fc4856e665bd683303189265",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "roofline_analysis"
+    ]
+  },
+  {
+    "path": "pytorch/145-Quantization Quality Check.py",
+    "sha256": "cf5f6ee069961499be719be1aef11c0a59ba008431df1283ccb1fc4eb1ec99c2",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "quantization_quality_check"
+    ]
+  },
+  {
+    "path": "pytorch/146-Momentum Optimizer.py",
+    "sha256": "b411fdf9f52f6928ecee3747c3bdb8006a4f9624c9f1b2ff44eafb1f36d2f8fe",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "momentum_optimizer"
+    ]
+  },
+  {
+    "path": "pytorch/147-GeLU Activation Function.py",
+    "sha256": "4904c568a2f51d96be87722b1c44947d1e792e0e7fa674c5ce1172bc16e7d5cc",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "GeLU"
+    ]
+  },
+  {
+    "path": "pytorch/148-Adamax Optimizer.py",
+    "sha256": "910442884dd9a0a6860a1d968007f6e0af237460a267810710c892bb0731becd",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "adamax_optimizer"
+    ]
+  },
+  {
+    "path": "pytorch/149-Adadelta Optimizer.py",
+    "sha256": "cbf633b0efa0783f3fd8194acef056ead7ff83c9791712b826c41a087b955d2b",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "adadelta_optimizer"
+    ]
+  },
+  {
+    "path": "pytorch/15-Linear Regression Using Gradient Descent.py",
+    "sha256": "cbeb9ef0f4a436103facc4e90a2f389076248583a8dfd081aa7dfd51aa1e8249",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "linear_regression_gradient_descent"
+    ]
+  },
+  {
+    "path": "pytorch/151-Dropout Layer.py",
+    "sha256": "dc8c2c68fef3a57d65c64c26080a5a74dcaeeae63023f6ff77c26d14f8662219",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "DropoutLayer"
+    ]
+  },
+  {
+    "path": "pytorch/156-Implement SwiGLU activation function.py",
+    "sha256": "f6961b3c8f2f2f4e9bae8dabdf9fbf9fb09abf04ea739c2f1c464d8baab9609f",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "SwiGLU"
+    ]
+  },
+  {
+    "path": "pytorch/157-Implement the Bellman Equation for Value Iteration.py",
+    "sha256": "ea79d88ea772e5c86134396a5da04fba0997e1cafe9ecfb62ac0e812022fd4c0",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "bellman_update"
+    ]
+  },
+  {
+    "path": "pytorch/158-Epsilon-Greedy Action Selection for n-Armed Bandit.py",
+    "sha256": "0bc02f81b31662b5bd87d5030cf7c0e40ff842bd05f5cbc2c7d55cfb491e71be",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "epsilon_greedy"
+    ]
+  },
+  {
+    "path": "pytorch/158-Incremental Mean for Online Reward Estimation.py",
+    "sha256": "ed9eb9e7e1ad0df1ba59e1a1d57b50026a4181f0fc231e285b71382283d84e0b",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "incremental_mean"
+    ]
+  },
+  {
+    "path": "pytorch/161-Exponential Weighted Average of Rewards.py",
+    "sha256": "3593ce2be7ec8b55c00083a823648280a9390dcb8d6d43a3d037be5a2606ccfe",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "exp_weighted_average"
+    ]
+  },
+  {
+    "path": "pytorch/162-Upper Confidence Bound (UCB) Action Selection.py",
+    "sha256": "e1f913517b6757540908abc893e2271ed7f9f3e3300d5d897a1cb9b1dfce1fae",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "ucb_action"
+    ]
+  },
+  {
+    "path": "pytorch/163-Gradient Bandit Action Selection.py",
+    "sha256": "c1908e16db9736b2db0f5061d85f3d822fe55ae16174f9bfd0e836bbf714aca1",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "GradientBandit"
+    ]
+  },
+  {
+    "path": "pytorch/164-Gambler's Problem: Value Iteration.py",
+    "sha256": "dde715e6366181527868ec94244990ea1dc1dca8630e9496a625486ce89f295f",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "gambler_value_iteration"
+    ]
+  },
+  {
+    "path": "pytorch/165-Compute Discounted Return.py",
+    "sha256": "f071664135bb645361961eda8527cef33ca4f9cc060e59bd62b34f0f12f7a160",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "discounted_return"
+    ]
+  },
+  {
+    "path": "pytorch/166-Evaluate Expected Value in a Markov Decision Process.py",
+    "sha256": "55d5a99cdb8d528a88aae54a79556cee37358d1df6fa5e3816f95ecee9a81461",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "expected_action_value"
+    ]
+  },
+  {
+    "path": "pytorch/167-Calculate the Discounted Return for a Given Trajectory.py",
+    "sha256": "99222e58a7e93b00efe9e4436ad2fdd28686ddf520df61d05d2d9825a8c00537",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "discounted_return"
+    ]
+  },
+  {
+    "path": "pytorch/17-K-Means Clustering.py",
+    "sha256": "cc451dcc6c4403cb1c13e45f3b273c4ac11a7e731471ab6874285aa0e43b0459",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "k_means_clustering"
+    ]
+  },
+  {
+    "path": "pytorch/172-Muon Optimizer Update with Newton-Schulz Iteration.py",
+    "sha256": "253a15210f671587113aa8b34cb3721e60c1013303a99416163b2c51af43a83f",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "muon_update"
+    ]
+  },
+  {
+    "path": "pytorch/174-Train a Simple GAN on 1D Gaussian Data.py",
+    "sha256": "4b083912113addd0f3e52a8e13fad93eb18a6fcda24cdcecde667ab49cf65311",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "train_gan"
+    ]
+  },
+  {
+    "path": "pytorch/177-Implement MuonClip (qk-clip) for Stabilizing Attention.py",
+    "sha256": "0ca62b7529f24e90c5dfd4e087bcc7a9d6e685cd05105c22c5d3b6682bca9db4",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "muonclip_qk_clip"
+    ]
+  },
+  {
+    "path": "pytorch/178-Implement Position-wise Feed-Forward Block with Residual and Dropout.py",
+    "sha256": "1af44e9f37db6277eb70d25ccf6adfa8a7da0b515c48d66a80c940405b25c3d2",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "ffn"
+    ]
+  },
+  {
+    "path": "pytorch/18-Implement K-Fold Cross-Validation.py",
+    "sha256": "861a03b3d1cc37c82aeca2e59567f5e726031b55a137af3aeba6d12862181099",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "k_fold_cross_validation"
+    ]
+  },
+  {
+    "path": "pytorch/18-Implement Lasso Regression using ISTA.py",
+    "sha256": "0eae29cc6d1df1b35bdeded67a099846f33e693149f1286cd494e1a156e6f89c",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "soft_threshold",
+      "l1_regularization_gradient_descent"
+    ]
+  },
+  {
+    "path": "pytorch/185-Optical Flow EPE with Masks (OmniWorld-style metric).py",
+    "sha256": "5606563017b56aed3906b000b4c1c0c6a3e91f089b76ee916e490002ab4714fa",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "flow_epe"
+    ]
+  },
+  {
+    "path": "pytorch/189-Implement Local Response Normalization (LRN).py",
+    "sha256": "a1393d15c2aabef21e0e35c35b7b954a929733c8784ac0b1e3714e919bb45cc3",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "local_response_normalization"
+    ]
+  },
+  {
+    "path": "pytorch/19-Principal Component Analysis (PCA) Implementation.py",
+    "sha256": "0794ac5f83262808b8d8cbbf1deda495a361434b70541a807110385091cb3109",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "pca"
+    ]
+  },
+  {
+    "path": "pytorch/190-Overlapping Max Pooling.py",
+    "sha256": "f7c49777dc8badf77b0444fb7d67d46dd342d3c668d2c43a1007e8ea566f3f67",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "max_pooling"
+    ]
+  },
+  {
+    "path": "pytorch/191-PCA Color Augmentation.py",
+    "sha256": "1fd1c331f296ed6b81fa59364d147d9f3d059af0c793dc3cc8846b64280e6486",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "pca_color_augmentation"
+    ]
+  },
+  {
+    "path": "pytorch/2-Transpose of a Matrix.py",
+    "sha256": "d8f5cf4febc7303a712f02196f1a0d82bcdf1b242bcb8ff764af780856709585",
+    "syntax": "pass",
+    "import": "fail",
+    "flags": [],
+    "error": "NameError: name 'torch' is not defined",
+    "functions": [
+      "transpose_matrix"
+    ]
+  },
+  {
+    "path": "pytorch/208-Flash Attention v1 - Forward Pass.py",
+    "sha256": "f339245b80ef391d025ebb6cd4c40925ddba810606bd4637b4b4a115d31aea33",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "possible_scalar_torch_sqrt",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "flash_attention_forward"
+    ]
+  },
+  {
+    "path": "pytorch/21-Pegasos Kernel SVM Implementation.py",
+    "sha256": "3f9738c639920dbb45883eafe93e8c320cf12331fccc33fd84e61874f477e0c8",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "pegasos_kernel_svm"
+    ]
+  },
+  {
+    "path": "pytorch/216-Thanksgiving Feast Predictor: Softmax for Dish Selection.py",
+    "sha256": "fe99865e5005ea458e72808e5509b25993220265d8b55ece11b92361bd4e5348",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "feast_predictor"
+    ]
+  },
+  {
+    "path": "pytorch/217-Derivatives of Activation Functions.py",
+    "sha256": "08c915e0ac39c88943913052b02b0b89ea7293cc72ca446284a118e61059938d",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "activation_derivatives"
+    ]
+  },
+  {
+    "path": "pytorch/218-Compute the Hessian Matrix.py",
+    "sha256": "c28d9d69da015f2223c30d4ed9979d659d35a18ec75e002d24343241c584885d",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "compute_hessian"
+    ]
+  },
+  {
+    "path": "pytorch/22-Sigmoid Activation Function Understanding.py",
+    "sha256": "77dc742e84149331b3a5f0e4277c001e012109a0373a0948bf63f226fb36ada4",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "sigmoid"
+    ]
+  },
+  {
+    "path": "pytorch/222-LoRA: Low-Rank Adaptation Forward Pass.py",
+    "sha256": "8ff448d22a6e1930ed508dc313be4266a4b5981c79dca0ace3f718c09b0ed847",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "lora_forward"
+    ]
+  },
+  {
+    "path": "pytorch/223-QLoRA: Quantized Low-Rank Adaptation Forward Pass.py",
+    "sha256": "78f06571ca747be050020075cf77dd193dc8279326d6a946f312157a7894c7f5",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "qlora_forward"
+    ]
+  },
+  {
+    "path": "pytorch/229-Sparse MoE Top-K Routing.py",
+    "sha256": "885aef5a450e88ee1922264c4fedbc270abb88cde713d529f2db548ec756d244",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "topk_routing"
+    ]
+  },
+  {
+    "path": "pytorch/23-Softmax Activation Function Implementation.py",
+    "sha256": "c5d7c40550371e69fc18c991e2f3a909c5f72295fa6cc83d7f2d7714be6111ce",
+    "syntax": "pass",
+    "import": "fail",
+    "flags": [],
+    "error": "NameError: name 'torch' is not defined",
+    "functions": [
+      "softmax"
+    ]
+  },
+  {
+    "path": "pytorch/230-3D CNN Forward Pass Implementation.py",
+    "sha256": "e40e5788fcb6320d9e4938b7850ab1253fa90b6a32f6feb654cf284750b786f8",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "conv3d"
+    ]
+  },
+  {
+    "path": "pytorch/231-Temperature Decay Scheduler.py",
+    "sha256": "200df62ffec84a6d6a7788f90ef989b9942a59229b6ecd6093d3a37da2cbb81f",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "temperature_decay"
+    ]
+  },
+  {
+    "path": "pytorch/232-PTX Loss for Catastrophic Forgetting Prevention (RLHF).py",
+    "sha256": "ced19591dd2fa70838d198103673fb37e57ee8103e4513fb9c84b8f644248648",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "ptx_loss"
+    ]
+  },
+  {
+    "path": "pytorch/233-Inference Head Pruning for Transformers.py",
+    "sha256": "52b77581351e01e0a8c3843a76ba13e4feca80659c037dda82e2ea86eac4a1ab",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "prune_heads"
+    ]
+  },
+  {
+    "path": "pytorch/234-Block-wise FP8 Quantization.py",
+    "sha256": "4cc122db9a9ad6daa6580ddb0bd86f92dedc49ca4c22f2344281e5580039b955",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "fp8_block_quantize"
+    ]
+  },
+  {
+    "path": "pytorch/235-Implement the SGTM Parameter Update Step.py",
+    "sha256": "43c6288f6e0a42d3d58f09023064485e1bb41adf43321f8aba065c460ca7ed63",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "sgtm_update"
+    ]
+  },
+  {
+    "path": "pytorch/236-Mean Ablation for Circuit Discovery.py",
+    "sha256": "42a707ca4d170d4c675e7e98f33edab4b86f74d5f22dc4f3ee9271587ae49143",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "mean_ablation"
+    ]
+  },
+  {
+    "path": "pytorch/237-Convert RGB Image to Grayscale.py",
+    "sha256": "2e824de2b8e0e95ac15c7ac27ee1df8e8eac44a7d8834672134a817c8d988a61",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "rgb_to_grayscale"
+    ]
+  },
+  {
+    "path": "pytorch/238-Flip an Image Horizontally or Vertically.py",
+    "sha256": "e471fd50baa22201ab246b4b65fc5833df69094c080afe1bd2e2ec69ac3a5ec9",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "flip_image"
+    ]
+  },
+  {
+    "path": "pytorch/239-Apply Zero Padding to an Image.py",
+    "sha256": "19ef3e88d8095ea325e0eabfd0d4b592fa30dd98035a1599cbf0a2df0c677b52",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "zero_padding"
+    ]
+  },
+  {
+    "path": "pytorch/24-Single Neuron.py",
+    "sha256": "d1ebffae1a5cff0f33c3adef6213732dd19049c9c0bdce65f0e1283564bfd4be",
+    "syntax": "pass",
+    "import": "fail",
+    "flags": [],
+    "error": "NameError: name 'torch' is not defined",
+    "functions": [
+      "sigmoid",
+      "single_neuron_model"
+    ]
+  },
+  {
+    "path": "pytorch/240-Bilinear Image Resizing.py",
+    "sha256": "a4fe66d5676f2b2ad8d8361c8d45cd7e724e130ddb8dd54acba47c4916c765c0",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "bilinear_resize"
+    ]
+  },
+  {
+    "path": "pytorch/241-Sobel Edge Detection.py",
+    "sha256": "f06ee1cd3a14341ed0cf16d1b96ba5dfd3948e523ade8100bf539ad4a4a7e8ff",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "sobel_edge_detection"
+    ]
+  },
+  {
+    "path": "pytorch/242-Non-Maximum Suppression for Object Detection.py",
+    "sha256": "2229cb18310d67da6937aa6ba88d6c243b0be799d1decd3c5e680674293ee23f",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "compute_iou",
+      "nms"
+    ]
+  },
+  {
+    "path": "pytorch/25-Single Neuron with Backpropagation.py",
+    "sha256": "e122fd6833e71fbe2437dc81633c4494255899fe0d3801a613c9a36d6c9f723e",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "train_neuron"
+    ]
+  },
+  {
+    "path": "pytorch/26-Implementing Basic Autograd Operations.py",
+    "sha256": "b1f945a0ecd07267742d0a6e1e7f91a9deb62981aa2667f1c576454e59296907",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "Value"
+    ]
+  },
+  {
+    "path": "pytorch/262-Implement the Mish Activation Function.py",
+    "sha256": "dc473e66559016a925acd1676822880de0443f925ab464cd49cfb68d088d504b",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "mish"
+    ]
+  },
+  {
+    "path": "pytorch/263-Implement Binary Cross-Entropy Loss.py",
+    "sha256": "0b034d65171e409ed8c24e4ae6a3e119ef67b3ae127b9ec2c271762f83477177",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "binary_cross_entropy"
+    ]
+  },
+  {
+    "path": "pytorch/264-Implement the Tanh Activation Function.py",
+    "sha256": "fdd9ea6621da04751621045db954e0bd6ce2ad6f07035b53ca83c9af48ed7405",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "tanh"
+    ]
+  },
+  {
+    "path": "pytorch/265-Implement 2D Average Pooling.py",
+    "sha256": "cfddc88faab9a9a7f9bfa1a6cb0a2a809b21462d07c41fa909101268ef8ff593",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "average_pooling"
+    ]
+  },
+  {
+    "path": "pytorch/266-Implement the Hardtanh Activation Function.py",
+    "sha256": "06a881ffc03a96514876ea713d8a0ab6bb56307652be40c67cfc5e2647bef4de",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "hardtanh"
+    ]
+  },
+  {
+    "path": "pytorch/267-Implement Neural Memory Update with Surprise and Momentum.py",
+    "sha256": "3803bb25037655a21c145892c07b45ef646436d7a069fc604a9c2103dd40f5f9",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "neural_memory_update"
+    ]
+  },
+  {
+    "path": "pytorch/27-Transformation Matrix from Basis B to C.py",
+    "sha256": "cbde1164f79c73e940e2bd4f5373c656b8562482023046bf67f5160c3e606885",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "transform_basis"
+    ]
+  },
+  {
+    "path": "pytorch/271-Implement Gated Attention.py",
+    "sha256": "18ef942b18800c7eaf233ac24723dda9c45af13da140c19320418549361a4854",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "gated_attention"
+    ]
+  },
+  {
+    "path": "pytorch/287-Implement GRU Cell.py",
+    "sha256": "1d5faa87499f2d25d6e1482d31522f871f0237cbe0d7573236919a0d12f976c1",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "gru_cell"
+    ]
+  },
+  {
+    "path": "pytorch/289-Implement Xavier_Glorot Weight Initialization.py",
+    "sha256": "158b150bce916bda4ac3c4e166a088da16aa1ab564254a8f1bfe02f5906815e1",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "xavier_initialization"
+    ]
+  },
+  {
+    "path": "pytorch/290-Implement He Weight Initialization.py",
+    "sha256": "44c858937581b5544febbf3f1e828fccf209c3bc83b44e3b4f7deca657bcc71a",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "he_initialization"
+    ]
+  },
+  {
+    "path": "pytorch/291-Calculate Number of Parameters in Neural Network.py",
+    "sha256": "8e80b91250c3fc91a9f327975463ce944362143ec0ce63150d9891afc44f8aad",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "count_parameters"
+    ]
+  },
+  {
+    "path": "pytorch/292-Implement Gradient Clipping by Value.py",
+    "sha256": "39530b354e78118546e2e1859b1a7e7aae06465c2ae7004136e4e51af80d536c",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "clip_gradients_value"
+    ]
+  },
+  {
+    "path": "pytorch/294-Implement INT8 Quantization.py",
+    "sha256": "08e785b32697535cdc2b02da6eb729dc788e63425df90b013f9d6b5a996d652b",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "int8_quantize"
+    ]
+  },
+  {
+    "path": "pytorch/298-Implement mHC Forward Pass.py",
+    "sha256": "56a04846a329181a0f4712bcbd6b8bb6c212437a26ccdd51890c377482c69d9d",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "numpy_style_transpose",
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "mhc_forward"
+    ]
+  },
+  {
+    "path": "pytorch/3-Reshape Matrix.py",
+    "sha256": "18656c91efbbe338246b17d4ba9c12dcf3ad41c32c4cdbbaa508f1bc691c0a61",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "reshape_matrix"
+    ]
+  },
+  {
+    "path": "pytorch/302-Diffusion Reconstruction Loss.py",
+    "sha256": "f1d4edada277dc801d9acdc73cc582dc3203e723aac1149cc0e32514c29c8862",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "diffusion_reconstruction_loss"
+    ]
+  },
+  {
+    "path": "pytorch/303-Forward Diffusion Process.py",
+    "sha256": "621d85af2010f2ebb705eb93e7c8a5ccbfbc1440f3569914945aa47d883ba2c9",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "forward_diffusion"
+    ]
+  },
+  {
+    "path": "pytorch/304-Forward & Backward Diffusion Process.py",
+    "sha256": "a92a2808011c970af935b5e08404836daafb914d25cd34b42665d492c543a5f4",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "diffusion_processes"
+    ]
+  },
+  {
+    "path": "pytorch/316-MMLU Log-Probability Scoring.py",
+    "sha256": "0729eabfe92b51607cc4182516c98409a69564ab7aef0cae8bafd2bc421cf53e",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "mmlu_scoring"
+    ]
+  },
+  {
+    "path": "pytorch/317-Rubric-Based LLM Judge Evaluation.py",
+    "sha256": "1c2abde8ca04997e557597212449f9e9cd6b122cc887a2958cceaf770fa9fcfd",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "rubric_judge"
+    ]
+  },
+  {
+    "path": "pytorch/318-Boxed Answer Extraction for Math Benchmarks.py",
+    "sha256": "374dafdde5b61820719e9ff7d6bb1e1e2b42ee13d43f151bc2696068f588aeee",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "extract_boxed_answer"
+    ]
+  },
+  {
+    "path": "pytorch/319-Math Answer Verification with Equivalence Checking.py",
+    "sha256": "78cf27a6b387510f373f5395a9bd3965dabe1d344dbdbe999dea5f53bfc8f93a",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "verify_math_answer"
+    ]
+  },
+  {
+    "path": "pytorch/323-Pairwise Preference Judge for LLM Comparison.py",
+    "sha256": "74467d52d65acd4b38b06e749dc950a651f8ea86944df480314902592759c347",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "pairwise_judge"
+    ]
+  },
+  {
+    "path": "pytorch/324-Code Execution Verifier for Programming Benchmarks.py",
+    "sha256": "f7d3bf8e9dead43f8a527d23ab4c61bdbbcd320305d88fca3295c104ef1d8ab2",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "verify_code"
+    ]
+  },
+  {
+    "path": "pytorch/327-Engram Context-Aware Gating.py",
+    "sha256": "68b458099987a3586379d2b499249548ae023c43dcbfed317f997779e6528b48",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "engram_gating"
+    ]
+  },
+  {
+    "path": "pytorch/335-Train a Paris-Style Decentralized Expert Model.py",
+    "sha256": "7034b6cc7f7a06aaa3937ed21a0a7ef7831b679f53377c702b90b0d45035da1c",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "paris_expert_consensus"
+    ]
+  },
+  {
+    "path": "pytorch/35-Convert Vector to Diagonal Matrix.py",
+    "sha256": "50bdc44908af2c46b026d988ea326b20f7103c8462d9973a9a36f580946090a8",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "make_diagonal"
+    ]
+  },
+  {
+    "path": "pytorch/358-Implement Core MDN Residualization.py",
+    "sha256": "af4b9a180d78a13b7d7f73abd019c348edfba3cb8e46fc58b625c0222337ad20",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "mdn_residualization"
+    ]
+  },
+  {
+    "path": "pytorch/36-Calculate Accuracy Score.py",
+    "sha256": "471df0cc13fea50a1f4a7c1948842ad5b4d8cfcc80e35e983c95d62d03ab28e8",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "accuracy_score"
+    ]
+  },
+  {
+    "path": "pytorch/360-MDN with Label Collinearity Control.py",
+    "sha256": "f607fab8b62f059b1ce377ebe289495b876248ce5c567093578121f4f253eae0",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "mdn_collinearity_control"
+    ]
+  },
+  {
+    "path": "pytorch/369-Implement Xavier_Glorot Weight Initialization.py",
+    "sha256": "158b150bce916bda4ac3c4e166a088da16aa1ab564254a8f1bfe02f5906815e1",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "xavier_initialization"
+    ]
+  },
+  {
+    "path": "pytorch/370-Implement He Weight Initialization for Neural Networks.py",
+    "sha256": "44c858937581b5544febbf3f1e828fccf209c3bc83b44e3b4f7deca657bcc71a",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "he_initialization"
+    ]
+  },
+  {
+    "path": "pytorch/371-Calculate Number of Parameters in Neural Network.py",
+    "sha256": "8e80b91250c3fc91a9f327975463ce944362143ec0ce63150d9891afc44f8aad",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "count_parameters"
+    ]
+  },
+  {
+    "path": "pytorch/372-Implement RMSNorm (Root Mean Square Layer Normalization).py",
+    "sha256": "35114d1976485ba09c4f13d9bee266404429c005e259026bbbc0a80f82dfc9d1",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "rmsnorm"
+    ]
+  },
+  {
+    "path": "pytorch/373-Implement the Square ReLU Activation Function.py",
+    "sha256": "ed718b6500b55c381ed873f59d60ca4cfbfaded46aa21558270024859df4af5d",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "square_relu"
+    ]
+  },
+  {
+    "path": "pytorch/374-Character-Level Tokenizer (stoi_itos_BOS).py",
+    "sha256": "51c7e9333f2e59a4f5ee1bf8ec7aa2fe9ab3f82609047b10a137b1b3b14bbea9",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "CharTokenizer"
+    ]
+  },
+  {
+    "path": "pytorch/375-Learned Positional Embeddings.py",
+    "sha256": "bcfd3266d23d7ddaa94ff573c5e6520690b1ecf485a6f6cf476a3c41ab994ad9",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "learned_positional_encoding"
+    ]
+  },
+  {
+    "path": "pytorch/376-KV Cache for Efficient Autoregressive Attention.py",
+    "sha256": "7b14945eeabb9b791733d314affb202bf490eaf47e743ccb4c8ad50cad87280b",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "possible_scalar_torch_sqrt",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "kv_cache_attention_step"
+    ]
+  },
+  {
+    "path": "pytorch/38-Implement AdaBoost Fit Method.py",
+    "sha256": "eb6e321d2578e5a77f036de195a75dbfb07cd23c9c3fc0c40fcbe479c738fa10",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "adaboost_fit"
+    ]
+  },
+  {
+    "path": "pytorch/381-Rotary Positional Embeddings (RoPE).py",
+    "sha256": "9e539bf587e8bf8afadc441818440abeaf6d4307ff19142fd5b17edcd36f37d6",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "apply_rope"
+    ]
+  },
+  {
+    "path": "pytorch/382-Direct Preference Optimization (DPO) Loss.py",
+    "sha256": "dda8959bb515d9ce3ef02c5f3c70c60a14cebea198bbf4de06b7a046ccc033f5",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "dpo_loss"
+    ]
+  },
+  {
+    "path": "pytorch/383-Top-p (Nucleus) Sampling.py",
+    "sha256": "3073609bbc7ce30334f8c80cbb364a559403b0d74c4416d7b32ae1a43c149ba3",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "top_p_sampling"
+    ]
+  },
+  {
+    "path": "pytorch/384-Contrastive Loss (InfoNCE _ SimCLR-style).py",
+    "sha256": "201d9cd372a59327f3466701c31d5d6157ffb69c1ec676eeb664f5843915e8e7",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "infonce_loss"
+    ]
+  },
+  {
+    "path": "pytorch/386-Spectral Normalization.py",
+    "sha256": "37e0463c2287d3f9a15a09f48f310c0f3c35d89cece0d6b3d2808b9a82986c52",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "spectral_normalization"
+    ]
+  },
+  {
+    "path": "pytorch/387-Triplet Margin Loss.py",
+    "sha256": "9e21b7e19de9dc68c981701521eed0ec4f63d0d5548715cbd1350a6d99bcc788",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "triplet_margin_loss"
+    ]
+  },
+  {
+    "path": "pytorch/388-Sliding Window Attention.py",
+    "sha256": "dca078bda1396a74a0debef94ced0ee21f85960cf93859a7d882f4058fa7d587",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "possible_scalar_torch_sqrt"
+    ],
+    "functions": [
+      "sliding_window_attention"
+    ]
+  },
+  {
+    "path": "pytorch/39-Implementation of Log Softmax Function.py",
+    "sha256": "e2f99e52af59cb3ee14b837ff1e191440866e83e690e86797db47f4943fd49c1",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "log_softmax"
+    ]
+  },
+  {
+    "path": "pytorch/390-Implement Multiquery Attention (MQA).py",
+    "sha256": "f2812cb8f3b2b75d4fe3932300372399a99ac5e5afe80a18f362d3446df38d50",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "multiquery_attention"
+    ]
+  },
+  {
+    "path": "pytorch/391-Implement Grouped Query Attention (GQA).py",
+    "sha256": "277b2b93abd3aaf60b56e02f65c87eb2feaa7a4c95b6121fe18e8e8194a81cfb",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "numpy_style_transpose",
+      "possible_scalar_torch_sqrt",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "grouped_query_attention"
+    ]
+  },
+  {
+    "path": "pytorch/393-Implement Variational Autoencoder (VAE) Loss (ELBO).py",
+    "sha256": "77493c1539958093d95e8888a8367b77c8df6e0bdc113ddfe7ec5836560d6650",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "vae_loss"
+    ]
+  },
+  {
+    "path": "pytorch/394-Implement Speculative Decoding Verification.py",
+    "sha256": "ebb7bad191167a9589181c02c0b5c83bed063359c2116afc7d64ecfa3ab6f804",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "speculative_decoding_verify"
+    ]
+  },
+  {
+    "path": "pytorch/395-DDPM Noise Schedule (Linear Beta Schedule).py",
+    "sha256": "735974328ff3c70c70a12761fd46bda75c392998508e05c4197184074cb88921",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "linear_beta_schedule"
+    ]
+  },
+  {
+    "path": "pytorch/396-Implement DDPM Reverse Sampling Step.py",
+    "sha256": "bf7def3397639db03a810e5c04d58075407a39695019207372a2a118082a3e5d",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "ddpm_reverse_step"
+    ]
+  },
+  {
+    "path": "pytorch/397-Classifier-Free Guidance for Conditional Diffusion.py",
+    "sha256": "8a0d2d1c72b79028d69c0d4647e614fd58371dda480bb1e371bd9422accccdca",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "classifier_free_guidance"
+    ]
+  },
+  {
+    "path": "pytorch/398-DDIM Deterministic Sampling Step.py",
+    "sha256": "8f275e76f118ac21cc2956d27afef2816f185833bc3dc1b02f3841758f55f504",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "ddim_step"
+    ]
+  },
+  {
+    "path": "pytorch/399-Diffusion Model U-Net Time Embedding.py",
+    "sha256": "edc0990141165ed5b3000a5752a2b6bbe3a4bdc52eed71cc63554057039ca36b",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "unet_time_embedding"
+    ]
+  },
+  {
+    "path": "pytorch/4-Calculate Mean by Row or Column.py",
+    "sha256": "deda099dec52d4684c85f77ad7751029af4a3fb49a940dc46c7d638520ed265a",
+    "syntax": "pass",
+    "import": "fail",
+    "flags": [],
+    "error": "NameError: name 'torch' is not defined",
+    "functions": [
+      "calculate_matrix_mean"
+    ]
+  },
+  {
+    "path": "pytorch/400-Noise Prediction Loss for Diffusion Training.py",
+    "sha256": "1eaf7f28de1c5a7484a835fc4327a0c08af447d51f12b4f033f1b2f34c94b8f9",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "noise_prediction_loss"
+    ]
+  },
+  {
+    "path": "pytorch/401-Exponential Moving Average (EMA) for Diffusion Model Weights.py",
+    "sha256": "3630b54cc2fd24b9903c3595e217ea86c55a83c1d4d1ff68830160039e4c01df",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "ema_weights"
+    ]
+  },
+  {
+    "path": "pytorch/402-Latent Diffusion Encoding and Decoding.py",
+    "sha256": "ef91dd8fce0066a394d26efadc3eb22e9d6f704cc33b1114a088d52fc3cbb42d",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "latent_diffusion_codec"
+    ]
+  },
+  {
+    "path": "pytorch/403-Diffusion Cosine Noise Schedule.py",
+    "sha256": "530e3afe532ddc2b0b08630f151ffa29c25d7514274ffd71c28ac238d875e030",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "cosine_beta_schedule"
+    ]
+  },
+  {
+    "path": "pytorch/404-Implement Score Matching for Score-Based Diffusion.py",
+    "sha256": "fd6be3daa5b13faf651939f4f4c4a05229c6b1f6a53aea036fc4073eefe47f0a",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "score_matching_loss"
+    ]
+  },
+  {
+    "path": "pytorch/406-NoPE (No Positional Embedding) with iRoPE Attention.py",
+    "sha256": "9e539bf587e8bf8afadc441818440abeaf6d4307ff19142fd5b17edcd36f37d6",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "apply_rope"
+    ]
+  },
+  {
+    "path": "pytorch/407-QK-Norm (Query-Key Normalization).py",
+    "sha256": "3f1d206afe7c35a705cb7bc3c421b330ae56b3950dd7b63fdc4df1b45578e5c2",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "qk_norm"
+    ]
+  },
+  {
+    "path": "pytorch/408-Pre-Norm vs Post-Norm Transformer Block.py",
+    "sha256": "ede18abb47f5d88c4857101afb8f55e48261108fe1bc89c4a80e3d18245fc1a3",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "layer_norm",
+      "transformer_block"
+    ]
+  },
+  {
+    "path": "pytorch/409-MoE with Shared Expert Forward Pass.py",
+    "sha256": "5fa1f3171711e93582d60214718868fcb0f0859f3f9ca958545f28908da31e81",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "shared_expert_moe"
+    ]
+  },
+  {
+    "path": "pytorch/41-Simple Convolutional 2D Layer.py",
+    "sha256": "2b1b5f40fd6c0d4f609c403d5360be9ad4f1bb18b0531bd516f25fa2bbda1f89",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "simple_conv2d"
+    ]
+  },
+  {
+    "path": "pytorch/410-Speculative Decoding End-to-End Simulation.py",
+    "sha256": "24dc385ab5dc077f75c9441300d9c91421d28c24dfd9e2e88cfcc141c65229fc",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "speculative_decoding_sim"
+    ]
+  },
+  {
+    "path": "pytorch/414-Compute Arithmetic Intensity and Classify Bottleneck.py",
+    "sha256": "a7b031892cc6f47681852e2ecd34bd8d2e4234205b7be89834ae71de808b80d9",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "arithmetic_intensity"
+    ]
+  },
+  {
+    "path": "pytorch/415-Roofline Model Analysis for GPU Operations.py",
+    "sha256": "557906d61b0d9a5c7943dc138e39843d05fd4194fc4856e665bd683303189265",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "roofline_analysis"
+    ]
+  },
+  {
+    "path": "pytorch/416-Compute Attention Memory Traffic and FLOPs.py",
+    "sha256": "993444232e7c2924da1ff7738eace94d7f708dfef81bfcc83ed649f3e2f37de9",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "compute_attention_memory_traffic"
+    ]
+  },
+  {
+    "path": "pytorch/417-Classify LLM Prefill vs Decode as Compute-Bound or Memory-Bound.py",
+    "sha256": "6ec200c2830f094f632af86e044fb564119e234990ca479c9dddb1ec14ff4ba2",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "classify_llm_phase"
+    ]
+  },
+  {
+    "path": "pytorch/418-Estimate KV Cache Size from Model Config.py",
+    "sha256": "967e28370fcbe6da52a691ff24b2691cb12124f1b9ffef71eb78b9f33d1ac99d",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "estimate_kv_cache_size"
+    ]
+  },
+  {
+    "path": "pytorch/419-Combined Token Sampling Pipeline (Temperature + Top-k + Top-p).py",
+    "sha256": "bb61a4939158d99023a6b610fb8f2c7e039fd7f420dfc18284007043a836b4f4",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "token_sampling_pipeline"
+    ]
+  },
+  {
+    "path": "pytorch/42-Implement ReLU Activation Function.py",
+    "sha256": "50604dbe448f319017408f1d62b36d5197bc76cd63b08eba2143646c64b8cf64",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "relu"
+    ]
+  },
+  {
+    "path": "pytorch/420-Latent Space Patchification for Diffusion Transformers.py",
+    "sha256": "756a01f78fd48e16bb5c2476acc246f193f97bf82e0898d83643b7e903423769",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "latent_diff_patchify"
+    ]
+  },
+  {
+    "path": "pytorch/421-GPU Ops_Byte Ratio Calculation from Spec Sheet.py",
+    "sha256": "725ee45b7d7d999a6634c26fe496f2f0243b8f353d67a29d835326a2a0b552da",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "gpu_ops_byte_ratio"
+    ]
+  },
+  {
+    "path": "pytorch/422-Multi-GPU Communication Overhead (NVLink vs InfiniBand).py",
+    "sha256": "9ebf88687f0cb9eb5e06705b133cad16ace560f6b694e9a98cfc85c81b39a82a",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "multi_gpu_communication_overhead"
+    ]
+  },
+  {
+    "path": "pytorch/423-Multi-Instance GPU (MIG) Resource Allocation.py",
+    "sha256": "9666e942b5b9ed71b8b73d019bad08a02b9a33acdfd0ee0d46271c0afc5181b2",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "mig_resource_allocation"
+    ]
+  },
+  {
+    "path": "pytorch/424-Kernel Fusion Memory Savings Calculator.py",
+    "sha256": "31bbbb88c6273951f99c17117a774ca07f3a47f58fc551c9bfd22b01366d714c",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "kernel_fusion_savings"
+    ]
+  },
+  {
+    "path": "pytorch/425-Continuous Batching (In-Flight Batching) Simulator.py",
+    "sha256": "e66cd24d86422bb76e9553ced7b597439d77467ef15d3b130153750fd40f7465",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "continuous_batching_sim"
+    ]
+  },
+  {
+    "path": "pytorch/426-Post-Training Quantization with Per-Channel Scale Factors.py",
+    "sha256": "2af31d1fdda00f367e928e7bf60047943cd239c2314bfac4999017c91a559fc1",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "per_channel_quantization"
+    ]
+  },
+  {
+    "path": "pytorch/427-FP4 Quantization with Microscaling (MXFP4).py",
+    "sha256": "90aae4a2f2e69600671cdd71b1092fcd8589e80aa3979ddff7ea7ce7196dab89",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "mxfp4_quantize"
+    ]
+  },
+  {
+    "path": "pytorch/428-Number Format Precision Comparison (FP16 vs BF16 vs FP8 vs FP4).py",
+    "sha256": "a64a6e70cab39ab34621b3731765fdbb69cc1d11f94a65cf87666cfe68e7fee3",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "float_precision_comparison"
+    ]
+  },
+  {
+    "path": "pytorch/431-EAGLE-Style Draft Model from Hidden States.py",
+    "sha256": "42a65346a3e43435cf42e26fe1bb83adc951aba5ccce885165d1a421657a807d",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "eagle_draft_model"
+    ]
+  },
+  {
+    "path": "pytorch/435-KV Cache Memory Budget and Eviction Policy.py",
+    "sha256": "6a54aaf4c73b543b0036e8743ca1bfd78d9c094f82db42a33c617e03755df0c0",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "kv_cache_eviction"
+    ]
+  },
+  {
+    "path": "pytorch/438-Tensor Parallelism All-Reduce Communication Cost.py",
+    "sha256": "f6b3bc7f421844cdc3d6e1d512eb626c44e7dc5db16788fad462dab5119d9807",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "tensor_parallel_allreduce"
+    ]
+  },
+  {
+    "path": "pytorch/44-Leaky ReLU Activation Function.py",
+    "sha256": "3427f014ba35c85a0b0343cc5867c5f847e9102a1ebe0739dc1480c0bcc0b522",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "leaky_relu"
+    ]
+  },
+  {
+    "path": "pytorch/442-VLM Visual Token Count from Image Resolution and Patch Size.py",
+    "sha256": "df6c93e2a77cacee575d621b0e87c7cf53d203d941972878e5928bd163593be9",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "vlm_visual_tokens"
+    ]
+  },
+  {
+    "path": "pytorch/446-Video Generation Latent Space Memory Estimation.py",
+    "sha256": "fdd54fb170342d5c8c6cdb95421aea78aa00ac57bd78ac2ba3445a2b8838a7fc",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "video_latent_memory"
+    ]
+  },
+  {
+    "path": "pytorch/447-Classifier-Free Guidance Skip Speedup Calculator.py",
+    "sha256": "2ce1c7fd6968d96ced31d57acd328d71d16801c864fe32b02ede5bceeec03bbb",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "cfg_skip_speedup"
+    ]
+  },
+  {
+    "path": "pytorch/448-Context Parallelism with Ring Attention for Video Models.py",
+    "sha256": "adecf01b50d5eb37c71932200a3c4daec54f9329501cb23f707303bfee6bee05",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "context_parallelism_ring"
+    ]
+  },
+  {
+    "path": "pytorch/453-Implement Graph Convolution Network (GCN) Layer.py",
+    "sha256": "b9e1dcd86e495f5f9e03493f1aa8a74cfe0f621f6ee3757fe46459de5038cddd",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "gcn_layer"
+    ]
+  },
+  {
+    "path": "pytorch/454-Autoregressive Video Chunk FPS Calculator.py",
+    "sha256": "7d0d5a032bb9c1961900fd514b433a4edeb5f58733f25b41fabb91c17158833f",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "video_chunk_fps"
+    ]
+  },
+  {
+    "path": "pytorch/455-Historical Context Compression Ratio.py",
+    "sha256": "f38cec1292807895fc8ef9b4f454c762d75c941eeac208181ae2a17f9bb903d6",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "context_compression_ratio"
+    ]
+  },
+  {
+    "path": "pytorch/456-Multi-term Memory Patchification for Video.py",
+    "sha256": "175b8b97189f9f18146128065bc954a7452ccc76f2abde74c642306805ff1a4b",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "video_memory_patchify"
+    ]
+  },
+  {
+    "path": "pytorch/457-Implement Attention Sink Detection.py",
+    "sha256": "9f7cdb88cdb9ef1649bb437ddab9dfef242df04531e4d5e51799704ca8157f49",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "detect_attention_sinks"
+    ]
+  },
+  {
+    "path": "pytorch/46-Implement Precision Metric.py",
+    "sha256": "9cfbdf35395e58d0f7c07f312beefe095299019891b697d4737558bcf678c969",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "precision"
+    ]
+  },
+  {
+    "path": "pytorch/47-Implement Gradient Descent Variants with MSE Loss.py",
+    "sha256": "2fa92ba61e5d76fd92362e7c01adfae0260a693c27400976201647e45f73fc33",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "gradient_descent"
+    ]
+  },
+  {
+    "path": "pytorch/48-Implement Reduced Row Echelon Form (RREF) Function.py",
+    "sha256": "d88c09454348605690a4b571721982a1bc4ad443e30eeea08d41f4169491249a",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "rref"
+    ]
+  },
+  {
+    "path": "pytorch/49-Implement Adam Optimization Algorithm.py",
+    "sha256": "3a4d65510fdc3249bdcad291303d42a7ebae4834a3f1077578fd6c8ee164113c",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "adam_optimizer"
+    ]
+  },
+  {
+    "path": "pytorch/5-Scalar Multiplication of a Matrix.py",
+    "sha256": "db12eaed6806afc8d088a4db427d73d6c186657874a0524aac3c308116e251e3",
+    "syntax": "pass",
+    "import": "fail",
+    "flags": [],
+    "error": "NameError: name 'torch' is not defined",
+    "functions": [
+      "scalar_multiply"
+    ]
+  },
+  {
+    "path": "pytorch/52-Implement Recall Metric in Binary Classification.py",
+    "sha256": "739c8356ace177665ea0a6e98a201c5be8806720c63e0c125e0a862aa331a9db",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "recall"
+    ]
+  },
+  {
+    "path": "pytorch/53-Implement Self-Attention Mechanism.py",
+    "sha256": "6a001f8b0160d4598f2be1ea831aa7adf768d1ee4c409484e02ef52569d5f0e7",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "possible_scalar_torch_sqrt"
+    ],
+    "functions": [
+      "compute_qkv",
+      "self_attention"
+    ]
+  },
+  {
+    "path": "pytorch/54-Implementing a Simple RNN.py",
+    "sha256": "801bb44d34e3c26ed015e0c8dc7e7f8795de65feeafeae53e4992be4a964589e",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals",
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "rnn_forward"
+    ]
+  },
+  {
+    "path": "pytorch/55-2D Translation Matrix Implementation.py",
+    "sha256": "b5e8abb9e7db06ad01aeefb1a53c6d095463912a65d5802823f03c611f1e429a",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "translate_object"
+    ]
+  },
+  {
+    "path": "pytorch/56-KL Divergence Between Two Normal Distributions.py",
+    "sha256": "634df04a3d450ed33cd03a3378294aff7c483a7a32b94fa47b65a54bc942e10f",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "kl_divergence_normal"
+    ]
+  },
+  {
+    "path": "pytorch/57-Gauss-Seidel Method for Solving Linear Systems.py",
+    "sha256": "1f27da861ce92bea715e2f5874c7e7dd6a168ffd89bd4ae78ab2a8c5423e2816",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "gauss_seidel"
+    ]
+  },
+  {
+    "path": "pytorch/59-Implement Long Short-Term Memory (LSTM) Network.py",
+    "sha256": "d62983715233a7c7ce76692371c7a882ab6f69215e7bb20a278529e4bb7f5075",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "LSTM"
+    ]
+  },
+  {
+    "path": "pytorch/59-Implement Long Short-Term Memory Network.py",
+    "sha256": "45f27bcfc3a7bd9d503669b04c1b4b79d230d8fd52cf25f3cd36ef5e6be7433b",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "LSTM"
+    ]
+  },
+  {
+    "path": "pytorch/6-Calculate Eigenvalues of a Matrix.py",
+    "sha256": "b8ecf267fc968acdd39f7101246ef2f75fe1e544edb9c8245e36eb5602ad18f4",
+    "syntax": "pass",
+    "import": "fail",
+    "flags": [],
+    "error": "NameError: name 'torch' is not defined",
+    "functions": [
+      "calculate_eigenvalues"
+    ]
+  },
+  {
+    "path": "pytorch/61-Implement F-Score Calculation for Binary Classification.py",
+    "sha256": "b41ab6b3303e7e5d8779d46429bcc3354f3d778dbf5d668c36b18e4b3bb2a7f8",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "f_score"
+    ]
+  },
+  {
+    "path": "pytorch/62-Implement a Simple RNN with Backpropagation Through Time (BPTT).py",
+    "sha256": "ac4e895053939ac36573a62477c6e5cdafda56ca59797d64f7bad3a6a7e1ca11",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "SimpleRNN"
+    ]
+  },
+  {
+    "path": "pytorch/65-Implement Compressed Row Sparse Matrix (CSR) Format Conversion.py",
+    "sha256": "cb48040e2b1b8db82c88e6fffd65275882ee559b790ee574739748daae97489f",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "compressed_row_sparse_matrix"
+    ]
+  },
+  {
+    "path": "pytorch/66-Implement Orthogonal Projection of a Vector onto a Line.py",
+    "sha256": "efc02751202ae072827cd0587d58274088c2e1ab0827adc34b974e0db93b3939",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "orthogonal_projection"
+    ]
+  },
+  {
+    "path": "pytorch/67-Implement Compressed Column Sparse Matrix Format.py",
+    "sha256": "b423c74ab7c4f8e82b34952ab828bbe13949313bcc1c6f65e188fec8fb88783f",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "compressed_col_sparse_matrix"
+    ]
+  },
+  {
+    "path": "pytorch/69-Calculate R-squared for Regression Analysis.py",
+    "sha256": "69976cf6c1745558b86e537e2485244907da9a0a811aaaa45db53e56d0193e44",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "r_squared"
+    ]
+  },
+  {
+    "path": "pytorch/7-Matrix Transformation.py",
+    "sha256": "115b42c415925ed2b5d0e4471cd38d1e3ac5188238c2a80398dfd3348ff8c37d",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "transform_matrix"
+    ]
+  },
+  {
+    "path": "pytorch/70-Calculate Image Brightness.py",
+    "sha256": "fc855498823d582423427d1bb60e69339727af7284197c14e52c70c75a24c068",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "calculate_brightness"
+    ]
+  },
+  {
+    "path": "pytorch/71-Calculate Root Mean Square Error (RMSE).py",
+    "sha256": "9f31749d54ba1765f3685c8b32fa3151dd82b51523e58f1b20bf0ef91e1ed4bb",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "rmse"
+    ]
+  },
+  {
+    "path": "pytorch/72-Calculate Jaccard Index for Binary Classification.py",
+    "sha256": "9ae0c3f76c13d1ac585d9e8c272e8384fb0486ebe0170ff075858b2765922d7d",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "jaccard_index"
+    ]
+  },
+  {
+    "path": "pytorch/75-Generate a Confusion Matrix for Binary Classification.py",
+    "sha256": "dee4b838d9c2bdf1ba4089b73bd84140566c89b3a70bc11ef143df4b5521bc45",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "confusion_matrix"
+    ]
+  },
+  {
+    "path": "pytorch/76-Calculate Cosine Similarity Between Vectors.py",
+    "sha256": "974b212b2afededc3837243313e6eac53447bb2855b423981c3706d60700b91e",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "cosine_similarity"
+    ]
+  },
+  {
+    "path": "pytorch/77-Calculate Performance Metrics for a Classification Model.py",
+    "sha256": "f6c60c92bcbebbc3bfea2f6766082c91282b69e44b878ee7b72fcb5675a24f49",
+    "syntax": "pass",
+    "import": "fail",
+    "flags": [],
+    "error": "NameError: name 'torch' is not defined",
+    "functions": [
+      "performance_metrics"
+    ]
+  },
+  {
+    "path": "pytorch/78-Descriptive Statistics Calculator.py",
+    "sha256": "03c56f81207702f48cdb4d6d0fe40f147c66fc06d92b92101c94a504e882a838",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "descriptive_statistics"
+    ]
+  },
+  {
+    "path": "pytorch/79-Binomial Distribution Probability.py",
+    "sha256": "c8737f360ab6075603fd685f06265b4b8a10445099fb3f66167d70589b3ff825",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "binomial_probability"
+    ]
+  },
+  {
+    "path": "pytorch/8-Calculate 2x2 Matrix Inverse.py",
+    "sha256": "500fc49e6711d27137054a9b0e6506a73f1766a3da32819269b584632fe17eda",
+    "syntax": "pass",
+    "import": "fail",
+    "flags": [],
+    "error": "NameError: name 'torch' is not defined",
+    "functions": [
+      "inverse_2x2"
+    ]
+  },
+  {
+    "path": "pytorch/80-Normal Distribution PDF Calculator.py",
+    "sha256": "4e8bae822f74f6b361e353ca985ceb1c3733a9a6ca1e64a05cb7c8294547a813",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "normal_pdf"
+    ]
+  },
+  {
+    "path": "pytorch/81-Poisson Distribution Probability Calculator.py",
+    "sha256": "873f4992de28d212bfd4a0db76a769769a58f282e0017013093ae7e58c0f537e",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "poisson_probability"
+    ]
+  },
+  {
+    "path": "pytorch/82-Grayscale Image Contrast Calculator.py",
+    "sha256": "827a27257b5df0dbfc0cc29f076f7474b6decf8416cad4147ce9a1326eb7aa45",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "calculate_contrast"
+    ]
+  },
+  {
+    "path": "pytorch/83-Dot Product Calculator Easy.py",
+    "sha256": "e5e4c00fdcb83403e505d4927320a8e902176b08baef36eb319a4e53a0bdadf5",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "calculate_dot_product"
+    ]
+  },
+  {
+    "path": "pytorch/85-Find the column space of a matrix.py",
+    "sha256": "7f0661a8821fe0237c6c08dd727983bdaac5e16b14361c571c82422ca1b6c754",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "matrix_image"
+    ]
+  },
+  {
+    "path": "pytorch/85-Positional Encoding Calculator.py",
+    "sha256": "7423e328bd269ee704ed83f4f8b9ee9fdb33419a0836558bb3834015eb23a26b",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "unbound_numpy_name"
+    ],
+    "functions": [
+      "pos_encoding"
+    ]
+  },
+  {
+    "path": "pytorch/88-GPT-2 Text Generation.py",
+    "sha256": "a7b9386b2076d7aec5285228f91dcf652568159c29b39a31300c6e0ebaa511c1",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "generate_text"
+    ]
+  },
+  {
+    "path": "pytorch/89-The Pattern Weaver's Code.py",
+    "sha256": "d57d1df4e067fc040e8e7b554b8391f12c0f73367fd3da6b9482a25b039c1740",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "positional_torch_round_decimals"
+    ],
+    "functions": [
+      "softmax",
+      "calculate_crystal_patterns"
+    ]
+  },
+  {
+    "path": "pytorch/9-Matrix times Matrix.py",
+    "sha256": "af16852baa53ec78d3d0dae8b431cae75b06b4d169b3ee737796468f7f59be90",
+    "syntax": "pass",
+    "import": "fail",
+    "flags": [],
+    "error": "NameError: name 'torch' is not defined",
+    "functions": [
+      "matrixmul"
+    ]
+  },
+  {
+    "path": "pytorch/93-Calculate Mean Absolute Error (MAE).py",
+    "sha256": "a122dba0f241247123c5ebb959fba0c73785aba306aeb24005060dd3d7b90bc1",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "mae"
+    ]
+  },
+  {
+    "path": "pytorch/94-Implement Multi-Head Attention.py",
+    "sha256": "6f445f8f633bae4eb5e5addb94c839fecf5329003074393034e105f8ce60b2ea",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [
+      "numpy_style_transpose",
+      "possible_scalar_torch_sqrt"
+    ],
+    "functions": [
+      "compute_qkv",
+      "self_attention",
+      "multi_head_attention"
+    ]
+  },
+  {
+    "path": "pytorch/98-Implement the PReLU Activation Function.py",
+    "sha256": "a4a27c9e4f73c38d1964ab81acdca780323222947d9e217ecfe707147b4e78bf",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "prelu"
+    ]
+  },
+  {
+    "path": "pytorch/98-Overlapping Max Pooling.py",
+    "sha256": "9e3d7679d9b32bb3e439916ea8838b3df4c63c727cb2b7e964d18854e6e138c3",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "overlapping_max_pool2d"
+    ]
+  },
+  {
+    "path": "pytorch/99-Implement Local Response Normalization.py",
+    "sha256": "ea17375a04bdb0e75c5adbebe6045890f9d26af4c37369b066e1701c714ec501",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "local_response_normalization"
+    ]
+  },
+  {
+    "path": "interview_core/01_multi_head_attention.py",
+    "sha256": "89c1f02ea3f5d7b4dabcda0854f63093a93a940ebe11b9ba25b61dac98c350d3",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "MultiHeadAttention"
+    ]
+  },
+  {
+    "path": "interview_core/02_grouped_query_attention.py",
+    "sha256": "7f670ceb230e81b4233521059dc43e643884779d4148f57769327474a5ed01c1",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "GroupedQueryAttention"
+    ]
+  },
+  {
+    "path": "interview_core/03_rmsnorm.py",
+    "sha256": "e456018d4fd59d321b9d58a75b208bd36100f04cfd8d5afc22461a06f09c6a5e",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "RMSNorm"
+    ]
+  },
+  {
+    "path": "interview_core/04_rope.py",
+    "sha256": "ce545820c74edeac948a7aae3273e06a8670134816beb8822a81c8df12737ca4",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "precompute_freqs_cis",
+      "apply_rotary_emb"
+    ]
+  },
+  {
+    "path": "interview_core/05_swiglu.py",
+    "sha256": "4e7043991ed13baeaf726f39adfb277b2e6d69896794093273369a923d34cfe7",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "SwiGLU"
+    ]
+  },
+  {
+    "path": "interview_core/06_kv_cache_attention.py",
+    "sha256": "17d5f12de5bd332d2124561b9a622925cf18b9f7f111b1ee722462c3157d8325",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "AttentionWithKVCache"
+    ]
+  },
+  {
+    "path": "interview_core/07_lora_linear.py",
+    "sha256": "ef51be8f6b18a5055abac9377f6543ee860176fe59e8ac042ea57be1153bc0cb",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "LoRALinear"
+    ]
+  },
+  {
+    "path": "interview_core/08_stable_softmax_and_cross_entropy.py",
+    "sha256": "9c1245b58d18151cb94cc65ddcd60d08dc5017e55bbce3f93cbbb414e2833641",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "stable_softmax",
+      "stable_cross_entropy"
+    ]
+  },
+  {
+    "path": "interview_core/09_dpo_loss.py",
+    "sha256": "163f41bd9faf6f04c15c08618a879ba41b55de83e721da8113d8077433c3ac2a",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "dpo_loss"
+    ]
+  },
+  {
+    "path": "interview_core/10_infonce_loss.py",
+    "sha256": "9a35f9d51ee1c3708092578e514540922cd400402f782f972c9dc0d477efa374",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "infonce_loss"
+    ]
+  },
+  {
+    "path": "interview_core/11_adam_step.py",
+    "sha256": "8bc04a7684d750d38bf8bd8264ca1d846746629be92374941c85868865bc413a",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "adam_step"
+    ]
+  },
+  {
+    "path": "interview_core/12_mlp_backpropagation.py",
+    "sha256": "76e00dbfac39f559d8fb147624400c3c0c9e6ea0c835bef3e878c4d8ce22e4d4",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "mlp_forward_backward"
+    ]
+  },
+  {
+    "path": "interview_core/13_kmeans_vectorized.py",
+    "sha256": "95cf344a7928d6a0eb25e0cd0ff5ecf7efa0429064b6ffff94722ee49bf7aa0b",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "kmeans"
+    ]
+  },
+  {
+    "path": "interview_core/14_pca_svd.py",
+    "sha256": "ab361ef19b08b7cbe14a5a84eedb6784baffbc3e2e8a173582401a260cd394ee",
+    "syntax": "pass",
+    "import": "pass",
+    "flags": [],
+    "functions": [
+      "pca"
+    ]
+  }
+]

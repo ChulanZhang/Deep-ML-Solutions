@@ -1,0 +1,127 @@
+{
+  "scope": "six nested historical modules, not counted in 248 top-level problem files",
+  "repaired": false,
+  "python_files": [
+    {
+      "original_path": "pytorch/llm_blocks/1-RMSNorm.py",
+      "archive_path": "archive/pytorch_legacy/llm_blocks/1-RMSNorm.py",
+      "sha256": "77f68396e43b7580ca5f4fdc58c65011447a930f74040930e95266feba1272fe",
+      "syntax": "pass",
+      "import": "pass"
+    },
+    {
+      "original_path": "pytorch/llm_blocks/2-RoPE.py",
+      "archive_path": "archive/pytorch_legacy/llm_blocks/2-RoPE.py",
+      "sha256": "7a7b01e53f5f8e462440c3c737529761454a44c8060cff71bfa5c35320faf63b",
+      "syntax": "pass",
+      "import": "pass"
+    },
+    {
+      "original_path": "pytorch/llm_blocks/3-SwiGLU_FFN.py",
+      "archive_path": "archive/pytorch_legacy/llm_blocks/3-SwiGLU_FFN.py",
+      "sha256": "796277931da83985086fcacbfcb6ca4f404baccd584e370fa1b215b18293669b",
+      "syntax": "pass",
+      "import": "pass"
+    },
+    {
+      "original_path": "pytorch/llm_blocks/4-GroupedQueryAttention.py",
+      "archive_path": "archive/pytorch_legacy/llm_blocks/4-GroupedQueryAttention.py",
+      "sha256": "3f4b2856e5fe777cd210a491276feefc1b01b1dd0c7d816d5028abefd32a1f8c",
+      "syntax": "pass",
+      "import": "pass"
+    },
+    {
+      "original_path": "pytorch/llm_blocks/5-TransformerBlock.py",
+      "archive_path": "archive/pytorch_legacy/llm_blocks/5-TransformerBlock.py",
+      "sha256": "a2a079849c118d7d6e87d4ea7f1f42ce113236052642ca9e143ffd6a63e43f8f",
+      "syntax": "pass",
+      "import": "pass"
+    },
+    {
+      "original_path": "pytorch/llm_blocks/6-Llama_Model.py",
+      "archive_path": "archive/pytorch_legacy/llm_blocks/6-Llama_Model.py",
+      "sha256": "d0e59e248e9b83417a3293ffd50a81d053503423a1016037e31c59d8e0f98a35",
+      "syntax": "pass",
+      "import": "pass"
+    }
+  ],
+  "checks": [
+    {
+      "name": "RMSNorm float32 reference",
+      "status": "pass",
+      "details": {
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "name": "RMSNorm float64 precision preservation",
+      "status": "fail",
+      "error": "AssertionError: Tensor-likes are not close!\n\nMismatched elements: 64 / 64 (100.0%)\nGreatest absolute difference: 2.0714067394678182e-07 at index (1, 3, 0) (up to 1e-12 allowed)\nGreatest relative difference: 1.3698480285207774e-07 at index (1, 3, 0) (up to 1e-12 allowed)"
+    },
+    {
+      "name": "Standalone RoPE adjacent-pair reference",
+      "status": "pass",
+      "details": {
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "name": "SwiGLU forward reference",
+      "status": "pass",
+      "details": {
+        "max_abs_error": 2.9802322387695312e-08
+      }
+    },
+    {
+      "name": "GQA without RoPE SDPA reference",
+      "status": "pass",
+      "details": {
+        "max_abs_error": 4.470348358154297e-08
+      }
+    },
+    {
+      "name": "GQA supplied RoPE is applied",
+      "status": "fail",
+      "error": "AssertionError: Tensor-likes are not close!\n\nMismatched elements: 64 / 64 (100.0%)\nGreatest absolute difference: 0.08935169130563736 at index (1, 3, 2) (up to 2e-06 allowed)\nGreatest relative difference: 2.7723071575164795 at index (1, 1, 0) (up to 2e-05 allowed)"
+    },
+    {
+      "name": "Transformer block applies supplied RoPE",
+      "status": "fail",
+      "error": "AssertionError: Tensor-likes are not close!\n\nMismatched elements: 64 / 64 (100.0%)\nGreatest absolute difference: 0.20849257707595825 at index (0, 1, 6) (up to 2e-06 allowed)\nGreatest relative difference: 37.30166244506836 at index (0, 0, 2) (up to 2e-05 allowed)"
+    },
+    {
+      "name": "Llama float32 forward smoke test",
+      "status": "pass",
+      "details": {
+        "shape": [
+          1,
+          4,
+          20
+        ]
+      }
+    },
+    {
+      "name": "Llama causal future-token isolation",
+      "status": "pass",
+      "details": {
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "name": "Llama actually uses nontrivial RoPE",
+      "status": "fail",
+      "error": "AssertionError: Changing all RoPE rotations to identity had max delta 0.0; the supplied frequencies are ignored."
+    },
+    {
+      "name": "Llama fp16 multi-token forward",
+      "status": "fail",
+      "error": "RuntimeError: expected scalar type Float but found Half"
+    }
+  ],
+  "replacement_learning_path": "interview_core/15_decoder_block_with_cache.py",
+  "notes": [
+    "Legacy Llama has no KV cache implementation; start_pos alone does not create a cache.",
+    "The standalone RoPE and SwiGLU calculations pass their checks; integration of RoPE is missing.",
+    "Float64 precision and fp16 end-to-end support are separately checked, not assumed."
+  ]
+}

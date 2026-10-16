@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="9" skipped="0" tests="21" time="0.947" timestamp="2026-10-16T03:19:53.584171+00:00" hostname="runnervm8k3b6"><testcase classname="tests.test_interview_core" name="test_mha_reference" time="0.006" /><testcase classname="tests.test_interview_core" name="test_mha_empty_mask_and_half_precision" time="0.003"><failure message="RuntimeError: value cannot be converted to type c10::Half without overflow">load = &lt;function load.&lt;locals&gt;.get at 0x7f1dd89fc720&gt;
+
+    def test_mha_empty_mask_and_half_precision(load):
+        model=load(1,True).MultiHeadAttention(8,2).half();x=torch.randn(1,3,8,dtype=torch.float16)
+&gt;       out=model(x,torch.zeros(3,3,dtype=torch.bool))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_interview_core.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/torch/nn/modules/module.py:1776: in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/torch/nn/modules/module.py:1787: in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = MultiHeadAttention(
+  (q_proj): Linear(in_features=8, out_features=8, bias=False)
+  (k_proj): Linear(in_features=8, ou...j): Linear(in_features=8, out_features=8, bias=False)
+  (out_proj): Linear(in_features=8, out_features=8, bias=False)
+)
+x = tensor([[[ 1.1104,  1.1523,  0.3972,  0.6953,  1.0107,  0.4849, -0.1675,
+           1.8516],
+         [-0.3633, -0.915...3],
+         [ 0.2605,  0.2478,  1.5410, -0.1220, -2.4512, -0.8003,  0.7788,
+          -0.9253]]], dtype=torch.float16)
+mask = tensor([[False, False, False],
+        [False, False, False],
+        [False, False, False]])
+
+    def forward(self, x: torch.Tensor, mask: torch.Tensor = None) -&gt; torch.Tensor:
+        B, S, D = x.shape
+    
+        # 1. 投影并拆分多头: [B, S, D] -&gt; [B, S, H, d_k] -&gt; [B, H, S, d_k]
+        Q = self.q_proj(x).view(B, S, self.n_heads, self.d_k).transpose(1, 2)
+        K = self.k_proj(x).view(B, S, self.n_heads, self.d_k).transpose(1, 2)
+        V = self.v_proj(x).view(B, S, self.n_heads, self.d_k).transpose(1, 2)
+    
+        # 2. 计算注意力分数: [B, H, S, d_k] @ [B, H, d_k, S] -&gt; [B, H, S, S]
+        scores = torch.matmul(Q, K.transpose(-2, -1)) / math.sqrt(self.d_k)
+    
+        # 3. 掩码 (若有因果掩码或 padding 掩码)
+        if mask is not None:
+&gt;           scores = scores.masked_fill(mask == 0, -1e9)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           RuntimeError: value cannot be converted to type c10::Half without overflow
+
+archive/interview_core/01_multi_head_attention.py:40: RuntimeError</failure></testcase><testcase classname="tests.test_interview_core" name="test_gqa_module_reference" time="0.003" /><testcase classname="tests.test_interview_core" name="test_gqa_invalid_model_width" time="0.002"><failure message="Failed: DID NOT RAISE &lt;class 'ValueError'&gt;">load = &lt;function load.&lt;locals&gt;.get at 0x7f1dd89fc5e0&gt;
+
+    def test_gqa_invalid_model_width(load):
+&gt;       with pytest.raises(ValueError):load(2,True).GroupedQueryAttention(10,4,2)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE &lt;class 'ValueError'&gt;
+
+tests/test_interview_core.py:29: Failed</failure></testcase><testcase classname="tests.test_interview_core" name="test_rms_module_fp16_accumulation" time="0.003"><failure message="AssertionError: Tensor-likes are not close!&#10;&#10;Mismatched elements: 48 / 48 (100.0%)&#10;Greatest absolute difference: 1.0 at index (0, 0, 0) (up to 0.01 allowed)&#10;Greatest relative difference: 1.0 at index (0, 0, 0) (up to 0.01 allowed)">load = &lt;function load.&lt;locals&gt;.get at 0x7f1dd89fcae0&gt;
+
+    def test_rms_module_fp16_accumulation(load):
+        model=load(3,True).RMSNorm(8).half();x=torch.full((2,3,8),10000.,dtype=torch.float16)
+&gt;       out=model(x);assert torch.isfinite(out).all();torch.testing.assert_close(out,torch.ones_like(out),rtol=.01,atol=.01)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Tensor-likes are not close!
+E       
+E       Mismatched elements: 48 / 48 (100.0%)
+E       Greatest absolute difference: 1.0 at index (0, 0, 0) (up to 0.01 allowed)
+E       Greatest relative difference: 1.0 at index (0, 0, 0) (up to 0.01 allowed)
+
+tests/test_interview_core.py:33: AssertionError</failure></testcase><testcase classname="tests.test_interview_core" name="test_rotary_half_split_convention" time="0.003" /><testcase classname="tests.test_interview_core" name="test_swiglu_module" time="0.003" /><testcase classname="tests.test_interview_core" name="test_cached_attention_matches_full_causal[chunks0]" time="0.004" /><testcase classname="tests.test_interview_core" name="test_cached_attention_matches_full_causal[chunks1]" time="0.003"><failure message="AssertionError: Tensor-likes are not close!&#10;&#10;Mismatched elements: 48 / 96 (50.0%)&#10;Greatest absolute difference: 0.3622758817360847 at index (0, 0, 7) (up to 2e-06 allowed)&#10;Greatest relative difference: 11.644207593167385 at index (1, 2, 4) (up to 2e-05 allowed)">load = &lt;function load.&lt;locals&gt;.get at 0x7f1dd87ad080&gt;, chunks = [2, 3, 1]
+
+    @pytest.mark.parametrize('chunks',[[1,1,1,1,1,1],[2,3,1],[3,3],[6]])
+    def test_cached_attention_matches_full_causal(load,chunks):
+        model=load(6,True).AttentionWithKVCache(8,2).double();x=torch.randn(2,6,8,dtype=torch.float64)
+        split=lambda z:z.reshape(2,6,2,4).transpose(1,2)
+        q,k,v=(split(f(x)) for f in (model.q_proj,model.k_proj,model.v_proj))
+        reference=F.scaled_dot_product_attention(q,k,v,is_causal=True).transpose(1,2).reshape(2,6,8)
+        reference=model.out_proj(reference);cache=None;outputs=[];start=0
+        for length in chunks:
+            out,cache=model(x[:,start:start+length],cache);outputs.append(out);start+=length
+            assert cache[0].shape==(2,2,start,4)
+&gt;       close(torch.cat(outputs,1),reference)
+
+tests/test_interview_core.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = tensor([[[ 0.1200,  0.1977,  0.0293, -0.0847, -0.1298,  0.3772,  0.1459,
+          -0.1391],
+         [ 0.0860,  0.214...0.0590, -0.1240, -0.0415,  0.1290,  0.0561,  0.1389,
+           0.0782]]], dtype=torch.float64, grad_fn=&lt;CatBackward0&gt;)
+b = tensor([[[-0.2176,  0.1439, -0.0546, -0.1449,  0.1943,  0.1434,  0.2557,
+           0.2232],
+         [ 0.0860,  0.214... -0.1240, -0.0415,  0.1290,  0.0561,  0.1389,
+           0.0782]]], dtype=torch.float64, grad_fn=&lt;UnsafeViewBackward0&gt;)
+
+&gt;   def close(a,b):torch.testing.assert_close(a,b,rtol=2e-5,atol=2e-6)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Tensor-likes are not close!
+E   
+E   Mismatched elements: 48 / 96 (50.0%)
+E   Greatest absolute difference: 0.3622758817360847 at index (0, 0, 7) (up to 2e-06 allowed)
+E   Greatest relative difference: 11.644207593167385 at index (1, 2, 4) (up to 2e-05 allowed)
+
+tests/test_interview_core.py:6: AssertionError</failure></testcase><testcase classname="tests.test_interview_core" name="test_cached_attention_matches_full_causal[chunks2]" time="0.003"><failure message="AssertionError: Tensor-likes are not close!&#10;&#10;Mismatched elements: 64 / 96 (66.7%)&#10;Greatest absolute difference: 0.24894185529783086 at index (0, 0, 7) (up to 2e-06 allowed)&#10;Greatest relative difference: 21.48250781782056 at index (1, 1, 3) (up to 2e-05 allowed)">load = &lt;function load.&lt;locals&gt;.get at 0x7f1dd87ad9e0&gt;, chunks = [3, 3]
+
+    @pytest.mark.parametrize('chunks',[[1,1,1,1,1,1],[2,3,1],[3,3],[6]])
+    def test_cached_attention_matches_full_causal(load,chunks):
+        model=load(6,True).AttentionWithKVCache(8,2).double();x=torch.randn(2,6,8,dtype=torch.float64)
+        split=lambda z:z.reshape(2,6,2,4).transpose(1,2)
+        q,k,v=(split(f(x)) for f in (model.q_proj,model.k_proj,model.v_proj))
+        reference=F.scaled_dot_product_attention(q,k,v,is_causal=True).transpose(1,2).reshape(2,6,8)
+        reference=model.out_proj(reference);cache=None;outputs=[];start=0
+        for length in chunks:
+            out,cache=model(x[:,start:start+length],cache);outputs.append(out);start+=length
+            assert cache[0].shape==(2,2,start,4)
+&gt;       close(torch.cat(outputs,1),reference)
+
+tests/test_interview_core.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = tensor([[[-0.0841,  0.3088, -0.0296,  0.0405,  0.1566,  0.2444,  0.1229,
+          -0.0257],
+         [-0.0431,  0.353...0.0590, -0.1240, -0.0415,  0.1290,  0.0561,  0.1389,
+           0.0782]]], dtype=torch.float64, grad_fn=&lt;CatBackward0&gt;)
+b = tensor([[[-0.2176,  0.1439, -0.0546, -0.1449,  0.1943,  0.1434,  0.2557,
+           0.2232],
+         [ 0.0860,  0.214... -0.1240, -0.0415,  0.1290,  0.0561,  0.1389,
+           0.0782]]], dtype=torch.float64, grad_fn=&lt;UnsafeViewBackward0&gt;)
+
+&gt;   def close(a,b):torch.testing.assert_close(a,b,rtol=2e-5,atol=2e-6)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Tensor-likes are not close!
+E   
+E   Mismatched elements: 64 / 96 (66.7%)
+E   Greatest absolute difference: 0.24894185529783086 at index (0, 0, 7) (up to 2e-06 allowed)
+E   Greatest relative difference: 21.48250781782056 at index (1, 1, 3) (up to 2e-05 allowed)
+
+tests/test_interview_core.py:6: AssertionError</failure></testcase><testcase classname="tests.test_interview_core" name="test_cached_attention_matches_full_causal[chunks3]" time="0.003"><failure message="AssertionError: Tensor-likes are not close!&#10;&#10;Mismatched elements: 80 / 96 (83.3%)&#10;Greatest absolute difference: 0.41610505860492275 at index (1, 1, 0) (up to 2e-06 allowed)&#10;Greatest relative difference: 14.327696212269666 at index (1, 3, 7) (up to 2e-05 allowed)">load = &lt;function load.&lt;locals&gt;.get at 0x7f1dd87accc0&gt;, chunks = [6]
+
+    @pytest.mark.parametrize('chunks',[[1,1,1,1,1,1],[2,3,1],[3,3],[6]])
+    def test_cached_attention_matches_full_causal(load,chunks):
+        model=load(6,True).AttentionWithKVCache(8,2).double();x=torch.randn(2,6,8,dtype=torch.float64)
+        split=lambda z:z.reshape(2,6,2,4).transpose(1,2)
+        q,k,v=(split(f(x)) for f in (model.q_proj,model.k_proj,model.v_proj))
+        reference=F.scaled_dot_product_attention(q,k,v,is_causal=True).transpose(1,2).reshape(2,6,8)
+        reference=model.out_proj(reference);cache=None;outputs=[];start=0
+        for length in chunks:
+            out,cache=model(x[:,start:start+length],cache);outputs.append(out);start+=length
+            assert cache[0].shape==(2,2,start,4)
+&gt;       close(torch.cat(outputs,1),reference)
+
+tests/test_interview_core.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = tensor([[[-0.2136,  0.1397, -0.0864, -0.0716,  0.1229,  0.1186,  0.1603,
+           0.0547],
+         [-0.2147,  0.172...0.0590, -0.1240, -0.0415,  0.1290,  0.0561,  0.1389,
+           0.0782]]], dtype=torch.float64, grad_fn=&lt;CatBackward0&gt;)
+b = tensor([[[-0.2176,  0.1439, -0.0546, -0.1449,  0.1943,  0.1434,  0.2557,
+           0.2232],
+         [ 0.0860,  0.214... -0.1240, -0.0415,  0.1290,  0.0561,  0.1389,
+           0.0782]]], dtype=torch.float64, grad_fn=&lt;UnsafeViewBackward0&gt;)
+
+&gt;   def close(a,b):torch.testing.assert_close(a,b,rtol=2e-5,atol=2e-6)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Tensor-likes are not close!
+E   
+E   Mismatched elements: 80 / 96 (83.3%)
+E   Greatest absolute difference: 0.41610505860492275 at index (1, 1, 0) (up to 2e-06 allowed)
+E   Greatest relative difference: 14.327696212269666 at index (1, 3, 7) (up to 2e-05 allowed)
+
+tests/test_interview_core.py:6: AssertionError</failure></testcase><testcase classname="tests.test_interview_core" name="test_cached_attention_no_future_leak" time="0.003"><failure message="AssertionError: Tensor-likes are not close!&#10;&#10;Mismatched elements: 24 / 24 (100.0%)&#10;Greatest absolute difference: 41.64679826429978 at index (0, 1, 5) (up to 2e-06 allowed)&#10;Greatest relative difference: 1.0526807678121763 at index (0, 0, 1) (up to 2e-05 allowed)">load = &lt;function load.&lt;locals&gt;.get at 0x7f1dd87ade40&gt;
+
+    def test_cached_attention_no_future_leak(load):
+        model=load(6,True).AttentionWithKVCache(8,2).double();x=torch.randn(1,5,8,dtype=torch.float64)
+        changed=x.clone();changed[:,3:]=torch.randn_like(changed[:,3:])*100
+&gt;       close(model(x)[0][:,:3],model(changed)[0][:,:3])
+
+tests/test_interview_core.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = tensor([[[ 0.0423,  0.1203,  0.0211, -0.0902,  0.1930,  0.0781, -0.0248,
+           0.0257],
+         [-0.0188,  0.200...1856,  0.0149, -0.0815,  0.1871,  0.0636,  0.0080,
+          -0.0012]]], dtype=torch.float64, grad_fn=&lt;SliceBackward0&gt;)
+b = tensor([[[  2.8644,  -2.2831,  -2.7437,  -3.2865,  10.3183, -16.0128, -16.0919,
+            1.2519],
+         [  0.788...-20.0776, -36.5972, -23.3178,  18.5121, -20.6982,
+          -20.0747]]], dtype=torch.float64, grad_fn=&lt;SliceBackward0&gt;)
+
+&gt;   def close(a,b):torch.testing.assert_close(a,b,rtol=2e-5,atol=2e-6)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Tensor-likes are not close!
+E   
+E   Mismatched elements: 24 / 24 (100.0%)
+E   Greatest absolute difference: 41.64679826429978 at index (0, 1, 5) (up to 2e-06 allowed)
+E   Greatest relative difference: 1.0526807678121763 at index (0, 0, 1) (up to 2e-05 allowed)
+
+tests/test_interview_core.py:6: AssertionError</failure></testcase><testcase classname="tests.test_interview_core" name="test_lora_frozen_base_and_gradients" time="0.003" /><testcase classname="tests.test_interview_core" name="test_softmax_cross_entropy_gradients" time="0.003" /><testcase classname="tests.test_interview_core" name="test_dpo_tensor_loss" time="0.002" /><testcase classname="tests.test_interview_core" name="test_clip_symmetric_infonce" time="0.003" /><testcase classname="tests.test_interview_core" name="test_adam_steps_against_optimizer" time="0.666" /><testcase classname="tests.test_interview_core" name="test_manual_mlp_backward" time="0.004" /><testcase classname="tests.test_interview_core" name="test_kmeans_labels_match_returned_centers" time="0.004"><failure message="assert False&#10; +  where False = &lt;built-in method equal of type object at 0x7f1df8c7f6a0&gt;(tensor([1, 0, 1, 0, 1, 1, 3, 1, 0, 1, 1, 2, 3, 2, 2, 2, 1, 1, 0, 1, 2, 0, 1, 2,\n        3, 0, 3, 3, 3, 1]), tensor([1, 0, 1, 0, 1, 1, 3, 1, 0, 1, 1, 2, 3, 2, 2, 2, 2, 1, 0, 1, 3, 0, 1, 2,\n        3, 0, 3, 3, 3, 1]))&#10; +    where &lt;built-in method equal of type object at 0x7f1df8c7f6a0&gt; = torch.equal">load = &lt;function load.&lt;locals&gt;.get at 0x7f1dd6266980&gt;
+
+    def test_kmeans_labels_match_returned_centers(load):
+        torch.manual_seed(2);x=torch.randn(30,2)
+        centers,labels=load(13,True).kmeans(x,4,max_iters=1,tol=0.)
+        expected=((x[:,None]-centers[None])**2).sum(-1).argmin(-1)
+&gt;       assert torch.equal(labels,expected)
+E       assert False
+E        +  where False = &lt;built-in method equal of type object at 0x7f1df8c7f6a0&gt;(tensor([1, 0, 1, 0, 1, 1, 3, 1, 0, 1, 1, 2, 3, 2, 2, 2, 1, 1, 0, 1, 2, 0, 1, 2,\n        3, 0, 3, 3, 3, 1]), tensor([1, 0, 1, 0, 1, 1, 3, 1, 0, 1, 1, 2, 3, 2, 2, 2, 2, 1, 0, 1, 3, 0, 1, 2,\n        3, 0, 3, 3, 3, 1]))
+E        +    where &lt;built-in method equal of type object at 0x7f1df8c7f6a0&gt; = torch.equal
+
+tests/test_interview_core.py:112: AssertionError</failure></testcase><testcase classname="tests.test_interview_core" name="test_kmeans_large_tolerance_updates_centers" time="0.002"><failure message="AssertionError: Tensor-likes are not close!&#10;&#10;Mismatched elements: 1 / 1 (100.0%)&#10;Greatest absolute difference: 5.5 at index (0, 0) (up to 2e-06 allowed)&#10;Greatest relative difference: 1.0 at index (0, 0) (up to 2e-05 allowed)">load = &lt;function load.&lt;locals&gt;.get at 0x7f1dd624c5e0&gt;
+
+    def test_kmeans_large_tolerance_updates_centers(load):
+        x=torch.tensor([[0.],[2.],[9.],[11.]])
+        centers,labels=load(13,True).kmeans(x,1,max_iters=2,tol=1e9)
+&gt;       close(centers,x.mean(0,keepdim=True))
+
+tests/test_interview_core.py:117: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = tensor([[11.]]), b = tensor([[5.5000]])
+
+&gt;   def close(a,b):torch.testing.assert_close(a,b,rtol=2e-5,atol=2e-6)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Tensor-likes are not close!
+E   
+E   Mismatched elements: 1 / 1 (100.0%)
+E   Greatest absolute difference: 5.5 at index (0, 0) (up to 2e-06 allowed)
+E   Greatest relative difference: 1.0 at index (0, 0) (up to 2e-05 allowed)
+
+tests/test_interview_core.py:6: AssertionError</failure></testcase><testcase classname="tests.test_interview_core" name="test_pca_singular_value_energy" time="0.003" /></testsuite></testsuites>
