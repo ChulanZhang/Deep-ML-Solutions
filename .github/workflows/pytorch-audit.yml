@@ -1,0 +1,54 @@
+name: PyTorch audit
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'pytorch/**'
+      - 'interview_core/**'
+      - 'pytorch_verified/**'
+      - 'tests/**'
+      - 'audit/**'
+      - '.github/workflows/pytorch-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Compile and inventory source files (not semantic validation)
+        run: |
+          mkdir -p audit-output
+          python - <<'PY'
+          import ast, collections, hashlib, json, pathlib, subprocess
+          root = pathlib.Path('.')
+          records = []
+          for folder in ('pytorch', 'interview_core'):
+              for p in sorted((root / folder).glob('*.py')):
+                  source = p.read_text(encoding='utf-8')
+                  item = {'path': str(p), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest(), 'bytes': p.stat().st_size, 'syntax_ok': True, 'semantic_tests': 'not_run'}
+                  try:
+                      tree = ast.parse(source, filename=str(p))
+                      compile(tree, str(p), 'exec')
+                  except SyntaxError as exc:
+                      item.update(syntax_ok=False, error=str(exc))
+                  records.append(item)
+          result = {'commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(), 'files': records}
+          pathlib.Path('audit-output/inventory.json').write_text(json.dumps(result, indent=2))
+          print(f"Inventoried {len(records)} Python files; syntax failures: {sum(not x['syntax_ok'] for x in records)}")
+          print('This is a syntax check, NOT proof that solutions are correct.')
+          PY
+          git archive --format=tar HEAD > audit-output/source-snapshot.tar
+      - uses: actions/upload-artifact@v7
+        with:
+          name: pytorch-audit-snapshot
+          path: audit-output/
+          retention-days: 7
+          if-no-files-found: error
