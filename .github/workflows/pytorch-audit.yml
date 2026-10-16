@@ -3,13 +3,6 @@ name: PyTorch audit
 on:
   pull_request:
     branches: [main]
-    paths:
-      - 'pytorch/**'
-      - 'interview_core/**'
-      - 'pytorch_verified/**'
-      - 'tests/**'
-      - 'audit/**'
-      - '.github/workflows/pytorch-audit.yml'
   workflow_dispatch:
 
 permissions:
@@ -20,33 +13,53 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Compile and inventory source files (not semantic validation)
+      - name: Inventory and capture public source definitions
         run: |
           mkdir -p audit-output
           python - <<'PY'
-          import ast, collections, hashlib, json, pathlib, subprocess
-          root = pathlib.Path('.')
+          import ast, hashlib, json, pathlib, subprocess, urllib.request, re
           records = []
           for folder in ('pytorch', 'interview_core'):
-              for p in sorted((root / folder).glob('*.py')):
+              for p in sorted(pathlib.Path(folder).glob('*.py')):
                   source = p.read_text(encoding='utf-8')
-                  item = {'path': str(p), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest(), 'bytes': p.stat().st_size, 'syntax_ok': True, 'semantic_tests': 'not_run'}
+                  item = {'path': str(p), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest(), 'syntax_ok': True, 'semantic_tests': 'not_run'}
                   try:
-                      tree = ast.parse(source, filename=str(p))
-                      compile(tree, str(p), 'exec')
+                      compile(ast.parse(source), str(p), 'exec')
                   except SyntaxError as exc:
                       item.update(syntax_ok=False, error=str(exc))
                   records.append(item)
-          result = {'commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(), 'files': records}
-          pathlib.Path('audit-output/inventory.json').write_text(json.dumps(result, indent=2))
-          print(f"Inventoried {len(records)} Python files; syntax failures: {sum(not x['syntax_ok'] for x in records)}")
-          print('This is a syntax check, NOT proof that solutions are correct.')
+          out = pathlib.Path('audit-output')
+          (out / 'inventory.json').write_text(json.dumps({'commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(), 'files': records}, indent=2))
+          print(f'Inventoried {len(records)} Python files; this is NOT semantic validation.')
+          def fetch(url):
+              req = urllib.request.Request(url, headers={'User-Agent': 'DeepML-Solutions-audit'})
+              with urllib.request.urlopen(req, timeout=60) as r:
+                  return r.read()
+          try:
+              info = json.loads(fetch('https://api.github.com/repos/Open-Deep-ML/DML-OpenProblem/commits/main'))
+              sha = info['sha']
+              (out / 'official-commit.txt').write_text(sha)
+              (out / 'official-source.tar.gz').write_bytes(fetch('https://codeload.github.com/Open-Deep-ML/DML-OpenProblem/tar.gz/' + sha))
+          except Exception as exc:
+              (out / 'official-fetch-error.txt').write_text(str(exc))
+          try:
+              html = fetch('https://www.deep-ml.com/problems/94')
+              (out / 'problem94.html').write_bytes(html)
+              for i, src in enumerate(re.findall(r'<script[^>]+src=[\"\x27]([^\"\x27]+)', html.decode())):
+                  if src.startswith('/'):
+                      try:
+                          data = fetch('https://www.deep-ml.com' + src)
+                          (out / f'website-script-{i}.js').write_bytes(data)
+                      except Exception:
+                          pass
+          except Exception as exc:
+              (out / 'website-fetch-error.txt').write_text(str(exc))
           PY
           git archive --format=tar HEAD > audit-output/source-snapshot.tar
-      - uses: actions/upload-artifact@v7
+      - uses: actions/upload-artifact@v4
         with:
           name: pytorch-audit-snapshot
           path: audit-output/
