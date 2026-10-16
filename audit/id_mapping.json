@@ -1,0 +1,2483 @@
+[
+  {
+    "path": "pytorch/1-Matrix-Vector Dot Product.py",
+    "old_id": 1,
+    "old_title": "Matrix-Vector Dot Product",
+    "official_id": 1,
+    "official_title": "Matrix-Vector Dot Product",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/1",
+    "archive_path": "archive/pytorch_legacy/1-Matrix-Vector Dot Product.py"
+  },
+  {
+    "path": "pytorch/10-Calculate Covariance Matrix.py",
+    "old_id": 10,
+    "old_title": "Calculate Covariance Matrix",
+    "official_id": 10,
+    "official_title": "Calculate Covariance Matrix",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/10",
+    "archive_path": "archive/pytorch_legacy/10-Calculate Covariance Matrix.py"
+  },
+  {
+    "path": "pytorch/100-PCA Color Augmentation.py",
+    "old_id": 100,
+    "old_title": "PCA Color Augmentation",
+    "official_id": 191,
+    "official_title": "PCA Color Augmentation",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/191",
+    "archive_path": "archive/pytorch_legacy/100-PCA Color Augmentation.py"
+  },
+  {
+    "path": "pytorch/104-Batch Normalization for BCHW Input.py",
+    "old_id": 104,
+    "old_title": "Batch Normalization for BCHW Input",
+    "official_id": 115,
+    "official_title": "Implement Batch Normalization for BCHW Input",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/115",
+    "archive_path": "archive/pytorch_legacy/104-Batch Normalization for BCHW Input.py"
+  },
+  {
+    "path": "pytorch/104-Binary Classification with Logistic Regression.py",
+    "old_id": 104,
+    "old_title": "Binary Classification with Logistic Regression",
+    "official_id": 104,
+    "official_title": "Binary Classification with Logistic Regression",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/104",
+    "archive_path": "archive/pytorch_legacy/104-Binary Classification with Logistic Regression.py"
+  },
+  {
+    "path": "pytorch/107-Implement Core MDN Residualization.py",
+    "old_id": 107,
+    "old_title": "Implement Core MDN Residualization",
+    "official_id": 358,
+    "official_title": "Implement Core MDN Residualization",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/358",
+    "archive_path": "archive/pytorch_legacy/107-Implement Core MDN Residualization.py"
+  },
+  {
+    "path": "pytorch/107-Implement Masked Self-Attention.py",
+    "old_id": 107,
+    "old_title": "Implement Masked Self-Attention",
+    "official_id": 107,
+    "official_title": "Implement Masked Self-Attention",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/107",
+    "archive_path": "archive/pytorch_legacy/107-Implement Masked Self-Attention.py"
+  },
+  {
+    "path": "pytorch/108-Label Collinearity Control.py",
+    "old_id": 108,
+    "old_title": "Label Collinearity Control",
+    "official_id": 360,
+    "official_title": "MDN with Label Collinearity Control",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/360",
+    "archive_path": "archive/pytorch_legacy/108-Label Collinearity Control.py"
+  },
+  {
+    "path": "pytorch/109-Feature Deconfounder Lab.py",
+    "old_id": 109,
+    "old_title": "Feature Deconfounder Lab",
+    "official_id": null,
+    "official_title": null,
+    "mapping": "unmatched_extension_no_official_id",
+    "archive_path": "archive/pytorch_legacy/109-Feature Deconfounder Lab.py"
+  },
+  {
+    "path": "pytorch/109-Implement Layer Normalization for Sequence Data.py",
+    "old_id": 109,
+    "old_title": "Implement Layer Normalization for Sequence Data",
+    "official_id": 109,
+    "official_title": "Implement Layer Normalization for Sequence Data",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/109",
+    "archive_path": "archive/pytorch_legacy/109-Implement Layer Normalization for Sequence Data.py"
+  },
+  {
+    "path": "pytorch/11-Solve Linear Equations using Jacobi Method.py",
+    "old_id": 11,
+    "old_title": "Solve Linear Equations using Jacobi Method",
+    "official_id": 11,
+    "official_title": "Solve Linear Equations using Jacobi Method",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/11",
+    "archive_path": "archive/pytorch_legacy/11-Solve Linear Equations using Jacobi Method.py"
+  },
+  {
+    "path": "pytorch/110-Distance Correlation Squared.py",
+    "old_id": 110,
+    "old_title": "Distance Correlation Squared",
+    "official_id": 359,
+    "official_title": "Distance Correlation for Measuring Metadata Dependence",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/359",
+    "archive_path": "archive/pytorch_legacy/110-Distance Correlation Squared.py"
+  },
+  {
+    "path": "pytorch/113-Implement a Simple Residual Block with Shortcut Connection.py",
+    "old_id": 113,
+    "old_title": "Implement a Simple Residual Block with Shortcut Connection",
+    "official_id": 113,
+    "official_title": "Implement a Simple Residual Block with Shortcut Connection",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/113",
+    "archive_path": "archive/pytorch_legacy/113-Implement a Simple Residual Block with Shortcut Connection.py"
+  },
+  {
+    "path": "pytorch/114-Implement Global Average Pooling.py",
+    "old_id": 114,
+    "old_title": "Implement Global Average Pooling",
+    "official_id": 114,
+    "official_title": "Implement Global Average Pooling",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/114",
+    "archive_path": "archive/pytorch_legacy/114-Implement Global Average Pooling.py"
+  },
+  {
+    "path": "pytorch/115-Character-Level Tokenizer.py",
+    "old_id": 115,
+    "old_title": "Character-Level Tokenizer",
+    "official_id": 374,
+    "official_title": "Character-Level Tokenizer (stoi/itos/BOS)",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/374",
+    "archive_path": "archive/pytorch_legacy/115-Character-Level Tokenizer.py"
+  },
+  {
+    "path": "pytorch/116-Learned Positional Embeddings.py",
+    "old_id": 116,
+    "old_title": "Learned Positional Embeddings",
+    "official_id": 375,
+    "official_title": "Learned Positional Embeddings",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/375",
+    "archive_path": "archive/pytorch_legacy/116-Learned Positional Embeddings.py"
+  },
+  {
+    "path": "pytorch/117-Language Modeling Tokenizer Lab.py",
+    "old_id": 117,
+    "old_title": "Language Modeling Tokenizer Lab",
+    "official_id": null,
+    "official_title": null,
+    "mapping": "unmatched_extension_no_official_id",
+    "archive_path": "archive/pytorch_legacy/117-Language Modeling Tokenizer Lab.py"
+  },
+  {
+    "path": "pytorch/118-RMSNorm.py",
+    "old_id": 118,
+    "old_title": "RMSNorm",
+    "official_id": 372,
+    "official_title": "Implement RMSNorm (Root Mean Square Layer Normalization)",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/372",
+    "archive_path": "archive/pytorch_legacy/118-RMSNorm.py"
+  },
+  {
+    "path": "pytorch/119-RoPE.py",
+    "old_id": 119,
+    "old_title": "RoPE",
+    "official_id": 381,
+    "official_title": "Rotary Positional Embeddings (RoPE)",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/381",
+    "archive_path": "archive/pytorch_legacy/119-RoPE.py"
+  },
+  {
+    "path": "pytorch/12-Singular Value Decomposition (SVD) of 2x2 Matrix.py",
+    "old_id": 12,
+    "old_title": "Singular Value Decomposition (SVD) of 2x2 Matrix",
+    "official_id": 12,
+    "official_title": "Singular Value Decomposition (SVD) of 2x2 Matrix",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/12",
+    "archive_path": "archive/pytorch_legacy/12-Singular Value Decomposition (SVD) of 2x2 Matrix.py"
+  },
+  {
+    "path": "pytorch/120-KV Cache.py",
+    "old_id": 120,
+    "old_title": "KV Cache",
+    "official_id": 376,
+    "official_title": "KV Cache for Efficient Autoregressive Attention",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/376",
+    "archive_path": "archive/pytorch_legacy/120-KV Cache.py"
+  },
+  {
+    "path": "pytorch/121-Implement Position-wise Feed-Forward Block with Residual and Dropout.py",
+    "old_id": 121,
+    "old_title": "Implement Position-wise Feed-Forward Block with Residual and Dropout",
+    "official_id": 178,
+    "official_title": "Implement Position-wise Feed-Forward Block with Residual and Dropout",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/178",
+    "archive_path": "archive/pytorch_legacy/121-Implement Position-wise Feed-Forward Block with Residual and Dropout.py"
+  },
+  {
+    "path": "pytorch/122-Implement the Square ReLU Activation Function.py",
+    "old_id": 122,
+    "old_title": "Implement the Square ReLU Activation Function",
+    "official_id": 373,
+    "official_title": "Implement the Square ReLU Activation Function",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/373",
+    "archive_path": "archive/pytorch_legacy/122-Implement the Square ReLU Activation Function.py"
+  },
+  {
+    "path": "pytorch/123-Linear Learning Rate Decay.py",
+    "old_id": 123,
+    "old_title": "Linear Learning Rate Decay",
+    "official_id": 377,
+    "official_title": "Linear Learning Rate Decay",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/377",
+    "archive_path": "archive/pytorch_legacy/123-Linear Learning Rate Decay.py"
+  },
+  {
+    "path": "pytorch/124-Calculate Number of Parameters in Neural Network.py",
+    "old_id": 124,
+    "old_title": "Calculate Number of Parameters in Neural Network",
+    "official_id": 291,
+    "official_title": "Calculate Number of Parameters in Neural Network",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/291",
+    "archive_path": "archive/pytorch_legacy/124-Calculate Number of Parameters in Neural Network.py",
+    "alternative_official_ids": [
+      371
+    ],
+    "mapping_note": "Official catalog has identical titles at #291 and #371; #291 is the canonical review choice, not a proven historical identification."
+  },
+  {
+    "path": "pytorch/125-Build a Digit Classifier from Scratch.py",
+    "old_id": 125,
+    "old_title": "Build a Digit Classifier from Scratch",
+    "official_id": null,
+    "official_title": null,
+    "mapping": "unmatched_extension_no_official_id",
+    "archive_path": "archive/pytorch_legacy/125-Build a Digit Classifier from Scratch.py"
+  },
+  {
+    "path": "pytorch/126-Implement Group Normalization.py",
+    "old_id": 126,
+    "old_title": "Implement Group Normalization",
+    "official_id": 126,
+    "official_title": "Implement Group Normalization",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/126",
+    "archive_path": "archive/pytorch_legacy/126-Implement Group Normalization.py"
+  },
+  {
+    "path": "pytorch/126-Temperature Sampling.py",
+    "old_id": 126,
+    "old_title": "Temperature Sampling",
+    "official_id": 378,
+    "official_title": "Temperature Sampling",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/378",
+    "archive_path": "archive/pytorch_legacy/126-Temperature Sampling.py"
+  },
+  {
+    "path": "pytorch/127-Pre-Norm vs Post-Norm Transformer Block.py",
+    "old_id": 127,
+    "old_title": "Pre-Norm vs Post-Norm Transformer Block",
+    "official_id": 408,
+    "official_title": "Pre-Norm vs Post-Norm Transformer Block",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/408",
+    "archive_path": "archive/pytorch_legacy/127-Pre-Norm vs Post-Norm Transformer Block.py"
+  },
+  {
+    "path": "pytorch/128-Grouped Query Attention.py",
+    "old_id": 128,
+    "old_title": "Grouped Query Attention",
+    "official_id": 391,
+    "official_title": "Implement Grouped Query Attention (GQA)",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/391",
+    "archive_path": "archive/pytorch_legacy/128-Grouped Query Attention.py"
+  },
+  {
+    "path": "pytorch/129-Sliding Window Attention.py",
+    "old_id": 129,
+    "old_title": "Sliding Window Attention",
+    "official_id": 388,
+    "official_title": "Sliding Window Attention",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/388",
+    "archive_path": "archive/pytorch_legacy/129-Sliding Window Attention.py"
+  },
+  {
+    "path": "pytorch/13-Determinant of a 4x4 Matrix using Laplace's Expansion.py",
+    "old_id": 13,
+    "old_title": "Determinant of a 4x4 Matrix using Laplace's Expansion",
+    "official_id": 13,
+    "official_title": "Determinant of a 4x4 Matrix using Laplace's Expansion (hard)",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/13",
+    "archive_path": "archive/pytorch_legacy/13-Determinant of a 4x4 Matrix using Laplace's Expansion.py"
+  },
+  {
+    "path": "pytorch/130-Mixture-of-Experts Gating.py",
+    "old_id": 130,
+    "old_title": "Mixture-of-Experts Gating",
+    "official_id": 124,
+    "official_title": "Implement the Noisy Top-K Gating Function",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/124",
+    "archive_path": "archive/pytorch_legacy/130-Mixture-of-Experts Gating.py"
+  },
+  {
+    "path": "pytorch/131-Swish SwiGLU Activation.py",
+    "old_id": 131,
+    "old_title": "Swish SwiGLU Activation",
+    "official_id": 156,
+    "official_title": "Implement SwiGLU activation function",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/156",
+    "archive_path": "archive/pytorch_legacy/131-Swish SwiGLU Activation.py"
+  },
+  {
+    "path": "pytorch/132-Implement INT8 Quantization.py",
+    "old_id": 132,
+    "old_title": "Implement INT8 Quantization",
+    "official_id": 294,
+    "official_title": "Implement INT8 Quantization",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/294",
+    "archive_path": "archive/pytorch_legacy/132-Implement INT8 Quantization.py"
+  },
+  {
+    "path": "pytorch/133-Block-wise FP8 Quantization.py",
+    "old_id": 133,
+    "old_title": "Block-wise FP8 Quantization",
+    "official_id": 234,
+    "official_title": "Block-wise FP8 Quantization",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/234",
+    "archive_path": "archive/pytorch_legacy/133-Block-wise FP8 Quantization.py"
+  },
+  {
+    "path": "pytorch/134-FP4 Quantization with Microscaling.py",
+    "old_id": 134,
+    "old_title": "FP4 Quantization with Microscaling",
+    "official_id": 427,
+    "official_title": "FP4 Quantization with Microscaling (MXFP4)",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/427",
+    "archive_path": "archive/pytorch_legacy/134-FP4 Quantization with Microscaling.py"
+  },
+  {
+    "path": "pytorch/135-Attention Sinks.py",
+    "old_id": 135,
+    "old_title": "Attention Sinks",
+    "official_id": 457,
+    "official_title": "Implement Attention Sink Detection",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/457",
+    "archive_path": "archive/pytorch_legacy/135-Attention Sinks.py"
+  },
+  {
+    "path": "pytorch/136-Implement GRPO Objective Function.py",
+    "old_id": 136,
+    "old_title": "Implement GRPO Objective Function",
+    "official_id": 101,
+    "official_title": "Implement the GRPO Objective Function",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/101",
+    "archive_path": "archive/pytorch_legacy/136-Implement GRPO Objective Function.py"
+  },
+  {
+    "path": "pytorch/137-Group Relative Advantage for GRPO.py",
+    "old_id": 137,
+    "old_title": "Group Relative Advantage for GRPO",
+    "official_id": 224,
+    "official_title": "Group Relative Advantage for GRPO",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/224",
+    "archive_path": "archive/pytorch_legacy/137-Group Relative Advantage for GRPO.py"
+  },
+  {
+    "path": "pytorch/137-Implement a Dense Block with 2D Convolutions.py",
+    "old_id": 137,
+    "old_title": "Implement a Dense Block with 2D Convolutions",
+    "official_id": 137,
+    "official_title": "Implement a Dense Block with 2D Convolutions",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/137",
+    "archive_path": "archive/pytorch_legacy/137-Implement a Dense Block with 2D Convolutions.py"
+  },
+  {
+    "path": "pytorch/138-KL Divergence Estimator for GRPO.py",
+    "old_id": 138,
+    "old_title": "KL Divergence Estimator for GRPO",
+    "official_id": 225,
+    "official_title": "KL Divergence Estimator for GRPO",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/225",
+    "archive_path": "archive/pytorch_legacy/138-KL Divergence Estimator for GRPO.py"
+  },
+  {
+    "path": "pytorch/139-LoRA Forward Pass.py",
+    "old_id": 139,
+    "old_title": "LoRA Forward Pass",
+    "official_id": 222,
+    "official_title": "LoRA: Low-Rank Adaptation Forward Pass",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/222",
+    "archive_path": "archive/pytorch_legacy/139-LoRA Forward Pass.py"
+  },
+  {
+    "path": "pytorch/14-Linear Regression Using Normal Equation.py",
+    "old_id": 14,
+    "old_title": "Linear Regression Using Normal Equation",
+    "official_id": 14,
+    "official_title": "Linear Regression Using Normal Equation",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/14",
+    "archive_path": "archive/pytorch_legacy/14-Linear Regression Using Normal Equation.py"
+  },
+  {
+    "path": "pytorch/140-QLoRA Forward Pass.py",
+    "old_id": 140,
+    "old_title": "QLoRA Forward Pass",
+    "official_id": 223,
+    "official_title": "QLoRA: Quantized Low-Rank Adaptation Forward Pass",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/223",
+    "archive_path": "archive/pytorch_legacy/140-QLoRA Forward Pass.py"
+  },
+  {
+    "path": "pytorch/141-Calculate Perplexity.py",
+    "old_id": 141,
+    "old_title": "Calculate Perplexity",
+    "official_id": 320,
+    "official_title": "Calculate Perplexity for Language Models",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/320",
+    "archive_path": "archive/pytorch_legacy/141-Calculate Perplexity.py"
+  },
+  {
+    "path": "pytorch/142-Continuous Batching Simulator.py",
+    "old_id": 142,
+    "old_title": "Continuous Batching Simulator",
+    "official_id": 425,
+    "official_title": "Continuous Batching (In-Flight Batching) Simulator",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/425",
+    "archive_path": "archive/pytorch_legacy/142-Continuous Batching Simulator.py"
+  },
+  {
+    "path": "pytorch/143-Flash Attention Forward.py",
+    "old_id": 143,
+    "old_title": "Flash Attention Forward",
+    "official_id": 208,
+    "official_title": "Flash Attention v1 - Forward Pass",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/208",
+    "archive_path": "archive/pytorch_legacy/143-Flash Attention Forward.py"
+  },
+  {
+    "path": "pytorch/144-Roofline Model Analysis.py",
+    "old_id": 144,
+    "old_title": "Roofline Model Analysis",
+    "official_id": 415,
+    "official_title": "Roofline Model Analysis for GPU Operations",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/415",
+    "archive_path": "archive/pytorch_legacy/144-Roofline Model Analysis.py"
+  },
+  {
+    "path": "pytorch/145-Quantization Quality Check.py",
+    "old_id": 145,
+    "old_title": "Quantization Quality Check",
+    "official_id": 429,
+    "official_title": "Quantization Quality Check via Perplexity Delta",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/429",
+    "archive_path": "archive/pytorch_legacy/145-Quantization Quality Check.py"
+  },
+  {
+    "path": "pytorch/146-Momentum Optimizer.py",
+    "old_id": 146,
+    "old_title": "Momentum Optimizer",
+    "official_id": 146,
+    "official_title": "Momentum Optimizer",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/146",
+    "archive_path": "archive/pytorch_legacy/146-Momentum Optimizer.py"
+  },
+  {
+    "path": "pytorch/147-GeLU Activation Function.py",
+    "old_id": 147,
+    "old_title": "GeLU Activation Function",
+    "official_id": 147,
+    "official_title": "GeLU Activation Function ",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/147",
+    "archive_path": "archive/pytorch_legacy/147-GeLU Activation Function.py"
+  },
+  {
+    "path": "pytorch/148-Adamax Optimizer.py",
+    "old_id": 148,
+    "old_title": "Adamax Optimizer",
+    "official_id": 148,
+    "official_title": "Adamax Optimizer",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/148",
+    "archive_path": "archive/pytorch_legacy/148-Adamax Optimizer.py"
+  },
+  {
+    "path": "pytorch/149-Adadelta Optimizer.py",
+    "old_id": 149,
+    "old_title": "Adadelta Optimizer",
+    "official_id": 149,
+    "official_title": "Adadelta Optimizer",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/149",
+    "archive_path": "archive/pytorch_legacy/149-Adadelta Optimizer.py"
+  },
+  {
+    "path": "pytorch/15-Linear Regression Using Gradient Descent.py",
+    "old_id": 15,
+    "old_title": "Linear Regression Using Gradient Descent",
+    "official_id": 15,
+    "official_title": "Linear Regression Using Gradient Descent",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/15",
+    "archive_path": "archive/pytorch_legacy/15-Linear Regression Using Gradient Descent.py"
+  },
+  {
+    "path": "pytorch/151-Dropout Layer.py",
+    "old_id": 151,
+    "old_title": "Dropout Layer",
+    "official_id": 151,
+    "official_title": "Dropout Layer",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/151",
+    "archive_path": "archive/pytorch_legacy/151-Dropout Layer.py"
+  },
+  {
+    "path": "pytorch/156-Implement SwiGLU activation function.py",
+    "old_id": 156,
+    "old_title": "Implement SwiGLU activation function",
+    "official_id": 156,
+    "official_title": "Implement SwiGLU activation function",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/156",
+    "archive_path": "archive/pytorch_legacy/156-Implement SwiGLU activation function.py"
+  },
+  {
+    "path": "pytorch/157-Implement the Bellman Equation for Value Iteration.py",
+    "old_id": 157,
+    "old_title": "Implement the Bellman Equation for Value Iteration",
+    "official_id": 157,
+    "official_title": "Implement the Bellman Equation for Value Iteration",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/157",
+    "archive_path": "archive/pytorch_legacy/157-Implement the Bellman Equation for Value Iteration.py"
+  },
+  {
+    "path": "pytorch/158-Epsilon-Greedy Action Selection for n-Armed Bandit.py",
+    "old_id": 158,
+    "old_title": "Epsilon-Greedy Action Selection for n-Armed Bandit",
+    "official_id": 158,
+    "official_title": "Epsilon-Greedy Action Selection for n-Armed Bandit",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/158",
+    "archive_path": "archive/pytorch_legacy/158-Epsilon-Greedy Action Selection for n-Armed Bandit.py"
+  },
+  {
+    "path": "pytorch/158-Incremental Mean for Online Reward Estimation.py",
+    "old_id": 158,
+    "old_title": "Incremental Mean for Online Reward Estimation",
+    "official_id": 159,
+    "official_title": "Incremental Mean for Online Reward Estimation",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/159",
+    "archive_path": "archive/pytorch_legacy/158-Incremental Mean for Online Reward Estimation.py"
+  },
+  {
+    "path": "pytorch/161-Exponential Weighted Average of Rewards.py",
+    "old_id": 161,
+    "old_title": "Exponential Weighted Average of Rewards",
+    "official_id": 161,
+    "official_title": "Exponential Weighted Average of Rewards",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/161",
+    "archive_path": "archive/pytorch_legacy/161-Exponential Weighted Average of Rewards.py"
+  },
+  {
+    "path": "pytorch/162-Upper Confidence Bound (UCB) Action Selection.py",
+    "old_id": 162,
+    "old_title": "Upper Confidence Bound (UCB) Action Selection",
+    "official_id": 162,
+    "official_title": "Upper Confidence Bound (UCB) Action Selection",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/162",
+    "archive_path": "archive/pytorch_legacy/162-Upper Confidence Bound (UCB) Action Selection.py"
+  },
+  {
+    "path": "pytorch/163-Gradient Bandit Action Selection.py",
+    "old_id": 163,
+    "old_title": "Gradient Bandit Action Selection",
+    "official_id": 163,
+    "official_title": "Gradient Bandit Action Selection",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/163",
+    "archive_path": "archive/pytorch_legacy/163-Gradient Bandit Action Selection.py"
+  },
+  {
+    "path": "pytorch/164-Gambler's Problem: Value Iteration.py",
+    "old_id": 164,
+    "old_title": "Gambler's Problem: Value Iteration",
+    "official_id": 164,
+    "official_title": "Gambler's Problem: Value Iteration",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/164",
+    "archive_path": "archive/pytorch_legacy/164-Gambler's Problem: Value Iteration.py"
+  },
+  {
+    "path": "pytorch/165-Compute Discounted Return.py",
+    "old_id": 165,
+    "old_title": "Compute Discounted Return",
+    "official_id": 165,
+    "official_title": "Compute Discounted Return",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/165",
+    "archive_path": "archive/pytorch_legacy/165-Compute Discounted Return.py"
+  },
+  {
+    "path": "pytorch/166-Evaluate Expected Value in a Markov Decision Process.py",
+    "old_id": 166,
+    "old_title": "Evaluate Expected Value in a Markov Decision Process",
+    "official_id": 166,
+    "official_title": "Evaluate Expected Value in a Markov Decision Process",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/166",
+    "archive_path": "archive/pytorch_legacy/166-Evaluate Expected Value in a Markov Decision Process.py"
+  },
+  {
+    "path": "pytorch/167-Calculate the Discounted Return for a Given Trajectory.py",
+    "old_id": 167,
+    "old_title": "Calculate the Discounted Return for a Given Trajectory",
+    "official_id": 167,
+    "official_title": "Calculate the Discounted Return for a Given Trajectory",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/167",
+    "archive_path": "archive/pytorch_legacy/167-Calculate the Discounted Return for a Given Trajectory.py"
+  },
+  {
+    "path": "pytorch/17-K-Means Clustering.py",
+    "old_id": 17,
+    "old_title": "K-Means Clustering",
+    "official_id": 17,
+    "official_title": "K-Means Clustering",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/17",
+    "archive_path": "archive/pytorch_legacy/17-K-Means Clustering.py"
+  },
+  {
+    "path": "pytorch/172-Muon Optimizer Update with Newton-Schulz Iteration.py",
+    "old_id": 172,
+    "old_title": "Muon Optimizer Update with Newton-Schulz Iteration",
+    "official_id": 172,
+    "official_title": "Muon Optimizer Update with Newton-Schulz Iteration",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/172",
+    "archive_path": "archive/pytorch_legacy/172-Muon Optimizer Update with Newton-Schulz Iteration.py"
+  },
+  {
+    "path": "pytorch/174-Train a Simple GAN on 1D Gaussian Data.py",
+    "old_id": 174,
+    "old_title": "Train a Simple GAN on 1D Gaussian Data",
+    "official_id": 174,
+    "official_title": "Train a Simple GAN on 1D Gaussian Data",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/174",
+    "archive_path": "archive/pytorch_legacy/174-Train a Simple GAN on 1D Gaussian Data.py"
+  },
+  {
+    "path": "pytorch/177-Implement MuonClip (qk-clip) for Stabilizing Attention.py",
+    "old_id": 177,
+    "old_title": "Implement MuonClip (qk-clip) for Stabilizing Attention",
+    "official_id": 177,
+    "official_title": "Implement MuonClip (qk-clip) for Stabilizing Attention",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/177",
+    "archive_path": "archive/pytorch_legacy/177-Implement MuonClip (qk-clip) for Stabilizing Attention.py"
+  },
+  {
+    "path": "pytorch/178-Implement Position-wise Feed-Forward Block with Residual and Dropout.py",
+    "old_id": 178,
+    "old_title": "Implement Position-wise Feed-Forward Block with Residual and Dropout",
+    "official_id": 178,
+    "official_title": "Implement Position-wise Feed-Forward Block with Residual and Dropout",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/178",
+    "archive_path": "archive/pytorch_legacy/178-Implement Position-wise Feed-Forward Block with Residual and Dropout.py"
+  },
+  {
+    "path": "pytorch/18-Implement K-Fold Cross-Validation.py",
+    "old_id": 18,
+    "old_title": "Implement K-Fold Cross-Validation",
+    "official_id": 18,
+    "official_title": "Implement K-Fold Cross-Validation",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/18",
+    "archive_path": "archive/pytorch_legacy/18-Implement K-Fold Cross-Validation.py"
+  },
+  {
+    "path": "pytorch/18-Implement Lasso Regression using ISTA.py",
+    "old_id": 18,
+    "old_title": "Implement Lasso Regression using ISTA",
+    "official_id": 50,
+    "official_title": "Implement Lasso Regression using ISTA",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/50",
+    "archive_path": "archive/pytorch_legacy/18-Implement Lasso Regression using ISTA.py"
+  },
+  {
+    "path": "pytorch/185-Optical Flow EPE with Masks (OmniWorld-style metric).py",
+    "old_id": 185,
+    "old_title": "Optical Flow EPE with Masks (OmniWorld-style metric)",
+    "official_id": 185,
+    "official_title": "Optical Flow EPE with Masks (OmniWorld-style metric)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/185",
+    "archive_path": "archive/pytorch_legacy/185-Optical Flow EPE with Masks (OmniWorld-style metric).py"
+  },
+  {
+    "path": "pytorch/189-Implement Local Response Normalization (LRN).py",
+    "old_id": 189,
+    "old_title": "Implement Local Response Normalization (LRN)",
+    "official_id": 189,
+    "official_title": "Implement Local Response Normalization (LRN)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/189",
+    "archive_path": "archive/pytorch_legacy/189-Implement Local Response Normalization (LRN).py"
+  },
+  {
+    "path": "pytorch/19-Principal Component Analysis (PCA) Implementation.py",
+    "old_id": 19,
+    "old_title": "Principal Component Analysis (PCA) Implementation",
+    "official_id": 19,
+    "official_title": "Principal Component Analysis (PCA) Implementation",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/19",
+    "archive_path": "archive/pytorch_legacy/19-Principal Component Analysis (PCA) Implementation.py"
+  },
+  {
+    "path": "pytorch/190-Overlapping Max Pooling.py",
+    "old_id": 190,
+    "old_title": "Overlapping Max Pooling",
+    "official_id": 190,
+    "official_title": "Overlapping Max Pooling",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/190",
+    "archive_path": "archive/pytorch_legacy/190-Overlapping Max Pooling.py"
+  },
+  {
+    "path": "pytorch/191-PCA Color Augmentation.py",
+    "old_id": 191,
+    "old_title": "PCA Color Augmentation",
+    "official_id": 191,
+    "official_title": "PCA Color Augmentation",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/191",
+    "archive_path": "archive/pytorch_legacy/191-PCA Color Augmentation.py"
+  },
+  {
+    "path": "pytorch/2-Transpose of a Matrix.py",
+    "old_id": 2,
+    "old_title": "Transpose of a Matrix",
+    "official_id": 2,
+    "official_title": "Transpose of a Matrix",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/2",
+    "archive_path": "archive/pytorch_legacy/2-Transpose of a Matrix.py"
+  },
+  {
+    "path": "pytorch/208-Flash Attention v1 - Forward Pass.py",
+    "old_id": 208,
+    "old_title": "Flash Attention v1 - Forward Pass",
+    "official_id": 208,
+    "official_title": "Flash Attention v1 - Forward Pass",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/208",
+    "archive_path": "archive/pytorch_legacy/208-Flash Attention v1 - Forward Pass.py"
+  },
+  {
+    "path": "pytorch/21-Pegasos Kernel SVM Implementation.py",
+    "old_id": 21,
+    "old_title": "Pegasos Kernel SVM Implementation",
+    "official_id": 21,
+    "official_title": "Pegasos Kernel SVM Implementation",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/21",
+    "archive_path": "archive/pytorch_legacy/21-Pegasos Kernel SVM Implementation.py"
+  },
+  {
+    "path": "pytorch/216-Thanksgiving Feast Predictor: Softmax for Dish Selection.py",
+    "old_id": 216,
+    "old_title": "Thanksgiving Feast Predictor: Softmax for Dish Selection",
+    "official_id": 216,
+    "official_title": "Thanksgiving Feast Predictor: Softmax for Dish Selection",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/216",
+    "archive_path": "archive/pytorch_legacy/216-Thanksgiving Feast Predictor: Softmax for Dish Selection.py"
+  },
+  {
+    "path": "pytorch/217-Derivatives of Activation Functions.py",
+    "old_id": 217,
+    "old_title": "Derivatives of Activation Functions",
+    "official_id": 217,
+    "official_title": "Derivatives of Activation Functions",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/217",
+    "archive_path": "archive/pytorch_legacy/217-Derivatives of Activation Functions.py"
+  },
+  {
+    "path": "pytorch/218-Compute the Hessian Matrix.py",
+    "old_id": 218,
+    "old_title": "Compute the Hessian Matrix",
+    "official_id": 218,
+    "official_title": "Compute the Hessian Matrix",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/218",
+    "archive_path": "archive/pytorch_legacy/218-Compute the Hessian Matrix.py"
+  },
+  {
+    "path": "pytorch/22-Sigmoid Activation Function Understanding.py",
+    "old_id": 22,
+    "old_title": "Sigmoid Activation Function Understanding",
+    "official_id": 22,
+    "official_title": "Sigmoid Activation Function Understanding",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/22",
+    "archive_path": "archive/pytorch_legacy/22-Sigmoid Activation Function Understanding.py"
+  },
+  {
+    "path": "pytorch/222-LoRA: Low-Rank Adaptation Forward Pass.py",
+    "old_id": 222,
+    "old_title": "LoRA: Low-Rank Adaptation Forward Pass",
+    "official_id": 222,
+    "official_title": "LoRA: Low-Rank Adaptation Forward Pass",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/222",
+    "archive_path": "archive/pytorch_legacy/222-LoRA: Low-Rank Adaptation Forward Pass.py"
+  },
+  {
+    "path": "pytorch/223-QLoRA: Quantized Low-Rank Adaptation Forward Pass.py",
+    "old_id": 223,
+    "old_title": "QLoRA: Quantized Low-Rank Adaptation Forward Pass",
+    "official_id": 223,
+    "official_title": "QLoRA: Quantized Low-Rank Adaptation Forward Pass",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/223",
+    "archive_path": "archive/pytorch_legacy/223-QLoRA: Quantized Low-Rank Adaptation Forward Pass.py"
+  },
+  {
+    "path": "pytorch/229-Sparse MoE Top-K Routing.py",
+    "old_id": 229,
+    "old_title": "Sparse MoE Top-K Routing",
+    "official_id": 229,
+    "official_title": "Sparse MoE Top-K Routing",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/229",
+    "archive_path": "archive/pytorch_legacy/229-Sparse MoE Top-K Routing.py"
+  },
+  {
+    "path": "pytorch/23-Softmax Activation Function Implementation.py",
+    "old_id": 23,
+    "old_title": "Softmax Activation Function Implementation",
+    "official_id": 23,
+    "official_title": "Softmax Activation Function Implementation ",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/23",
+    "archive_path": "archive/pytorch_legacy/23-Softmax Activation Function Implementation.py"
+  },
+  {
+    "path": "pytorch/230-3D CNN Forward Pass Implementation.py",
+    "old_id": 230,
+    "old_title": "3D CNN Forward Pass Implementation",
+    "official_id": 230,
+    "official_title": "3D CNN Forward Pass Implementation",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/230",
+    "archive_path": "archive/pytorch_legacy/230-3D CNN Forward Pass Implementation.py"
+  },
+  {
+    "path": "pytorch/231-Temperature Decay Scheduler.py",
+    "old_id": 231,
+    "old_title": "Temperature Decay Scheduler",
+    "official_id": 231,
+    "official_title": "Temperature Decay Scheduler",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/231",
+    "archive_path": "archive/pytorch_legacy/231-Temperature Decay Scheduler.py"
+  },
+  {
+    "path": "pytorch/232-PTX Loss for Catastrophic Forgetting Prevention (RLHF).py",
+    "old_id": 232,
+    "old_title": "PTX Loss for Catastrophic Forgetting Prevention (RLHF)",
+    "official_id": 232,
+    "official_title": "PTX Loss for Catastrophic Forgetting Prevention (RLHF)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/232",
+    "archive_path": "archive/pytorch_legacy/232-PTX Loss for Catastrophic Forgetting Prevention (RLHF).py"
+  },
+  {
+    "path": "pytorch/233-Inference Head Pruning for Transformers.py",
+    "old_id": 233,
+    "old_title": "Inference Head Pruning for Transformers",
+    "official_id": 233,
+    "official_title": "Inference Head Pruning for Transformers",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/233",
+    "archive_path": "archive/pytorch_legacy/233-Inference Head Pruning for Transformers.py"
+  },
+  {
+    "path": "pytorch/234-Block-wise FP8 Quantization.py",
+    "old_id": 234,
+    "old_title": "Block-wise FP8 Quantization",
+    "official_id": 234,
+    "official_title": "Block-wise FP8 Quantization",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/234",
+    "archive_path": "archive/pytorch_legacy/234-Block-wise FP8 Quantization.py"
+  },
+  {
+    "path": "pytorch/235-Implement the SGTM Parameter Update Step.py",
+    "old_id": 235,
+    "old_title": "Implement the SGTM Parameter Update Step",
+    "official_id": 235,
+    "official_title": "Implement the SGTM Parameter Update Step",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/235",
+    "archive_path": "archive/pytorch_legacy/235-Implement the SGTM Parameter Update Step.py"
+  },
+  {
+    "path": "pytorch/236-Mean Ablation for Circuit Discovery.py",
+    "old_id": 236,
+    "old_title": "Mean Ablation for Circuit Discovery",
+    "official_id": 236,
+    "official_title": "Mean Ablation for Circuit Discovery",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/236",
+    "archive_path": "archive/pytorch_legacy/236-Mean Ablation for Circuit Discovery.py"
+  },
+  {
+    "path": "pytorch/237-Convert RGB Image to Grayscale.py",
+    "old_id": 237,
+    "old_title": "Convert RGB Image to Grayscale",
+    "official_id": 237,
+    "official_title": "Convert RGB Image to Grayscale",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/237",
+    "archive_path": "archive/pytorch_legacy/237-Convert RGB Image to Grayscale.py"
+  },
+  {
+    "path": "pytorch/238-Flip an Image Horizontally or Vertically.py",
+    "old_id": 238,
+    "old_title": "Flip an Image Horizontally or Vertically",
+    "official_id": 238,
+    "official_title": "Flip an Image Horizontally or Vertically",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/238",
+    "archive_path": "archive/pytorch_legacy/238-Flip an Image Horizontally or Vertically.py"
+  },
+  {
+    "path": "pytorch/239-Apply Zero Padding to an Image.py",
+    "old_id": 239,
+    "old_title": "Apply Zero Padding to an Image",
+    "official_id": 239,
+    "official_title": "Apply Zero Padding to an Image",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/239",
+    "archive_path": "archive/pytorch_legacy/239-Apply Zero Padding to an Image.py"
+  },
+  {
+    "path": "pytorch/24-Single Neuron.py",
+    "old_id": 24,
+    "old_title": "Single Neuron",
+    "official_id": 24,
+    "official_title": "Single Neuron",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/24",
+    "archive_path": "archive/pytorch_legacy/24-Single Neuron.py"
+  },
+  {
+    "path": "pytorch/240-Bilinear Image Resizing.py",
+    "old_id": 240,
+    "old_title": "Bilinear Image Resizing",
+    "official_id": 240,
+    "official_title": "Bilinear Image Resizing",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/240",
+    "archive_path": "archive/pytorch_legacy/240-Bilinear Image Resizing.py"
+  },
+  {
+    "path": "pytorch/241-Sobel Edge Detection.py",
+    "old_id": 241,
+    "old_title": "Sobel Edge Detection",
+    "official_id": 241,
+    "official_title": "Sobel Edge Detection",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/241",
+    "archive_path": "archive/pytorch_legacy/241-Sobel Edge Detection.py"
+  },
+  {
+    "path": "pytorch/242-Non-Maximum Suppression for Object Detection.py",
+    "old_id": 242,
+    "old_title": "Non-Maximum Suppression for Object Detection",
+    "official_id": 242,
+    "official_title": "Non-Maximum Suppression for Object Detection",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/242",
+    "archive_path": "archive/pytorch_legacy/242-Non-Maximum Suppression for Object Detection.py"
+  },
+  {
+    "path": "pytorch/25-Single Neuron with Backpropagation.py",
+    "old_id": 25,
+    "old_title": "Single Neuron with Backpropagation",
+    "official_id": 25,
+    "official_title": "Single Neuron with Backpropagation",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/25",
+    "archive_path": "archive/pytorch_legacy/25-Single Neuron with Backpropagation.py"
+  },
+  {
+    "path": "pytorch/26-Implementing Basic Autograd Operations.py",
+    "old_id": 26,
+    "old_title": "Implementing Basic Autograd Operations",
+    "official_id": 26,
+    "official_title": "Implementing Basic Autograd Operations",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/26",
+    "archive_path": "archive/pytorch_legacy/26-Implementing Basic Autograd Operations.py"
+  },
+  {
+    "path": "pytorch/262-Implement the Mish Activation Function.py",
+    "old_id": 262,
+    "old_title": "Implement the Mish Activation Function",
+    "official_id": 262,
+    "official_title": "Implement the Mish Activation Function",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/262",
+    "archive_path": "archive/pytorch_legacy/262-Implement the Mish Activation Function.py"
+  },
+  {
+    "path": "pytorch/263-Implement Binary Cross-Entropy Loss.py",
+    "old_id": 263,
+    "old_title": "Implement Binary Cross-Entropy Loss",
+    "official_id": 263,
+    "official_title": "Implement Binary Cross-Entropy Loss",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/263",
+    "archive_path": "archive/pytorch_legacy/263-Implement Binary Cross-Entropy Loss.py"
+  },
+  {
+    "path": "pytorch/264-Implement the Tanh Activation Function.py",
+    "old_id": 264,
+    "old_title": "Implement the Tanh Activation Function",
+    "official_id": 264,
+    "official_title": "Implement the Tanh Activation Function",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/264",
+    "archive_path": "archive/pytorch_legacy/264-Implement the Tanh Activation Function.py"
+  },
+  {
+    "path": "pytorch/265-Implement 2D Average Pooling.py",
+    "old_id": 265,
+    "old_title": "Implement 2D Average Pooling",
+    "official_id": 265,
+    "official_title": "Implement 2D Average Pooling",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/265",
+    "archive_path": "archive/pytorch_legacy/265-Implement 2D Average Pooling.py"
+  },
+  {
+    "path": "pytorch/266-Implement the Hardtanh Activation Function.py",
+    "old_id": 266,
+    "old_title": "Implement the Hardtanh Activation Function",
+    "official_id": 266,
+    "official_title": "Implement the Hardtanh Activation Function",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/266",
+    "archive_path": "archive/pytorch_legacy/266-Implement the Hardtanh Activation Function.py"
+  },
+  {
+    "path": "pytorch/267-Implement Neural Memory Update with Surprise and Momentum.py",
+    "old_id": 267,
+    "old_title": "Implement Neural Memory Update with Surprise and Momentum",
+    "official_id": 267,
+    "official_title": "Implement Neural Memory Update with Surprise and Momentum",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/267",
+    "archive_path": "archive/pytorch_legacy/267-Implement Neural Memory Update with Surprise and Momentum.py"
+  },
+  {
+    "path": "pytorch/27-Transformation Matrix from Basis B to C.py",
+    "old_id": 27,
+    "old_title": "Transformation Matrix from Basis B to C",
+    "official_id": 27,
+    "official_title": "Transformation Matrix from Basis B to C",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/27",
+    "archive_path": "archive/pytorch_legacy/27-Transformation Matrix from Basis B to C.py"
+  },
+  {
+    "path": "pytorch/271-Implement Gated Attention.py",
+    "old_id": 271,
+    "old_title": "Implement Gated Attention",
+    "official_id": 271,
+    "official_title": "Implement Gated Attention",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/271",
+    "archive_path": "archive/pytorch_legacy/271-Implement Gated Attention.py"
+  },
+  {
+    "path": "pytorch/287-Implement GRU Cell.py",
+    "old_id": 287,
+    "old_title": "Implement GRU Cell",
+    "official_id": 287,
+    "official_title": "Implement GRU Cell",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/287",
+    "archive_path": "archive/pytorch_legacy/287-Implement GRU Cell.py"
+  },
+  {
+    "path": "pytorch/289-Implement Xavier_Glorot Weight Initialization.py",
+    "old_id": 289,
+    "old_title": "Implement Xavier_Glorot Weight Initialization",
+    "official_id": 289,
+    "official_title": "Implement Xavier/Glorot Weight Initialization",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/289",
+    "archive_path": "archive/pytorch_legacy/289-Implement Xavier_Glorot Weight Initialization.py"
+  },
+  {
+    "path": "pytorch/290-Implement He Weight Initialization.py",
+    "old_id": 290,
+    "old_title": "Implement He Weight Initialization",
+    "official_id": 290,
+    "official_title": "Implement He Weight Initialization",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/290",
+    "archive_path": "archive/pytorch_legacy/290-Implement He Weight Initialization.py"
+  },
+  {
+    "path": "pytorch/291-Calculate Number of Parameters in Neural Network.py",
+    "old_id": 291,
+    "old_title": "Calculate Number of Parameters in Neural Network",
+    "official_id": 291,
+    "official_title": "Calculate Number of Parameters in Neural Network",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/291",
+    "archive_path": "archive/pytorch_legacy/291-Calculate Number of Parameters in Neural Network.py"
+  },
+  {
+    "path": "pytorch/292-Implement Gradient Clipping by Value.py",
+    "old_id": 292,
+    "old_title": "Implement Gradient Clipping by Value",
+    "official_id": 292,
+    "official_title": "Implement Gradient Clipping by Value",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/292",
+    "archive_path": "archive/pytorch_legacy/292-Implement Gradient Clipping by Value.py"
+  },
+  {
+    "path": "pytorch/294-Implement INT8 Quantization.py",
+    "old_id": 294,
+    "old_title": "Implement INT8 Quantization",
+    "official_id": 294,
+    "official_title": "Implement INT8 Quantization",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/294",
+    "archive_path": "archive/pytorch_legacy/294-Implement INT8 Quantization.py"
+  },
+  {
+    "path": "pytorch/298-Implement mHC Forward Pass.py",
+    "old_id": 298,
+    "old_title": "Implement mHC Forward Pass",
+    "official_id": 298,
+    "official_title": "Implement mHC Forward Pass",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/298",
+    "archive_path": "archive/pytorch_legacy/298-Implement mHC Forward Pass.py"
+  },
+  {
+    "path": "pytorch/3-Reshape Matrix.py",
+    "old_id": 3,
+    "old_title": "Reshape Matrix",
+    "official_id": 3,
+    "official_title": "Reshape Matrix",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/3",
+    "archive_path": "archive/pytorch_legacy/3-Reshape Matrix.py"
+  },
+  {
+    "path": "pytorch/302-Diffusion Reconstruction Loss.py",
+    "old_id": 302,
+    "old_title": "Diffusion Reconstruction Loss",
+    "official_id": 302,
+    "official_title": "Diffusion Reconstruction Loss",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/302",
+    "archive_path": "archive/pytorch_legacy/302-Diffusion Reconstruction Loss.py"
+  },
+  {
+    "path": "pytorch/303-Forward Diffusion Process.py",
+    "old_id": 303,
+    "old_title": "Forward Diffusion Process",
+    "official_id": 303,
+    "official_title": "Forward Diffusion Process",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/303",
+    "archive_path": "archive/pytorch_legacy/303-Forward Diffusion Process.py"
+  },
+  {
+    "path": "pytorch/304-Forward & Backward Diffusion Process.py",
+    "old_id": 304,
+    "old_title": "Forward & Backward Diffusion Process",
+    "official_id": 304,
+    "official_title": "Forward & Backward Diffusion Process",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/304",
+    "archive_path": "archive/pytorch_legacy/304-Forward & Backward Diffusion Process.py"
+  },
+  {
+    "path": "pytorch/316-MMLU Log-Probability Scoring.py",
+    "old_id": 316,
+    "old_title": "MMLU Log-Probability Scoring",
+    "official_id": 316,
+    "official_title": "MMLU Log-Probability Scoring",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/316",
+    "archive_path": "archive/pytorch_legacy/316-MMLU Log-Probability Scoring.py"
+  },
+  {
+    "path": "pytorch/317-Rubric-Based LLM Judge Evaluation.py",
+    "old_id": 317,
+    "old_title": "Rubric-Based LLM Judge Evaluation",
+    "official_id": 317,
+    "official_title": "Rubric-Based LLM Judge Evaluation",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/317",
+    "archive_path": "archive/pytorch_legacy/317-Rubric-Based LLM Judge Evaluation.py"
+  },
+  {
+    "path": "pytorch/318-Boxed Answer Extraction for Math Benchmarks.py",
+    "old_id": 318,
+    "old_title": "Boxed Answer Extraction for Math Benchmarks",
+    "official_id": 318,
+    "official_title": "Boxed Answer Extraction for Math Benchmarks",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/318",
+    "archive_path": "archive/pytorch_legacy/318-Boxed Answer Extraction for Math Benchmarks.py"
+  },
+  {
+    "path": "pytorch/319-Math Answer Verification with Equivalence Checking.py",
+    "old_id": 319,
+    "old_title": "Math Answer Verification with Equivalence Checking",
+    "official_id": 319,
+    "official_title": "Math Answer Verification with Equivalence Checking",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/319",
+    "archive_path": "archive/pytorch_legacy/319-Math Answer Verification with Equivalence Checking.py"
+  },
+  {
+    "path": "pytorch/323-Pairwise Preference Judge for LLM Comparison.py",
+    "old_id": 323,
+    "old_title": "Pairwise Preference Judge for LLM Comparison",
+    "official_id": 323,
+    "official_title": "Pairwise Preference Judge for LLM Comparison",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/323",
+    "archive_path": "archive/pytorch_legacy/323-Pairwise Preference Judge for LLM Comparison.py"
+  },
+  {
+    "path": "pytorch/324-Code Execution Verifier for Programming Benchmarks.py",
+    "old_id": 324,
+    "old_title": "Code Execution Verifier for Programming Benchmarks",
+    "official_id": 324,
+    "official_title": "Code Execution Verifier for Programming Benchmarks",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/324",
+    "archive_path": "archive/pytorch_legacy/324-Code Execution Verifier for Programming Benchmarks.py"
+  },
+  {
+    "path": "pytorch/327-Engram Context-Aware Gating.py",
+    "old_id": 327,
+    "old_title": "Engram Context-Aware Gating",
+    "official_id": 327,
+    "official_title": "Engram Context-Aware Gating",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/327",
+    "archive_path": "archive/pytorch_legacy/327-Engram Context-Aware Gating.py"
+  },
+  {
+    "path": "pytorch/335-Train a Paris-Style Decentralized Expert Model.py",
+    "old_id": 335,
+    "old_title": "Train a Paris-Style Decentralized Expert Model",
+    "official_id": 335,
+    "official_title": "Train a Paris-Style Decentralized Expert Model",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/335",
+    "archive_path": "archive/pytorch_legacy/335-Train a Paris-Style Decentralized Expert Model.py"
+  },
+  {
+    "path": "pytorch/35-Convert Vector to Diagonal Matrix.py",
+    "old_id": 35,
+    "old_title": "Convert Vector to Diagonal Matrix",
+    "official_id": 35,
+    "official_title": "Convert Vector to Diagonal Matrix",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/35",
+    "archive_path": "archive/pytorch_legacy/35-Convert Vector to Diagonal Matrix.py"
+  },
+  {
+    "path": "pytorch/358-Implement Core MDN Residualization.py",
+    "old_id": 358,
+    "old_title": "Implement Core MDN Residualization",
+    "official_id": 358,
+    "official_title": "Implement Core MDN Residualization",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/358",
+    "archive_path": "archive/pytorch_legacy/358-Implement Core MDN Residualization.py"
+  },
+  {
+    "path": "pytorch/36-Calculate Accuracy Score.py",
+    "old_id": 36,
+    "old_title": "Calculate Accuracy Score",
+    "official_id": 36,
+    "official_title": "Calculate Accuracy Score",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/36",
+    "archive_path": "archive/pytorch_legacy/36-Calculate Accuracy Score.py"
+  },
+  {
+    "path": "pytorch/360-MDN with Label Collinearity Control.py",
+    "old_id": 360,
+    "old_title": "MDN with Label Collinearity Control",
+    "official_id": 360,
+    "official_title": "MDN with Label Collinearity Control",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/360",
+    "archive_path": "archive/pytorch_legacy/360-MDN with Label Collinearity Control.py"
+  },
+  {
+    "path": "pytorch/369-Implement Xavier_Glorot Weight Initialization.py",
+    "old_id": 369,
+    "old_title": "Implement Xavier_Glorot Weight Initialization",
+    "official_id": 369,
+    "official_title": "Implement Xavier/Glorot Weight Initialization",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/369",
+    "archive_path": "archive/pytorch_legacy/369-Implement Xavier_Glorot Weight Initialization.py"
+  },
+  {
+    "path": "pytorch/370-Implement He Weight Initialization for Neural Networks.py",
+    "old_id": 370,
+    "old_title": "Implement He Weight Initialization for Neural Networks",
+    "official_id": 370,
+    "official_title": "Implement He Weight Initialization for Neural Networks",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/370",
+    "archive_path": "archive/pytorch_legacy/370-Implement He Weight Initialization for Neural Networks.py"
+  },
+  {
+    "path": "pytorch/371-Calculate Number of Parameters in Neural Network.py",
+    "old_id": 371,
+    "old_title": "Calculate Number of Parameters in Neural Network",
+    "official_id": 371,
+    "official_title": "Calculate Number of Parameters in Neural Network",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/371",
+    "archive_path": "archive/pytorch_legacy/371-Calculate Number of Parameters in Neural Network.py"
+  },
+  {
+    "path": "pytorch/372-Implement RMSNorm (Root Mean Square Layer Normalization).py",
+    "old_id": 372,
+    "old_title": "Implement RMSNorm (Root Mean Square Layer Normalization)",
+    "official_id": 372,
+    "official_title": "Implement RMSNorm (Root Mean Square Layer Normalization)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/372",
+    "archive_path": "archive/pytorch_legacy/372-Implement RMSNorm (Root Mean Square Layer Normalization).py"
+  },
+  {
+    "path": "pytorch/373-Implement the Square ReLU Activation Function.py",
+    "old_id": 373,
+    "old_title": "Implement the Square ReLU Activation Function",
+    "official_id": 373,
+    "official_title": "Implement the Square ReLU Activation Function",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/373",
+    "archive_path": "archive/pytorch_legacy/373-Implement the Square ReLU Activation Function.py"
+  },
+  {
+    "path": "pytorch/374-Character-Level Tokenizer (stoi_itos_BOS).py",
+    "old_id": 374,
+    "old_title": "Character-Level Tokenizer (stoi_itos_BOS)",
+    "official_id": 374,
+    "official_title": "Character-Level Tokenizer (stoi/itos/BOS)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/374",
+    "archive_path": "archive/pytorch_legacy/374-Character-Level Tokenizer (stoi_itos_BOS).py"
+  },
+  {
+    "path": "pytorch/375-Learned Positional Embeddings.py",
+    "old_id": 375,
+    "old_title": "Learned Positional Embeddings",
+    "official_id": 375,
+    "official_title": "Learned Positional Embeddings",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/375",
+    "archive_path": "archive/pytorch_legacy/375-Learned Positional Embeddings.py"
+  },
+  {
+    "path": "pytorch/376-KV Cache for Efficient Autoregressive Attention.py",
+    "old_id": 376,
+    "old_title": "KV Cache for Efficient Autoregressive Attention",
+    "official_id": 376,
+    "official_title": "KV Cache for Efficient Autoregressive Attention",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/376",
+    "archive_path": "archive/pytorch_legacy/376-KV Cache for Efficient Autoregressive Attention.py"
+  },
+  {
+    "path": "pytorch/38-Implement AdaBoost Fit Method.py",
+    "old_id": 38,
+    "old_title": "Implement AdaBoost Fit Method",
+    "official_id": 38,
+    "official_title": "Implement AdaBoost Fit Method",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/38",
+    "archive_path": "archive/pytorch_legacy/38-Implement AdaBoost Fit Method.py"
+  },
+  {
+    "path": "pytorch/381-Rotary Positional Embeddings (RoPE).py",
+    "old_id": 381,
+    "old_title": "Rotary Positional Embeddings (RoPE)",
+    "official_id": 381,
+    "official_title": "Rotary Positional Embeddings (RoPE)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/381",
+    "archive_path": "archive/pytorch_legacy/381-Rotary Positional Embeddings (RoPE).py"
+  },
+  {
+    "path": "pytorch/382-Direct Preference Optimization (DPO) Loss.py",
+    "old_id": 382,
+    "old_title": "Direct Preference Optimization (DPO) Loss",
+    "official_id": 382,
+    "official_title": "Direct Preference Optimization (DPO) Loss",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/382",
+    "archive_path": "archive/pytorch_legacy/382-Direct Preference Optimization (DPO) Loss.py"
+  },
+  {
+    "path": "pytorch/383-Top-p (Nucleus) Sampling.py",
+    "old_id": 383,
+    "old_title": "Top-p (Nucleus) Sampling",
+    "official_id": 383,
+    "official_title": "Top-p (Nucleus) Sampling",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/383",
+    "archive_path": "archive/pytorch_legacy/383-Top-p (Nucleus) Sampling.py"
+  },
+  {
+    "path": "pytorch/384-Contrastive Loss (InfoNCE _ SimCLR-style).py",
+    "old_id": 384,
+    "old_title": "Contrastive Loss (InfoNCE _ SimCLR-style)",
+    "official_id": 384,
+    "official_title": "Contrastive Loss (InfoNCE / SimCLR-style)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/384",
+    "archive_path": "archive/pytorch_legacy/384-Contrastive Loss (InfoNCE _ SimCLR-style).py"
+  },
+  {
+    "path": "pytorch/386-Spectral Normalization.py",
+    "old_id": 386,
+    "old_title": "Spectral Normalization",
+    "official_id": 386,
+    "official_title": "Spectral Normalization",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/386",
+    "archive_path": "archive/pytorch_legacy/386-Spectral Normalization.py"
+  },
+  {
+    "path": "pytorch/387-Triplet Margin Loss.py",
+    "old_id": 387,
+    "old_title": "Triplet Margin Loss",
+    "official_id": 387,
+    "official_title": "Triplet Margin Loss",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/387",
+    "archive_path": "archive/pytorch_legacy/387-Triplet Margin Loss.py"
+  },
+  {
+    "path": "pytorch/388-Sliding Window Attention.py",
+    "old_id": 388,
+    "old_title": "Sliding Window Attention",
+    "official_id": 388,
+    "official_title": "Sliding Window Attention",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/388",
+    "archive_path": "archive/pytorch_legacy/388-Sliding Window Attention.py"
+  },
+  {
+    "path": "pytorch/39-Implementation of Log Softmax Function.py",
+    "old_id": 39,
+    "old_title": "Implementation of Log Softmax Function",
+    "official_id": 39,
+    "official_title": "Implementation of Log Softmax Function",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/39",
+    "archive_path": "archive/pytorch_legacy/39-Implementation of Log Softmax Function.py"
+  },
+  {
+    "path": "pytorch/390-Implement Multiquery Attention (MQA).py",
+    "old_id": 390,
+    "old_title": "Implement Multiquery Attention (MQA)",
+    "official_id": 390,
+    "official_title": "Implement Multiquery Attention (MQA)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/390",
+    "archive_path": "archive/pytorch_legacy/390-Implement Multiquery Attention (MQA).py"
+  },
+  {
+    "path": "pytorch/391-Implement Grouped Query Attention (GQA).py",
+    "old_id": 391,
+    "old_title": "Implement Grouped Query Attention (GQA)",
+    "official_id": 391,
+    "official_title": "Implement Grouped Query Attention (GQA)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/391",
+    "archive_path": "archive/pytorch_legacy/391-Implement Grouped Query Attention (GQA).py"
+  },
+  {
+    "path": "pytorch/393-Implement Variational Autoencoder (VAE) Loss (ELBO).py",
+    "old_id": 393,
+    "old_title": "Implement Variational Autoencoder (VAE) Loss (ELBO)",
+    "official_id": 393,
+    "official_title": "Implement Variational Autoencoder (VAE) Loss (ELBO)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/393",
+    "archive_path": "archive/pytorch_legacy/393-Implement Variational Autoencoder (VAE) Loss (ELBO).py"
+  },
+  {
+    "path": "pytorch/394-Implement Speculative Decoding Verification.py",
+    "old_id": 394,
+    "old_title": "Implement Speculative Decoding Verification",
+    "official_id": 394,
+    "official_title": "Implement Speculative Decoding Verification",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/394",
+    "archive_path": "archive/pytorch_legacy/394-Implement Speculative Decoding Verification.py"
+  },
+  {
+    "path": "pytorch/395-DDPM Noise Schedule (Linear Beta Schedule).py",
+    "old_id": 395,
+    "old_title": "DDPM Noise Schedule (Linear Beta Schedule)",
+    "official_id": 395,
+    "official_title": "DDPM Noise Schedule (Linear Beta Schedule)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/395",
+    "archive_path": "archive/pytorch_legacy/395-DDPM Noise Schedule (Linear Beta Schedule).py"
+  },
+  {
+    "path": "pytorch/396-Implement DDPM Reverse Sampling Step.py",
+    "old_id": 396,
+    "old_title": "Implement DDPM Reverse Sampling Step",
+    "official_id": 396,
+    "official_title": "Implement DDPM Reverse Sampling Step",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/396",
+    "archive_path": "archive/pytorch_legacy/396-Implement DDPM Reverse Sampling Step.py"
+  },
+  {
+    "path": "pytorch/397-Classifier-Free Guidance for Conditional Diffusion.py",
+    "old_id": 397,
+    "old_title": "Classifier-Free Guidance for Conditional Diffusion",
+    "official_id": 397,
+    "official_title": "Classifier-Free Guidance for Conditional Diffusion",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/397",
+    "archive_path": "archive/pytorch_legacy/397-Classifier-Free Guidance for Conditional Diffusion.py"
+  },
+  {
+    "path": "pytorch/398-DDIM Deterministic Sampling Step.py",
+    "old_id": 398,
+    "old_title": "DDIM Deterministic Sampling Step",
+    "official_id": 398,
+    "official_title": "DDIM Deterministic Sampling Step",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/398",
+    "archive_path": "archive/pytorch_legacy/398-DDIM Deterministic Sampling Step.py"
+  },
+  {
+    "path": "pytorch/399-Diffusion Model U-Net Time Embedding.py",
+    "old_id": 399,
+    "old_title": "Diffusion Model U-Net Time Embedding",
+    "official_id": 399,
+    "official_title": "Diffusion Model U-Net Time Embedding",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/399",
+    "archive_path": "archive/pytorch_legacy/399-Diffusion Model U-Net Time Embedding.py"
+  },
+  {
+    "path": "pytorch/4-Calculate Mean by Row or Column.py",
+    "old_id": 4,
+    "old_title": "Calculate Mean by Row or Column",
+    "official_id": 4,
+    "official_title": "Calculate Mean by Row or Column",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/4",
+    "archive_path": "archive/pytorch_legacy/4-Calculate Mean by Row or Column.py"
+  },
+  {
+    "path": "pytorch/400-Noise Prediction Loss for Diffusion Training.py",
+    "old_id": 400,
+    "old_title": "Noise Prediction Loss for Diffusion Training",
+    "official_id": 400,
+    "official_title": "Noise Prediction Loss for Diffusion Training",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/400",
+    "archive_path": "archive/pytorch_legacy/400-Noise Prediction Loss for Diffusion Training.py"
+  },
+  {
+    "path": "pytorch/401-Exponential Moving Average (EMA) for Diffusion Model Weights.py",
+    "old_id": 401,
+    "old_title": "Exponential Moving Average (EMA) for Diffusion Model Weights",
+    "official_id": 401,
+    "official_title": "Exponential Moving Average (EMA) for Diffusion Model Weights",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/401",
+    "archive_path": "archive/pytorch_legacy/401-Exponential Moving Average (EMA) for Diffusion Model Weights.py"
+  },
+  {
+    "path": "pytorch/402-Latent Diffusion Encoding and Decoding.py",
+    "old_id": 402,
+    "old_title": "Latent Diffusion Encoding and Decoding",
+    "official_id": 402,
+    "official_title": "Latent Diffusion Encoding and Decoding",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/402",
+    "archive_path": "archive/pytorch_legacy/402-Latent Diffusion Encoding and Decoding.py"
+  },
+  {
+    "path": "pytorch/403-Diffusion Cosine Noise Schedule.py",
+    "old_id": 403,
+    "old_title": "Diffusion Cosine Noise Schedule",
+    "official_id": 403,
+    "official_title": "Diffusion Cosine Noise Schedule",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/403",
+    "archive_path": "archive/pytorch_legacy/403-Diffusion Cosine Noise Schedule.py"
+  },
+  {
+    "path": "pytorch/404-Implement Score Matching for Score-Based Diffusion.py",
+    "old_id": 404,
+    "old_title": "Implement Score Matching for Score-Based Diffusion",
+    "official_id": 404,
+    "official_title": "Implement Score Matching for Score-Based Diffusion",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/404",
+    "archive_path": "archive/pytorch_legacy/404-Implement Score Matching for Score-Based Diffusion.py"
+  },
+  {
+    "path": "pytorch/406-NoPE (No Positional Embedding) with iRoPE Attention.py",
+    "old_id": 406,
+    "old_title": "NoPE (No Positional Embedding) with iRoPE Attention",
+    "official_id": 406,
+    "official_title": "NoPE (No Positional Embedding) with iRoPE Attention",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/406",
+    "archive_path": "archive/pytorch_legacy/406-NoPE (No Positional Embedding) with iRoPE Attention.py"
+  },
+  {
+    "path": "pytorch/407-QK-Norm (Query-Key Normalization).py",
+    "old_id": 407,
+    "old_title": "QK-Norm (Query-Key Normalization)",
+    "official_id": 407,
+    "official_title": "QK-Norm (Query-Key Normalization)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/407",
+    "archive_path": "archive/pytorch_legacy/407-QK-Norm (Query-Key Normalization).py"
+  },
+  {
+    "path": "pytorch/408-Pre-Norm vs Post-Norm Transformer Block.py",
+    "old_id": 408,
+    "old_title": "Pre-Norm vs Post-Norm Transformer Block",
+    "official_id": 408,
+    "official_title": "Pre-Norm vs Post-Norm Transformer Block",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/408",
+    "archive_path": "archive/pytorch_legacy/408-Pre-Norm vs Post-Norm Transformer Block.py"
+  },
+  {
+    "path": "pytorch/409-MoE with Shared Expert Forward Pass.py",
+    "old_id": 409,
+    "old_title": "MoE with Shared Expert Forward Pass",
+    "official_id": 409,
+    "official_title": "MoE with Shared Expert Forward Pass",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/409",
+    "archive_path": "archive/pytorch_legacy/409-MoE with Shared Expert Forward Pass.py"
+  },
+  {
+    "path": "pytorch/41-Simple Convolutional 2D Layer.py",
+    "old_id": 41,
+    "old_title": "Simple Convolutional 2D Layer",
+    "official_id": 41,
+    "official_title": "Simple Convolutional 2D Layer",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/41",
+    "archive_path": "archive/pytorch_legacy/41-Simple Convolutional 2D Layer.py"
+  },
+  {
+    "path": "pytorch/410-Speculative Decoding End-to-End Simulation.py",
+    "old_id": 410,
+    "old_title": "Speculative Decoding End-to-End Simulation",
+    "official_id": 410,
+    "official_title": "Speculative Decoding End-to-End Simulation",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/410",
+    "archive_path": "archive/pytorch_legacy/410-Speculative Decoding End-to-End Simulation.py"
+  },
+  {
+    "path": "pytorch/414-Compute Arithmetic Intensity and Classify Bottleneck.py",
+    "old_id": 414,
+    "old_title": "Compute Arithmetic Intensity and Classify Bottleneck",
+    "official_id": 414,
+    "official_title": "Compute Arithmetic Intensity and Classify Bottleneck",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/414",
+    "archive_path": "archive/pytorch_legacy/414-Compute Arithmetic Intensity and Classify Bottleneck.py"
+  },
+  {
+    "path": "pytorch/415-Roofline Model Analysis for GPU Operations.py",
+    "old_id": 415,
+    "old_title": "Roofline Model Analysis for GPU Operations",
+    "official_id": 415,
+    "official_title": "Roofline Model Analysis for GPU Operations",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/415",
+    "archive_path": "archive/pytorch_legacy/415-Roofline Model Analysis for GPU Operations.py"
+  },
+  {
+    "path": "pytorch/416-Compute Attention Memory Traffic and FLOPs.py",
+    "old_id": 416,
+    "old_title": "Compute Attention Memory Traffic and FLOPs",
+    "official_id": 416,
+    "official_title": "Compute Attention Memory Traffic and FLOPs",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/416",
+    "archive_path": "archive/pytorch_legacy/416-Compute Attention Memory Traffic and FLOPs.py"
+  },
+  {
+    "path": "pytorch/417-Classify LLM Prefill vs Decode as Compute-Bound or Memory-Bound.py",
+    "old_id": 417,
+    "old_title": "Classify LLM Prefill vs Decode as Compute-Bound or Memory-Bound",
+    "official_id": 417,
+    "official_title": "Classify LLM Prefill vs Decode as Compute-Bound or Memory-Bound",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/417",
+    "archive_path": "archive/pytorch_legacy/417-Classify LLM Prefill vs Decode as Compute-Bound or Memory-Bound.py"
+  },
+  {
+    "path": "pytorch/418-Estimate KV Cache Size from Model Config.py",
+    "old_id": 418,
+    "old_title": "Estimate KV Cache Size from Model Config",
+    "official_id": 418,
+    "official_title": "Estimate KV Cache Size from Model Config",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/418",
+    "archive_path": "archive/pytorch_legacy/418-Estimate KV Cache Size from Model Config.py"
+  },
+  {
+    "path": "pytorch/419-Combined Token Sampling Pipeline (Temperature + Top-k + Top-p).py",
+    "old_id": 419,
+    "old_title": "Combined Token Sampling Pipeline (Temperature + Top-k + Top-p)",
+    "official_id": 419,
+    "official_title": "Combined Token Sampling Pipeline (Temperature + Top-k + Top-p)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/419",
+    "archive_path": "archive/pytorch_legacy/419-Combined Token Sampling Pipeline (Temperature + Top-k + Top-p).py"
+  },
+  {
+    "path": "pytorch/42-Implement ReLU Activation Function.py",
+    "old_id": 42,
+    "old_title": "Implement ReLU Activation Function",
+    "official_id": 42,
+    "official_title": "Implement ReLU Activation Function",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/42",
+    "archive_path": "archive/pytorch_legacy/42-Implement ReLU Activation Function.py"
+  },
+  {
+    "path": "pytorch/420-Latent Space Patchification for Diffusion Transformers.py",
+    "old_id": 420,
+    "old_title": "Latent Space Patchification for Diffusion Transformers",
+    "official_id": 420,
+    "official_title": "Latent Space Patchification for Diffusion Transformers",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/420",
+    "archive_path": "archive/pytorch_legacy/420-Latent Space Patchification for Diffusion Transformers.py"
+  },
+  {
+    "path": "pytorch/421-GPU Ops_Byte Ratio Calculation from Spec Sheet.py",
+    "old_id": 421,
+    "old_title": "GPU Ops_Byte Ratio Calculation from Spec Sheet",
+    "official_id": 421,
+    "official_title": "GPU Ops:Byte Ratio Calculation from Spec Sheet",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/421",
+    "archive_path": "archive/pytorch_legacy/421-GPU Ops_Byte Ratio Calculation from Spec Sheet.py"
+  },
+  {
+    "path": "pytorch/422-Multi-GPU Communication Overhead (NVLink vs InfiniBand).py",
+    "old_id": 422,
+    "old_title": "Multi-GPU Communication Overhead (NVLink vs InfiniBand)",
+    "official_id": 422,
+    "official_title": "Multi-GPU Communication Overhead (NVLink vs InfiniBand)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/422",
+    "archive_path": "archive/pytorch_legacy/422-Multi-GPU Communication Overhead (NVLink vs InfiniBand).py"
+  },
+  {
+    "path": "pytorch/423-Multi-Instance GPU (MIG) Resource Allocation.py",
+    "old_id": 423,
+    "old_title": "Multi-Instance GPU (MIG) Resource Allocation",
+    "official_id": 423,
+    "official_title": "Multi-Instance GPU (MIG) Resource Allocation",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/423",
+    "archive_path": "archive/pytorch_legacy/423-Multi-Instance GPU (MIG) Resource Allocation.py"
+  },
+  {
+    "path": "pytorch/424-Kernel Fusion Memory Savings Calculator.py",
+    "old_id": 424,
+    "old_title": "Kernel Fusion Memory Savings Calculator",
+    "official_id": 424,
+    "official_title": "Kernel Fusion Memory Savings Calculator",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/424",
+    "archive_path": "archive/pytorch_legacy/424-Kernel Fusion Memory Savings Calculator.py"
+  },
+  {
+    "path": "pytorch/425-Continuous Batching (In-Flight Batching) Simulator.py",
+    "old_id": 425,
+    "old_title": "Continuous Batching (In-Flight Batching) Simulator",
+    "official_id": 425,
+    "official_title": "Continuous Batching (In-Flight Batching) Simulator",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/425",
+    "archive_path": "archive/pytorch_legacy/425-Continuous Batching (In-Flight Batching) Simulator.py"
+  },
+  {
+    "path": "pytorch/426-Post-Training Quantization with Per-Channel Scale Factors.py",
+    "old_id": 426,
+    "old_title": "Post-Training Quantization with Per-Channel Scale Factors",
+    "official_id": 426,
+    "official_title": "Post-Training Quantization with Per-Channel Scale Factors",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/426",
+    "archive_path": "archive/pytorch_legacy/426-Post-Training Quantization with Per-Channel Scale Factors.py"
+  },
+  {
+    "path": "pytorch/427-FP4 Quantization with Microscaling (MXFP4).py",
+    "old_id": 427,
+    "old_title": "FP4 Quantization with Microscaling (MXFP4)",
+    "official_id": 427,
+    "official_title": "FP4 Quantization with Microscaling (MXFP4)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/427",
+    "archive_path": "archive/pytorch_legacy/427-FP4 Quantization with Microscaling (MXFP4).py"
+  },
+  {
+    "path": "pytorch/428-Number Format Precision Comparison (FP16 vs BF16 vs FP8 vs FP4).py",
+    "old_id": 428,
+    "old_title": "Number Format Precision Comparison (FP16 vs BF16 vs FP8 vs FP4)",
+    "official_id": 428,
+    "official_title": "Number Format Precision Comparison (FP16 vs BF16 vs FP8 vs FP4)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/428",
+    "archive_path": "archive/pytorch_legacy/428-Number Format Precision Comparison (FP16 vs BF16 vs FP8 vs FP4).py"
+  },
+  {
+    "path": "pytorch/431-EAGLE-Style Draft Model from Hidden States.py",
+    "old_id": 431,
+    "old_title": "EAGLE-Style Draft Model from Hidden States",
+    "official_id": 431,
+    "official_title": "EAGLE-Style Draft Model from Hidden States",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/431",
+    "archive_path": "archive/pytorch_legacy/431-EAGLE-Style Draft Model from Hidden States.py"
+  },
+  {
+    "path": "pytorch/435-KV Cache Memory Budget and Eviction Policy.py",
+    "old_id": 435,
+    "old_title": "KV Cache Memory Budget and Eviction Policy",
+    "official_id": 435,
+    "official_title": "KV Cache Memory Budget and Eviction Policy",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/435",
+    "archive_path": "archive/pytorch_legacy/435-KV Cache Memory Budget and Eviction Policy.py"
+  },
+  {
+    "path": "pytorch/438-Tensor Parallelism All-Reduce Communication Cost.py",
+    "old_id": 438,
+    "old_title": "Tensor Parallelism All-Reduce Communication Cost",
+    "official_id": 438,
+    "official_title": "Tensor Parallelism All-Reduce Communication Cost",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/438",
+    "archive_path": "archive/pytorch_legacy/438-Tensor Parallelism All-Reduce Communication Cost.py"
+  },
+  {
+    "path": "pytorch/44-Leaky ReLU Activation Function.py",
+    "old_id": 44,
+    "old_title": "Leaky ReLU Activation Function",
+    "official_id": 44,
+    "official_title": "Leaky ReLU Activation Function",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/44",
+    "archive_path": "archive/pytorch_legacy/44-Leaky ReLU Activation Function.py"
+  },
+  {
+    "path": "pytorch/442-VLM Visual Token Count from Image Resolution and Patch Size.py",
+    "old_id": 442,
+    "old_title": "VLM Visual Token Count from Image Resolution and Patch Size",
+    "official_id": 442,
+    "official_title": "VLM Visual Token Count from Image Resolution and Patch Size",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/442",
+    "archive_path": "archive/pytorch_legacy/442-VLM Visual Token Count from Image Resolution and Patch Size.py"
+  },
+  {
+    "path": "pytorch/446-Video Generation Latent Space Memory Estimation.py",
+    "old_id": 446,
+    "old_title": "Video Generation Latent Space Memory Estimation",
+    "official_id": 446,
+    "official_title": "Video Generation Latent Space Memory Estimation",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/446",
+    "archive_path": "archive/pytorch_legacy/446-Video Generation Latent Space Memory Estimation.py"
+  },
+  {
+    "path": "pytorch/447-Classifier-Free Guidance Skip Speedup Calculator.py",
+    "old_id": 447,
+    "old_title": "Classifier-Free Guidance Skip Speedup Calculator",
+    "official_id": 447,
+    "official_title": "Classifier-Free Guidance Skip Speedup Calculator",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/447",
+    "archive_path": "archive/pytorch_legacy/447-Classifier-Free Guidance Skip Speedup Calculator.py"
+  },
+  {
+    "path": "pytorch/448-Context Parallelism with Ring Attention for Video Models.py",
+    "old_id": 448,
+    "old_title": "Context Parallelism with Ring Attention for Video Models",
+    "official_id": 448,
+    "official_title": "Context Parallelism with Ring Attention for Video Models",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/448",
+    "archive_path": "archive/pytorch_legacy/448-Context Parallelism with Ring Attention for Video Models.py"
+  },
+  {
+    "path": "pytorch/453-Implement Graph Convolution Network (GCN) Layer.py",
+    "old_id": 453,
+    "old_title": "Implement Graph Convolution Network (GCN) Layer",
+    "official_id": 453,
+    "official_title": "Implement Graph Convolution Network (GCN) Layer",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/453",
+    "archive_path": "archive/pytorch_legacy/453-Implement Graph Convolution Network (GCN) Layer.py"
+  },
+  {
+    "path": "pytorch/454-Autoregressive Video Chunk FPS Calculator.py",
+    "old_id": 454,
+    "old_title": "Autoregressive Video Chunk FPS Calculator",
+    "official_id": 454,
+    "official_title": "Autoregressive Video Chunk FPS Calculator",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/454",
+    "archive_path": "archive/pytorch_legacy/454-Autoregressive Video Chunk FPS Calculator.py"
+  },
+  {
+    "path": "pytorch/455-Historical Context Compression Ratio.py",
+    "old_id": 455,
+    "old_title": "Historical Context Compression Ratio",
+    "official_id": 455,
+    "official_title": "Historical Context Compression Ratio",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/455",
+    "archive_path": "archive/pytorch_legacy/455-Historical Context Compression Ratio.py"
+  },
+  {
+    "path": "pytorch/456-Multi-term Memory Patchification for Video.py",
+    "old_id": 456,
+    "old_title": "Multi-term Memory Patchification for Video",
+    "official_id": 456,
+    "official_title": "Multi-term Memory Patchification for Video",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/456",
+    "archive_path": "archive/pytorch_legacy/456-Multi-term Memory Patchification for Video.py"
+  },
+  {
+    "path": "pytorch/457-Implement Attention Sink Detection.py",
+    "old_id": 457,
+    "old_title": "Implement Attention Sink Detection",
+    "official_id": 457,
+    "official_title": "Implement Attention Sink Detection",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/457",
+    "archive_path": "archive/pytorch_legacy/457-Implement Attention Sink Detection.py"
+  },
+  {
+    "path": "pytorch/46-Implement Precision Metric.py",
+    "old_id": 46,
+    "old_title": "Implement Precision Metric",
+    "official_id": 46,
+    "official_title": "Implement Precision Metric",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/46",
+    "archive_path": "archive/pytorch_legacy/46-Implement Precision Metric.py"
+  },
+  {
+    "path": "pytorch/47-Implement Gradient Descent Variants with MSE Loss.py",
+    "old_id": 47,
+    "old_title": "Implement Gradient Descent Variants with MSE Loss",
+    "official_id": 47,
+    "official_title": "Implement Gradient Descent Variants with MSE Loss",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/47",
+    "archive_path": "archive/pytorch_legacy/47-Implement Gradient Descent Variants with MSE Loss.py"
+  },
+  {
+    "path": "pytorch/48-Implement Reduced Row Echelon Form (RREF) Function.py",
+    "old_id": 48,
+    "old_title": "Implement Reduced Row Echelon Form (RREF) Function",
+    "official_id": 48,
+    "official_title": "Implement Reduced Row Echelon Form (RREF) Function",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/48",
+    "archive_path": "archive/pytorch_legacy/48-Implement Reduced Row Echelon Form (RREF) Function.py"
+  },
+  {
+    "path": "pytorch/49-Implement Adam Optimization Algorithm.py",
+    "old_id": 49,
+    "old_title": "Implement Adam Optimization Algorithm",
+    "official_id": 49,
+    "official_title": "Implement Adam Optimization Algorithm",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/49",
+    "archive_path": "archive/pytorch_legacy/49-Implement Adam Optimization Algorithm.py"
+  },
+  {
+    "path": "pytorch/5-Scalar Multiplication of a Matrix.py",
+    "old_id": 5,
+    "old_title": "Scalar Multiplication of a Matrix",
+    "official_id": 5,
+    "official_title": "Scalar Multiplication of a Matrix",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/5",
+    "archive_path": "archive/pytorch_legacy/5-Scalar Multiplication of a Matrix.py"
+  },
+  {
+    "path": "pytorch/52-Implement Recall Metric in Binary Classification.py",
+    "old_id": 52,
+    "old_title": "Implement Recall Metric in Binary Classification",
+    "official_id": 52,
+    "official_title": "Implement Recall Metric in Binary Classification",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/52",
+    "archive_path": "archive/pytorch_legacy/52-Implement Recall Metric in Binary Classification.py"
+  },
+  {
+    "path": "pytorch/53-Implement Self-Attention Mechanism.py",
+    "old_id": 53,
+    "old_title": "Implement Self-Attention Mechanism",
+    "official_id": 53,
+    "official_title": "Implement Self-Attention Mechanism",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/53",
+    "archive_path": "archive/pytorch_legacy/53-Implement Self-Attention Mechanism.py"
+  },
+  {
+    "path": "pytorch/54-Implementing a Simple RNN.py",
+    "old_id": 54,
+    "old_title": "Implementing a Simple RNN",
+    "official_id": 54,
+    "official_title": "Implementing a Simple RNN",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/54",
+    "archive_path": "archive/pytorch_legacy/54-Implementing a Simple RNN.py"
+  },
+  {
+    "path": "pytorch/55-2D Translation Matrix Implementation.py",
+    "old_id": 55,
+    "old_title": "2D Translation Matrix Implementation",
+    "official_id": 55,
+    "official_title": "2D Translation Matrix Implementation",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/55",
+    "archive_path": "archive/pytorch_legacy/55-2D Translation Matrix Implementation.py"
+  },
+  {
+    "path": "pytorch/56-KL Divergence Between Two Normal Distributions.py",
+    "old_id": 56,
+    "old_title": "KL Divergence Between Two Normal Distributions",
+    "official_id": 56,
+    "official_title": "KL Divergence Between Two Normal Distributions",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/56",
+    "archive_path": "archive/pytorch_legacy/56-KL Divergence Between Two Normal Distributions.py"
+  },
+  {
+    "path": "pytorch/57-Gauss-Seidel Method for Solving Linear Systems.py",
+    "old_id": 57,
+    "old_title": "Gauss-Seidel Method for Solving Linear Systems",
+    "official_id": 57,
+    "official_title": "Gauss-Seidel Method for Solving Linear Systems",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/57",
+    "archive_path": "archive/pytorch_legacy/57-Gauss-Seidel Method for Solving Linear Systems.py"
+  },
+  {
+    "path": "pytorch/59-Implement Long Short-Term Memory (LSTM) Network.py",
+    "old_id": 59,
+    "old_title": "Implement Long Short-Term Memory (LSTM) Network",
+    "official_id": 59,
+    "official_title": "Implement Long Short-Term Memory (LSTM) Network",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/59",
+    "archive_path": "archive/pytorch_legacy/59-Implement Long Short-Term Memory (LSTM) Network.py"
+  },
+  {
+    "path": "pytorch/59-Implement Long Short-Term Memory Network.py",
+    "old_id": 59,
+    "old_title": "Implement Long Short-Term Memory Network",
+    "official_id": 59,
+    "official_title": "Implement Long Short-Term Memory (LSTM) Network",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/59",
+    "archive_path": "archive/pytorch_legacy/59-Implement Long Short-Term Memory Network.py"
+  },
+  {
+    "path": "pytorch/6-Calculate Eigenvalues of a Matrix.py",
+    "old_id": 6,
+    "old_title": "Calculate Eigenvalues of a Matrix",
+    "official_id": 6,
+    "official_title": "Calculate Eigenvalues of a Matrix",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/6",
+    "archive_path": "archive/pytorch_legacy/6-Calculate Eigenvalues of a Matrix.py"
+  },
+  {
+    "path": "pytorch/61-Implement F-Score Calculation for Binary Classification.py",
+    "old_id": 61,
+    "old_title": "Implement F-Score Calculation for Binary Classification",
+    "official_id": 61,
+    "official_title": "Implement F-Score Calculation for Binary Classification",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/61",
+    "archive_path": "archive/pytorch_legacy/61-Implement F-Score Calculation for Binary Classification.py"
+  },
+  {
+    "path": "pytorch/62-Implement a Simple RNN with Backpropagation Through Time (BPTT).py",
+    "old_id": 62,
+    "old_title": "Implement a Simple RNN with Backpropagation Through Time (BPTT)",
+    "official_id": 62,
+    "official_title": "Implement a Simple RNN with Backpropagation Through Time (BPTT)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/62",
+    "archive_path": "archive/pytorch_legacy/62-Implement a Simple RNN with Backpropagation Through Time (BPTT).py"
+  },
+  {
+    "path": "pytorch/65-Implement Compressed Row Sparse Matrix (CSR) Format Conversion.py",
+    "old_id": 65,
+    "old_title": "Implement Compressed Row Sparse Matrix (CSR) Format Conversion",
+    "official_id": 65,
+    "official_title": "Implement Compressed Row Sparse Matrix (CSR) Format Conversion",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/65",
+    "archive_path": "archive/pytorch_legacy/65-Implement Compressed Row Sparse Matrix (CSR) Format Conversion.py"
+  },
+  {
+    "path": "pytorch/66-Implement Orthogonal Projection of a Vector onto a Line.py",
+    "old_id": 66,
+    "old_title": "Implement Orthogonal Projection of a Vector onto a Line",
+    "official_id": 66,
+    "official_title": "Implement Orthogonal Projection of a Vector onto a Line",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/66",
+    "archive_path": "archive/pytorch_legacy/66-Implement Orthogonal Projection of a Vector onto a Line.py"
+  },
+  {
+    "path": "pytorch/67-Implement Compressed Column Sparse Matrix Format.py",
+    "old_id": 67,
+    "old_title": "Implement Compressed Column Sparse Matrix Format",
+    "official_id": 67,
+    "official_title": "Implement Compressed Column Sparse Matrix Format (CSC)",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/67",
+    "archive_path": "archive/pytorch_legacy/67-Implement Compressed Column Sparse Matrix Format.py"
+  },
+  {
+    "path": "pytorch/69-Calculate R-squared for Regression Analysis.py",
+    "old_id": 69,
+    "old_title": "Calculate R-squared for Regression Analysis",
+    "official_id": 69,
+    "official_title": "Calculate R-squared for Regression Analysis",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/69",
+    "archive_path": "archive/pytorch_legacy/69-Calculate R-squared for Regression Analysis.py"
+  },
+  {
+    "path": "pytorch/7-Matrix Transformation.py",
+    "old_id": 7,
+    "old_title": "Matrix Transformation",
+    "official_id": 7,
+    "official_title": "Matrix Transformation ",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/7",
+    "archive_path": "archive/pytorch_legacy/7-Matrix Transformation.py"
+  },
+  {
+    "path": "pytorch/70-Calculate Image Brightness.py",
+    "old_id": 70,
+    "old_title": "Calculate Image Brightness",
+    "official_id": 70,
+    "official_title": "Calculate Image Brightness",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/70",
+    "archive_path": "archive/pytorch_legacy/70-Calculate Image Brightness.py"
+  },
+  {
+    "path": "pytorch/71-Calculate Root Mean Square Error (RMSE).py",
+    "old_id": 71,
+    "old_title": "Calculate Root Mean Square Error (RMSE)",
+    "official_id": 71,
+    "official_title": "Calculate Root Mean Square Error (RMSE)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/71",
+    "archive_path": "archive/pytorch_legacy/71-Calculate Root Mean Square Error (RMSE).py"
+  },
+  {
+    "path": "pytorch/72-Calculate Jaccard Index for Binary Classification.py",
+    "old_id": 72,
+    "old_title": "Calculate Jaccard Index for Binary Classification",
+    "official_id": 72,
+    "official_title": "Calculate Jaccard Index for Binary Classification",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/72",
+    "archive_path": "archive/pytorch_legacy/72-Calculate Jaccard Index for Binary Classification.py"
+  },
+  {
+    "path": "pytorch/75-Generate a Confusion Matrix for Binary Classification.py",
+    "old_id": 75,
+    "old_title": "Generate a Confusion Matrix for Binary Classification",
+    "official_id": 75,
+    "official_title": "Generate a Confusion Matrix for Binary Classification",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/75",
+    "archive_path": "archive/pytorch_legacy/75-Generate a Confusion Matrix for Binary Classification.py"
+  },
+  {
+    "path": "pytorch/76-Calculate Cosine Similarity Between Vectors.py",
+    "old_id": 76,
+    "old_title": "Calculate Cosine Similarity Between Vectors",
+    "official_id": 76,
+    "official_title": "Calculate Cosine Similarity Between Vectors",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/76",
+    "archive_path": "archive/pytorch_legacy/76-Calculate Cosine Similarity Between Vectors.py"
+  },
+  {
+    "path": "pytorch/77-Calculate Performance Metrics for a Classification Model.py",
+    "old_id": 77,
+    "old_title": "Calculate Performance Metrics for a Classification Model",
+    "official_id": 77,
+    "official_title": "Calculate Performance Metrics for a Classification Model",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/77",
+    "archive_path": "archive/pytorch_legacy/77-Calculate Performance Metrics for a Classification Model.py"
+  },
+  {
+    "path": "pytorch/78-Descriptive Statistics Calculator.py",
+    "old_id": 78,
+    "old_title": "Descriptive Statistics Calculator",
+    "official_id": 78,
+    "official_title": "Descriptive Statistics Calculator",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/78",
+    "archive_path": "archive/pytorch_legacy/78-Descriptive Statistics Calculator.py"
+  },
+  {
+    "path": "pytorch/79-Binomial Distribution Probability.py",
+    "old_id": 79,
+    "old_title": "Binomial Distribution Probability",
+    "official_id": 79,
+    "official_title": "Binomial Distribution Probability",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/79",
+    "archive_path": "archive/pytorch_legacy/79-Binomial Distribution Probability.py"
+  },
+  {
+    "path": "pytorch/8-Calculate 2x2 Matrix Inverse.py",
+    "old_id": 8,
+    "old_title": "Calculate 2x2 Matrix Inverse",
+    "official_id": 8,
+    "official_title": "Calculate 2x2 Matrix Inverse",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/8",
+    "archive_path": "archive/pytorch_legacy/8-Calculate 2x2 Matrix Inverse.py"
+  },
+  {
+    "path": "pytorch/80-Normal Distribution PDF Calculator.py",
+    "old_id": 80,
+    "old_title": "Normal Distribution PDF Calculator",
+    "official_id": 80,
+    "official_title": "Normal Distribution PDF Calculator",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/80",
+    "archive_path": "archive/pytorch_legacy/80-Normal Distribution PDF Calculator.py"
+  },
+  {
+    "path": "pytorch/81-Poisson Distribution Probability Calculator.py",
+    "old_id": 81,
+    "old_title": "Poisson Distribution Probability Calculator",
+    "official_id": 81,
+    "official_title": "Poisson Distribution Probability Calculator",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/81",
+    "archive_path": "archive/pytorch_legacy/81-Poisson Distribution Probability Calculator.py"
+  },
+  {
+    "path": "pytorch/82-Grayscale Image Contrast Calculator.py",
+    "old_id": 82,
+    "old_title": "Grayscale Image Contrast Calculator",
+    "official_id": 82,
+    "official_title": "Grayscale Image Contrast Calculator",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/82",
+    "archive_path": "archive/pytorch_legacy/82-Grayscale Image Contrast Calculator.py"
+  },
+  {
+    "path": "pytorch/83-Dot Product Calculator Easy.py",
+    "old_id": 83,
+    "old_title": "Dot Product Calculator Easy",
+    "official_id": 83,
+    "official_title": "Dot Product Calculator",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/83",
+    "archive_path": "archive/pytorch_legacy/83-Dot Product Calculator Easy.py"
+  },
+  {
+    "path": "pytorch/85-Find the column space of a matrix.py",
+    "old_id": 85,
+    "old_title": "Find the column space of a matrix",
+    "official_id": 68,
+    "official_title": "Find the column space of a matrix",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/68",
+    "archive_path": "archive/pytorch_legacy/85-Find the column space of a matrix.py"
+  },
+  {
+    "path": "pytorch/85-Positional Encoding Calculator.py",
+    "old_id": 85,
+    "old_title": "Positional Encoding Calculator",
+    "official_id": 85,
+    "official_title": "Positional Encoding Calculator",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/85",
+    "archive_path": "archive/pytorch_legacy/85-Positional Encoding Calculator.py"
+  },
+  {
+    "path": "pytorch/88-GPT-2 Text Generation.py",
+    "old_id": 88,
+    "old_title": "GPT-2 Text Generation",
+    "official_id": 88,
+    "official_title": "GPT-2 Text Generation",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/88",
+    "archive_path": "archive/pytorch_legacy/88-GPT-2 Text Generation.py"
+  },
+  {
+    "path": "pytorch/89-The Pattern Weaver's Code.py",
+    "old_id": 89,
+    "old_title": "The Pattern Weaver's Code",
+    "official_id": 89,
+    "official_title": "The Pattern Weaver's Code",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/89",
+    "archive_path": "archive/pytorch_legacy/89-The Pattern Weaver's Code.py"
+  },
+  {
+    "path": "pytorch/9-Matrix times Matrix.py",
+    "old_id": 9,
+    "old_title": "Matrix times Matrix",
+    "official_id": 9,
+    "official_title": "Matrix times Matrix ",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/9",
+    "archive_path": "archive/pytorch_legacy/9-Matrix times Matrix.py"
+  },
+  {
+    "path": "pytorch/93-Calculate Mean Absolute Error (MAE).py",
+    "old_id": 93,
+    "old_title": "Calculate Mean Absolute Error (MAE)",
+    "official_id": 93,
+    "official_title": "Calculate Mean Absolute Error (MAE)",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/93",
+    "archive_path": "archive/pytorch_legacy/93-Calculate Mean Absolute Error (MAE).py"
+  },
+  {
+    "path": "pytorch/94-Implement Multi-Head Attention.py",
+    "old_id": 94,
+    "old_title": "Implement Multi-Head Attention",
+    "official_id": 94,
+    "official_title": "Implement Multi-Head Attention",
+    "mapping": "exact_id_title",
+    "official_url": "https://www.deep-ml.com/problems/94",
+    "archive_path": "archive/pytorch_legacy/94-Implement Multi-Head Attention.py"
+  },
+  {
+    "path": "pytorch/98-Implement the PReLU Activation Function.py",
+    "old_id": 98,
+    "old_title": "Implement the PReLU Activation Function",
+    "official_id": 98,
+    "official_title": "Implement PReLU Forward and Backward Pass",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/98",
+    "archive_path": "archive/pytorch_legacy/98-Implement the PReLU Activation Function.py"
+  },
+  {
+    "path": "pytorch/98-Overlapping Max Pooling.py",
+    "old_id": 98,
+    "old_title": "Overlapping Max Pooling",
+    "official_id": 190,
+    "official_title": "Overlapping Max Pooling",
+    "mapping": "renumbered_exact_title",
+    "official_url": "https://www.deep-ml.com/problems/190",
+    "archive_path": "archive/pytorch_legacy/98-Overlapping Max Pooling.py"
+  },
+  {
+    "path": "pytorch/99-Implement Local Response Normalization.py",
+    "old_id": 99,
+    "old_title": "Implement Local Response Normalization",
+    "official_id": 189,
+    "official_title": "Implement Local Response Normalization (LRN)",
+    "mapping": "title_alias_contract_requires_audit",
+    "official_url": "https://www.deep-ml.com/problems/189",
+    "archive_path": "archive/pytorch_legacy/99-Implement Local Response Normalization.py"
+  }
+]

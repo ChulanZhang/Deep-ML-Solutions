@@ -1,44 +1,24 @@
+"""RoPE for x[B,S,H,D], using HALF-SPLIT pairs, not adjacent pairs.
+Related: #381 uses adjacent pairs; these conventions are not interchangeable
+without permuting the feature layout. start_pos supports cached decoding.
+"""
 import torch
 
-def precompute_freqs_cis(dim: int, max_seq_len: int, base: float = 10000.0):
-    """
-    预计算旋转角度的 cos 和 sin
-    频率: theta_i = base^(-2i / dim)
-    """
-    freqs = 1.0 / (base ** (torch.arange(0, dim, 2).float() / dim))
-    t = torch.arange(max_seq_len, dtype=torch.float32)
-    angles = torch.outer(t, freqs)  # [max_seq_len, dim // 2]
-    return torch.cos(angles), torch.sin(angles)
+def precompute_freqs_cis(dim: int, max_seq_len: int, base: float = 10000.0,
+                         *, device=None, dtype=torch.float32):
+    if dim <= 0 or dim % 2 or max_seq_len < 0 or base <= 0:
+        raise ValueError('Need even positive dim, nonnegative length and positive base.')
+    frequency = base ** (-torch.arange(0, dim, 2, device=device, dtype=dtype) / dim)
+    positions = torch.arange(max_seq_len, device=device, dtype=dtype)
+    angles = positions[:, None] * frequency
+    return angles.cos(), angles.sin()
 
-def apply_rotary_emb(x: torch.Tensor, cos: torch.Tensor, sin: torch.Tensor) -> torch.Tensor:
-    """
-    旋转位置编码 (RoPE) - 面试标准模版
-    核心考点:
-    1. 原理: 将特征两两分组并在 2D 复平面上旋转，使得点积 <R_m*q, R_n*k> 只与相对位置 (m-n) 相关
-    2. 旋转矩阵应用公式:
-       x_rot = [-x2, x1]
-       output = x * cos + x_rot * sin
-    """
-    # x 形状: [Batch, Seq_len, n_heads, head_dim]
-    B, S, H, D = x.shape
-    
-    # 截取当前序列长度对应的 cos 和 sin，并广播到 [1, S, 1, D // 2]
-    cos = cos[:S, :].unsqueeze(0).unsqueeze(2)  # [1, S, 1, D//2]
-    sin = sin[:S, :].unsqueeze(0).unsqueeze(2)  # [1, S, 1, D//2]
-
-    # 将最后两两一组切分为前半段与后半段
-    x1 = x[..., :D // 2]
-    x2 = x[..., D // 2:]
-
-    # 旋转变换: [x1, x2] 乘以旋转矩阵 -> [x1*cos - x2*sin, x2*cos + x1*sin]
-    out1 = x1 * cos - x2 * sin
-    out2 = x2 * cos + x1 * sin
-
-    return torch.cat([out1, out2], dim=-1)
-
-if __name__ == "__main__":
-    B, S, H, D = 2, 8, 4, 16
-    q = torch.randn(B, S, H, D)
-    cos, sin = precompute_freqs_cis(dim=D, max_seq_len=S)
-    q_rot = apply_rotary_emb(q, cos, sin)
-    print("RoPE Output Shape:", q_rot.shape)  # [2, 8, 4, 16]
+def apply_rotary_emb(x: torch.Tensor, cos: torch.Tensor, sin: torch.Tensor, start_pos: int = 0):
+    length, width = x.shape[1], x.shape[-1]
+    if width % 2 or start_pos < 0 or start_pos + length > cos.shape[0]:
+        raise ValueError('Invalid feature dimension or position range.')
+    work = x.float() if x.dtype in (torch.float16, torch.bfloat16) else x
+    c = cos[start_pos:start_pos + length].to(work).unsqueeze(0).unsqueeze(2)
+    s = sin[start_pos:start_pos + length].to(work).unsqueeze(0).unsqueeze(2)
+    first, second = work.chunk(2, dim=-1)
+    return torch.cat((first * c - second * s, second * c + first * s), dim=-1).to(x.dtype)

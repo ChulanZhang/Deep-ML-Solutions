@@ -1,0 +1,46 @@
+name: PyTorch review tests
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, edited]
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  correctness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install CPU test dependencies
+        run: |
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.10.0
+          python -m pip install -r requirements-review.txt
+      - name: Check mapping and preserved original sources
+        run: python audit/validate_manifest.py
+      - name: Independent numerical and gradient tests
+        env:
+          OMP_NUM_THREADS: '1'
+        run: python -m pytest tests -q --junitxml=/tmp/independent-tests.xml
+      - name: Replay captured public PyTorch examples (not the website judge)
+        env:
+          OMP_NUM_THREADS: '1'
+        run: python audit/run_public_tests.py --source verified --output /tmp/public-core.json
+      - name: Export reviewed repository snapshot
+        run: git archive --format=zip --output=/tmp/Deep-ML-PyTorch-Reviewed.zip HEAD
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pytorch-review-test-results
+          path: |
+            /tmp/independent-tests.xml
+            /tmp/public-core.json
+            /tmp/Deep-ML-PyTorch-Reviewed.zip
+          retention-days: 30
