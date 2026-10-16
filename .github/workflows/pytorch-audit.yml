@@ -8,57 +8,31 @@ permissions:
 jobs:
   inventory:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Capture live public problem metadata and public tests
+      - name: Capture remaining public problem definitions
         run: |
           python - <<'PY'
-          import concurrent.futures, datetime, difflib, hashlib, json, pathlib, re, urllib.request
-          out = pathlib.Path('audit-output'); out.mkdir()
-          def fetch(url):
-              req = urllib.request.Request(url, headers={'User-Agent': 'DeepML-Solutions-review/1.0'})
-              with urllib.request.urlopen(req, timeout=30) as r:
-                  return r.read()
-          def norm(s):
-              return re.sub(r'[^a-z0-9]+', '', s.lower())
-          url = 'https://api.deep-ml.com/list-problems'
-          raw = fetch(url)
-          (out / 'live-catalog.json').write_bytes(raw)
-          catalog = json.loads(raw)
-          items = catalog.get('problems', []) if isinstance(catalog, dict) else catalog
-          ids = set()
-          for p in pathlib.Path('pytorch').glob('*.py'):
-              match = re.match(r'(\d+)-(.*)', p.stem)
-              if not match:
-                  continue
-              ids.add(match[1])
-              title = norm(match[2])
-              for item in items:
-                  candidate = norm(item.get('title', item.get('name', '')))
-                  if candidate and (candidate == title or difflib.SequenceMatcher(None, title, candidate).ratio() > 0.80):
-                      ids.add(str(item['id']))
-          ids.update(map(str, [23,39,49,53,85,94,101,107,109,125,151,156,178,208,222,223,229,234,263,294,372,375,376,381,382,383,384,388,390,391,394,407,408,409,415,418,419,425,427,435,457]))
-          (out / 'problems').mkdir()
-          def download(pid):
-              url = 'https://api.deep-ml.com/fetch-problem?problem_id=' + pid
-              try:
-                  data = fetch(url)
-                  value = json.loads(data)
-                  (out / 'problems' / (pid + '.json')).write_bytes(data)
-                  return {'id': pid, 'url': url, 'status': 'retrieved', 'sha256': hashlib.sha256(data).hexdigest()}
-              except Exception as exc:
-                  return {'id': pid, 'url': url, 'status': 'unavailable', 'error': str(exc)}
-          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
-              records = list(pool.map(download, sorted(ids, key=int)))
-          (out / 'live-provenance.json').write_text(json.dumps({'retrieved_at_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'catalog_url': url, 'problems': records}, indent=2))
-          print('Catalog entries:', len(items), 'Problem definitions retrieved:', sum(r['status']=='retrieved' for r in records), '/', len(records))
+          import json, pathlib, urllib.request, hashlib, datetime
+          out=pathlib.Path('audit-output/problems'); out.mkdir(parents=True)
+          records=[]
+          for pid in (124,320,359,360,374,427,429,457):
+              url='https://api.deep-ml.com/fetch-problem?problem_id='+str(pid)
+              req=urllib.request.Request(url,headers={'User-Agent':'DeepML-Solutions-review/1.0'})
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  data=response.read()
+              json.loads(data)
+              (out/f'{pid}.json').write_bytes(data)
+              records.append({'id':pid,'url':url,'sha256':hashlib.sha256(data).hexdigest()})
+          (out.parent/'provenance-extra.json').write_text(json.dumps({'retrieved_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'problems':records},indent=2))
+          print('Retrieved',len(records),'additional public problem definitions.')
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: deepml-live-definitions
+          name: deepml-additional-definitions
           path: audit-output/
           retention-days: 7
           if-no-files-found: error
