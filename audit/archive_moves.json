@@ -1,0 +1,102 @@
+[
+  {
+    "from": "Deep_ML_Problems_List.md",
+    "to": "archive/Deep_ML_Problems_List.original.md",
+    "sha256": "57f25d98c4c7f64cdb376e43efff174af9f4d7e1f7ea178b2cb4dc8c511059fb"
+  },
+  {
+    "from": "README.md",
+    "to": "archive/README.original.md",
+    "sha256": "04751060b956542ca4f82a06b241e1d1dc09e0db9530907f6b963938c12191dd"
+  },
+  {
+    "from": "find_missing.py",
+    "to": "archive/legacy_metadata/find_missing.py",
+    "sha256": "05f13fa405edfb37d500f9fb8288ab7eb24f7ae70649cda18d55b919e79120d0"
+  },
+  {
+    "from": "generate_pytorch_plan.py",
+    "to": "archive/legacy_metadata/generate_pytorch_plan.py",
+    "sha256": "5540dfde9541135ad27910dce840aff67d30ebccd6b743003b95da92806af67d"
+  },
+  {
+    "from": "missing_list_output.txt",
+    "to": "archive/legacy_metadata/missing_list_output.txt",
+    "sha256": "4927894ff8eaa19e3aaa663efe0ca1a869370dbc70442c7dd6956596431498ac"
+  },
+  {
+    "from": "missing_problems.json",
+    "to": "archive/legacy_metadata/missing_problems.json",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "from": "numpy_files_list.txt",
+    "to": "archive/legacy_metadata/numpy_files_list.txt",
+    "sha256": "ae874a0964b5726645848ed4edc4df41e9127985027675b2897292f7d1265747"
+  },
+  {
+    "from": "pytorch_task.md",
+    "to": "archive/legacy_metadata/pytorch_task.md",
+    "sha256": "45b1d6ca54fae5e74d8872218445c0add27f9fd418eaee356197d09af5307126"
+  },
+  {
+    "from": "raw_problems.txt",
+    "to": "archive/legacy_metadata/raw_problems.txt",
+    "sha256": "f8c742d6519a031b0affcc810db51d7b130a4263992ff6c9c5f5dda448b85c77"
+  },
+  {
+    "from": "refactor_pytorch_signatures.py",
+    "to": "archive/legacy_metadata/refactor_pytorch_signatures.py",
+    "sha256": "d55bc7194551c67418bdf888e748e9cf571965c70b6623adafe073f7c255bbbb"
+  },
+  {
+    "from": "refactor_pytorch_tensors.py",
+    "to": "archive/legacy_metadata/refactor_pytorch_tensors.py",
+    "sha256": "0528e03459e04edd8c7d016c58e46062d4eb3e940c1c99a77c9aa38aeaa42441"
+  },
+  {
+    "from": "rename_to_real_ids.py",
+    "to": "archive/legacy_metadata/rename_to_real_ids.py",
+    "sha256": "caea9cfde40f69307ab71dbfda5fb355519059e20914132c164b6fd08dc3295f"
+  },
+  {
+    "from": "scrape_deepml.py",
+    "to": "archive/legacy_metadata/scrape_deepml.py",
+    "sha256": "b51fe117ca232e5e41c58f970294fbe5b820729534d3ad0d82108755aaee807d"
+  },
+  {
+    "from": "update_plans.py",
+    "to": "archive/legacy_metadata/update_plans.py",
+    "sha256": "6ae2768bb7f07920ccda3ce09b81413dadcbf5e5b5bec532129e9179634667db"
+  },
+  {
+    "from": "write_batch1.py",
+    "to": "archive/legacy_metadata/write_batch1.py",
+    "sha256": "d4f62b8a6f4b3c1a003b11482213a760c29bd467dc34f7109dc7ade51452744b"
+  },
+  {
+    "from": "write_batch2.py",
+    "to": "archive/legacy_metadata/write_batch2.py",
+    "sha256": "be11856caf19cf71a6ee5b6b4fdbdaed031787814673cff2ae5c3ba976a1e364"
+  },
+  {
+    "from": "write_batch3.py",
+    "to": "archive/legacy_metadata/write_batch3.py",
+    "sha256": "acb193cae53776c2693ff772966c0e7a3649b762c4a3fb32c34a2b95b2294ef8"
+  },
+  {
+    "from": "write_batch4.py",
+    "to": "archive/legacy_metadata/write_batch4.py",
+    "sha256": "51524640fb6116653e696901e4d96326052702217e92f50646c312c15210c47c"
+  },
+  {
+    "from": "write_batch5.py",
+    "to": "archive/legacy_metadata/write_batch5.py",
+    "sha256": "edcbb0fb2d2c371975749df6cc631b24bcc003f3410375a7ce5baa50c61f394e"
+  },
+  {
+    "from": "write_batch6.py",
+    "to": "archive/legacy_metadata/write_batch6.py",
+    "sha256": "c564ef8752ca886de7d8b80456b19185ce4684b2cd95bc14f6f42ad04211a344"
+  }
+]

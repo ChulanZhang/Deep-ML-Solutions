@@ -1,0 +1,2163 @@
+{
+  "source": "verified",
+  "python": "3.13.16",
+  "torch": "2.10.0+cpu",
+  "cuda_tested": false,
+  "comparison": "numeric atol=5.1e-5, rtol=1e-5; nesting/words preserved; whitespace/commas ignored",
+  "official_judge_submission": false,
+  "files": [
+    {
+      "path": "pytorch/0023_softmax.py",
+      "official_id": 23,
+      "sha256": "b3dd48ef74f5c8a898de7dca4f0976833d1ec97ea94e14508b58f3e367f0a9d7",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "softmax"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.09, 0.2447, 0.6652]",
+          "expected": "[0.09, 0.2447, 0.6652]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "softmax"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.3333, 0.3333, 0.3333]",
+          "expected": "[0.3333, 0.3333, 0.3333]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0039_log_softmax.py",
+      "official_id": 39,
+      "sha256": "b1a0263cdd826a6eddbb09fe7e1a590dd0b183ea3bd358abed39b50bb5784000",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "log_softmax"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[-2.4076, -1.4076, -0.4076]",
+          "expected": "[-2.4076, -1.4076, -0.4076]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "log_softmax"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[-1.0986, -1.0986, -1.0986]",
+          "expected": "[-1.0986, -1.0986, -1.0986]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0049_adam.py",
+      "official_id": 49,
+      "sha256": "d1f4164f5f15fca2944eb3ae10fcd2409e86fe7f5da9530f833fed0a30afc37e",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "adam_optimizer"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.99000325, 0.99000325]",
+          "expected": "[0.99000325, 0.99000325]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "adam_optimizer"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.19001678, 12.29000026]",
+          "expected": "[0.19001678, 12.29000026]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0053_self_attention.py",
+      "official_id": 53,
+      "sha256": "91e84395e6ff2fbf1b1a51b2c91b1743313d1c9470eb37e0549a862a52e27e11",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "self_attention"
+          ],
+          "shadowed_solution_definitions": [
+            "compute_qkv"
+          ],
+          "actual": "[[1.660477, 2.660477], [2.339523, 3.339523]]",
+          "expected": "[[1.660477, 2.660477], [2.339523, 3.339523]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "self_attention"
+          ],
+          "shadowed_solution_definitions": [
+            "compute_qkv"
+          ],
+          "actual": "[[3.009285, 4.679046], [2.5, 4.0]]",
+          "expected": "[[3.009285, 4.679046], [2.5, 4.0]]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "self_attention"
+          ],
+          "shadowed_solution_definitions": [
+            "compute_qkv"
+          ],
+          "actual": "[[8.0, 10.0, 12.0], [8.619874, 10.619874, 12.619874], [7.380126, 9.380126, 11.380126]]",
+          "expected": "[[8.0, 10.0, 12.0], [8.619874, 10.619874, 12.619874], [7.380126, 9.380126, 11.380126]]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "self_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "True",
+          "expected": "True"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "self_attention"
+          ],
+          "shadowed_solution_definitions": [
+            "compute_qkv"
+          ],
+          "actual": "[[6.287932, 8.287932], [6.871892, 8.871892], [6.406673, 8.406673]]",
+          "expected": "[[6.287932, 8.287932], [6.871892, 8.871892], [6.406673, 8.406673]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0085_sinusoidal_position.py",
+      "official_id": 85,
+      "sha256": "a295de415493ad04d9ca961c6026613bcadced3dcfe481b537bb338dbc0e43a9",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "pos_encoding"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "-1",
+          "expected": "-1"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "pos_encoding"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "-1",
+          "expected": "-1"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "pos_encoding"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "-1",
+          "expected": "-1"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "pos_encoding"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0], [0.84130859375, 0.54052734375, 0.099853515625, 0.9951171875, 0.01000213623046875, 1.0, 0.0010004043579101562, 1.0]]",
+          "expected": "[[0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0], [0.84130859375, 0.54052734375, 0.099853515625, 0.9951171875, 0.01000213623046875, 1.0, 0.0010004043579101562, 1.0]]"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "pos_encoding"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "torch.Size([1, 4])\ntorch.float16",
+          "expected": "torch.Size([1, 4])\ntorch.float16"
+        },
+        {
+          "index": 6,
+          "status": "pass",
+          "called_solution_functions": [
+            "pos_encoding"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]",
+          "expected": "[0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]"
+        },
+        {
+          "index": 7,
+          "status": "pass",
+          "called_solution_functions": [
+            "pos_encoding"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "torch.Size([3, 4])\ntorch.float16",
+          "expected": "torch.Size([3, 4])\ntorch.float16"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0094_multi_head_attention.py",
+      "official_id": 94,
+      "sha256": "9b1940d467c1f96b482683bd1add2c8958e436a3ca5f033d2b760b187986751e",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "compute_qkv",
+            "multi_head_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[103, 109, 46, 99], [103, 109, 46, 99], [103, 109, 46, 99], [103, 109, 46, 99]]",
+          "expected": "[[103, 109, 46, 99], [103, 109, 46, 99], [103, 109, 46, 99], [103, 109, 46, 99]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "compute_qkv",
+            "multi_head_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[500, 463, 399, 495, 377, 450, 531, 362]",
+          "expected": "[500, 463, 399, 495, 377, 450, 531, 362]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "compute_qkv"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[3, 4] [3, 4] [3, 4]",
+          "expected": "[3, 4] [3, 4] [3, 4]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "self_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[5, 8]",
+          "expected": "[5, 8]"
+        },
+        {
+          "index": 5,
+          "status": "not_exercised",
+          "called_solution_functions": [],
+          "shadowed_solution_definitions": [],
+          "actual": "True",
+          "expected": "True"
+        },
+        {
+          "index": 6,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "multi_head_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[4, 8]",
+          "expected": "[4, 8]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0101_grpo_objective.py",
+      "official_id": 101,
+      "sha256": "3bce0eef0e734188e60c1c59666f1360dadab316bdfa7974519e56980db6cc34",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "grpo_objective"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "1.03277",
+          "expected": "1.03277"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "grpo_objective"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "0.999743",
+          "expected": "0.999743"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "grpo_objective"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "0.882639",
+          "expected": "0.882639"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "grpo_objective"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "1.0",
+          "expected": "1.0"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0107_masked_attention.py",
+      "official_id": 107,
+      "sha256": "95dd597a7c1b94ecd038d9ba6c751276dfbfc9adf89365fc76ea297de7834b72",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "compute_qkv",
+            "masked_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[547. 490. 399. 495. 485. 439. 645. 393.]\n [547. 490. 399. 495. 485. 439. 645. 393.]\n [471. 472. 429. 538. 377. 450. 531. 362.]\n [471. 472. 429. 538. 377. 450. 531. 362.]\n [471. 472. 429. 538. 377. 450. 531. 362.]\n [471. 472. 429. 538. 377. 450. 531. 362.]]",
+          "expected": "[[547. 490. 399. 495. 485. 439. 645. 393.]\n [547. 490. 399. 495. 485. 439. 645. 393.]\n [471. 472. 429. 538. 377. 450. 531. 362.]\n [471. 472. 429. 538. 377. 450. 531. 362.]\n [471. 472. 429. 538. 377. 450. 531. 362.]\n [471. 472. 429. 538. 377. 450. 531. 362.]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "compute_qkv",
+            "masked_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[ 52.  63.  48.  71.]\n [103. 109.  46.  99.]\n [103. 109.  46.  99.]\n [103. 109.  46.  99.]]",
+          "expected": "[[ 52.  63.  48.  71.]\n [103. 109.  46.  99.]\n [103. 109.  46.  99.]\n [103. 109.  46.  99.]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0109_layer_norm.py",
+      "official_id": 109,
+      "sha256": "0171f9af773aeffeb4d8f601a1ac8662d952e4c7c8afea86217d16289fcda17b",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "layer_normalization"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[[0.474, -1.391, 0.917], [1.414, -0.707, -0.707]], [[1.132, 0.168, -1.3], [1.414, -0.705, -0.71]]]",
+          "expected": "[[[0.474, -1.391, 0.917], [1.414, -0.707, -0.707]], [[1.132, 0.168, -1.3], [1.414, -0.705, -0.71]]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "layer_normalization"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[[-0.229, -1.3, 0.026, 1.502], [-0.926, -0.926, 1.46, 0.392], [-0.585, 1.732, -0.571, -0.576]], [[1.401, -1.05, -0.836, 0.486], [-0.4, 1.657, -0.238, -1.019], [1.454, -0.191, 0.094, -1.357]]]",
+          "expected": "[[[-0.229, -1.3, 0.026, 1.502], [-0.926, -0.926, 1.46, 0.392], [-0.585, 1.732, -0.571, -0.576]], [[1.401, -1.05, -0.836, 0.486], [-0.4, 1.657, -0.238, -1.019], [1.454, -0.191, 0.094, -1.357]]]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "layer_normalization"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[[0.886, 0.35, 1.013, 1.751], [0.537, 0.537, 1.73, 1.196], [0.708, 1.866, 0.715, 0.712]], [[1.7, 0.475, 0.582, 1.243], [0.8, 1.828, 0.881, 0.49], [1.727, 0.904, 1.047, 0.322]]]",
+          "expected": "[[[0.886, 0.35, 1.013, 1.751], [0.537, 0.537, 1.73, 1.196], [0.708, 1.866, 0.715, 0.712]], [[1.7, 0.475, 0.582, 1.243], [0.8, 1.828, 0.881, 0.49], [1.727, 0.904, 1.047, 0.322]]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0124_noisy_topk_gating.py",
+      "official_id": 124,
+      "sha256": "f255725dc23e4085ae8b57388863ea28f1fdf39d33dd73a2786718c24f6ac1c0",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "noisy_topk_gating"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0. 1.]]",
+          "expected": "[[0. 1.]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "noisy_topk_gating"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.917, 0.083]]",
+          "expected": "[[0.917, 0.083]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0125_sparse_moe.py",
+      "official_id": 125,
+      "sha256": "064e1afc87c4316229412698c5f8b465ad74bda3964e98093519a14afc745788",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "moe"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[[0.5148 0.4329]\n  [0.5554 0.5447]\n  [0.1285 0.102 ]]\n\n [[0.339  0.3046]\n  [0.5391 0.417 ]\n  [0.3597 0.3262]]]",
+          "expected": "[[[0.5148 0.4329]\n  [0.5554 0.5447]\n  [0.1285 0.102 ]]\n\n [[0.339  0.3046]\n  [0.5391 0.417 ]\n  [0.3597 0.3262]]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "moe"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[[0. 0.]\n  [0. 0.]\n  [0. 0.]]\n\n [[0. 0.]\n  [0. 0.]\n  [0. 0.]]]",
+          "expected": "[[[0. 0.]\n  [0. 0.]\n  [0. 0.]]\n\n [[0. 0.]\n  [0. 0.]\n  [0. 0.]]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0151_dropout.py",
+      "official_id": 151,
+      "sha256": "dc6a21b0b4acb76072f2479e997440dce50c6a566229e44a0a52115327ddb62d",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "__init__",
+            "forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.0, 2.0], [3.0, 4.0]]",
+          "expected": "[[1.0, 2.0], [3.0, 4.0]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "__init__",
+            "forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "False",
+          "expected": "False"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "__init__",
+            "forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "True",
+          "expected": "True"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "__init__",
+            "backward",
+            "forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "True",
+          "expected": "True"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0156_swiglu.py",
+      "official_id": 156,
+      "sha256": "e4c129d1ca1cc02c1a6842281e08b2e8a7c86150a85591f7f6ec41eebf436dc1",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "SwiGLU"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.0, 0.0]]",
+          "expected": "[[0.0, 0.0]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "SwiGLU"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.7616, 0.2384]]",
+          "expected": "[[1.7616, 0.2384]]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "SwiGLU"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[2.8577, 7.8561], [34.9681, 47.9839], [98.9984, 119.9993]]",
+          "expected": "[[2.8577, 7.8561], [34.9681, 47.9839], [98.9984, 119.9993]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0178_ffn_block.py",
+      "official_id": 178,
+      "sha256": "93a7f44bcfc88a03b06cfb9f4dcabc42fdf2356c4574b79f36d7bacb94b448b3",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "__init__",
+            "forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[1.0, -0.5]",
+          "expected": "[1.0, -0.5]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "__init__",
+            "forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[10.0, 11.0]",
+          "expected": "[10.0, 11.0]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0208_flash_attention_reference.py",
+      "official_id": 208,
+      "sha256": "35fdefcf1fcf1cd9b67c90e5e0576edcb04398e60b003e8bfc1aec328f8a8087",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "flash_attention_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[-0.8285, -0.716, -0.4417, 0.6186]",
+          "expected": "[-0.8285, -0.716, -0.4417, 0.6186]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "flash_attention_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[-0.5894, -0.8379, -0.4217, 0.3902]",
+          "expected": "[-0.5894, -0.8379, -0.4217, 0.3902]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "flash_attention_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "(8, 4)",
+          "expected": "(8, 4)"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "flash_attention_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[1.6605, 2.6605]",
+          "expected": "[1.6605, 2.6605]"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "flash_attention_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[-0.0921, -0.5509, 0.1524]",
+          "expected": "[-0.0921, -0.5509, 0.1524]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0222_lora_forward.py",
+      "official_id": 222,
+      "sha256": "97787635cec1721df02b6aa8113adde8212c362c96ea89a0c358e50ec144711a",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "lora_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[5.4, 7.8]]",
+          "expected": "[[5.4, 7.8]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "lora_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[3.0, 2.0], [2.0, 3.0]]",
+          "expected": "[[3.0, 2.0], [2.0, 3.0]]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "lora_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[6.0]]",
+          "expected": "[[6.0]]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "lora_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.5, 3.0]]",
+          "expected": "[[1.5, 3.0]]"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "lora_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.1, 1.2], [1.2, 1.4], [1.3, 1.6]]",
+          "expected": "[[1.1, 1.2], [1.2, 1.4], [1.3, 1.6]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0223_qlora_forward.py",
+      "official_id": 223,
+      "sha256": "f69263a6f555570e281dec83d94f5c24dab442f720d2e46c163b9e50ecad4039",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "qlora_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[3.5, 2.5]]",
+          "expected": "[[3.5, 2.5]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "qlora_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[3.5, 1.5], [1.5, 3.5]]",
+          "expected": "[[3.5, 1.5], [1.5, 3.5]]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "qlora_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[8.5, 8.0]]",
+          "expected": "[[8.5, 8.0]]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "qlora_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[3.0, 5.0]]",
+          "expected": "[[3.0, 5.0]]"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "qlora_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[8.8, 15.0]]",
+          "expected": "[[8.8, 15.0]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0224_group_relative_advantage.py",
+      "official_id": 224,
+      "sha256": "be0c66add873fb402cef89e6a986eb81b0cb1f06e6ac4a34989ab7c7206b9cd1",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "compute_group_relative_advantage"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[-1.4142, -0.7071, 0.0, 0.7071, 1.4142]",
+          "expected": "[-1.4142, -0.7071, 0.0, 0.7071, 1.4142]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "compute_group_relative_advantage"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.0, 0.0, 0.0, 0.0]",
+          "expected": "[0.0, 0.0, 0.0, 0.0]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "compute_group_relative_advantage"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[-1.0, 1.0]",
+          "expected": "[-1.0, 1.0]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "compute_group_relative_advantage"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[-1.118, -1.118, 1.118, 1.118, 0.0]",
+          "expected": "[-1.118, -1.118, 1.118, 1.118, 0.0]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0225_kl_estimator.py",
+      "official_id": 225,
+      "sha256": "2a3e32d15763350f1cbb196d80815cdba9a9e48e8ca2c6bf334975aa05e74718",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "kl_divergence_estimator"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0. 0.]",
+          "expected": "[0. 0.]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "kl_divergence_estimator"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.1931 0.0945]",
+          "expected": "[0.1931 0.0945]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "kl_divergence_estimator"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.4319]",
+          "expected": "[0.4319]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "kl_divergence_estimator"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.     0.0508 0.1558 0.1433]",
+          "expected": "[0.     0.0508 0.1558 0.1433]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0229_moe_topk_routing.py",
+      "official_id": 229,
+      "sha256": "f5e7df6c663942686feb58b56f29c533580b9558b0b5cf4867512647bd98d0b6",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "moe_topk_routing"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "tensor([[0.7311, 0.2689]])",
+          "expected": "tensor([[0.7311, 0.2689]])"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "moe_topk_routing"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "tensor([[0.5000, 0.5000]])",
+          "expected": "tensor([[0.5000, 0.5000]])"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "moe_topk_routing"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "tensor([[3., 3.]])",
+          "expected": "tensor([[3., 3.]])"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "moe_topk_routing"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "tensor([[2.7311],\n        [1.2689]])",
+          "expected": "tensor([[2.7311],\n        [1.2689]])"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0263_binary_cross_entropy.py",
+      "official_id": 263,
+      "sha256": "ff875f7f288c768e58665c4104b0057c9dc4e74702da70708e783b6cf47e4923",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "binary_cross_entropy"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "0.1643",
+          "expected": "0.1643"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "binary_cross_entropy"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "2.3026",
+          "expected": "2.3026"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "binary_cross_entropy"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "0.6931",
+          "expected": "0.6931"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "binary_cross_entropy"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "0.3567",
+          "expected": "0.3567"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "binary_cross_entropy"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "0.0746",
+          "expected": "0.0746"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0294_int8_quantization.py",
+      "official_id": 294,
+      "sha256": "dc409a4436405633b001f719938d06e986eadde9b7edb67463b56d0fba11065a",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "int8_quantize"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "{'quantized': [127, -127, 64, -64], 'scale': 0.007874, 'dequantized': [1.0, -1.0, 0.5039, -0.5039]}",
+          "expected": "{'quantized': [127, -127, 64, -64], 'scale': 0.007874, 'dequantized': [1.0, -1.0, 0.5039, -0.5039]}"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "int8_quantize"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "{'quantized': [0, 32, 64, 127], 'scale': 0.015748, 'dequantized': [0.0, 0.5039, 1.0079, 2.0]}",
+          "expected": "{'quantized': [0, 32, 64, 127], 'scale': 0.015748, 'dequantized': [0.0, 0.5039, 1.0079, 2.0]}"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "int8_quantize"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "{'quantized': [0, 0, 0], 'scale': 1.0, 'dequantized': [0.0, 0.0, 0.0]}",
+          "expected": "{'quantized': [0, 0, 0], 'scale': 1.0, 'dequantized': [0.0, 0.0, 0.0]}"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "int8_quantize"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "{'quantized': [-127, 64, 38, -25, 0], 'scale': 0.07874, 'dequantized': [-10.0, 5.0394, 2.9921, -1.9685, 0.0]}",
+          "expected": "{'quantized': [-127, 64, 38, -25, 0], 'scale': 0.07874, 'dequantized': [-10.0, 5.0394, 2.9921, -1.9685, 0.0]}"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "int8_quantize"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "{'quantized': [63, -127, 95], 'scale': 0.000157, 'dequantized': [0.0099, -0.02, 0.015]}",
+          "expected": "{'quantized': [63, -127, 95], 'scale': 0.000157, 'dequantized': [0.0099, -0.02, 0.015]}"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0320_perplexity.py",
+      "official_id": 320,
+      "sha256": "29fb9b5869f5fce6789fcba41cc2279690c5dc68bc0ab78f7e526a960cba4084",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "calculate_perplexity"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "2.0",
+          "expected": "2.0"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "calculate_perplexity"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "1.0",
+          "expected": "1.0"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "calculate_perplexity"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "5.5032",
+          "expected": "5.5032"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "calculate_perplexity"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "4.0",
+          "expected": "4.0"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "calculate_perplexity"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "2.9337",
+          "expected": "2.9337"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0372_rmsnorm.py",
+      "official_id": 372,
+      "sha256": "9190638e7948bf56c7148bc64e663b0074811fd7cbd28460a49119b0d3055862",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "rmsnorm"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.4629000127315521, 0.9258000254631042, 1.388700008392334]]",
+          "expected": "[[0.4629, 0.9258, 1.3887]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "rmsnorm"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.23149999976158142, 0.9258000254631042, 2.7774999141693115]]",
+          "expected": "[[0.2315, 0.9258, 2.7775]]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "rmsnorm"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.414199948310852, 0.0], [0.0, 1.414199948310852]]",
+          "expected": "[[1.4142, 0.0], [0.0, 1.4142]]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "rmsnorm"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.0, 0.0, 0.0]]",
+          "expected": "[[0.0, 0.0, 0.0]]"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "rmsnorm"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0]]",
+          "expected": "[[1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0374_char_tokenizer.py",
+      "official_id": 374,
+      "sha256": "8ac0c5eaea1601fb38b577db3cf15c40660de80a393cd9508d6842292092fa58",
+      "tests": [
+        {
+          "index": 1,
+          "status": "not_exercised",
+          "called_solution_functions": [],
+          "shadowed_solution_definitions": [
+            "CharTokenizer"
+          ],
+          "actual": "6",
+          "expected": "6"
+        },
+        {
+          "index": 2,
+          "status": "not_exercised",
+          "called_solution_functions": [],
+          "shadowed_solution_definitions": [
+            "CharTokenizer"
+          ],
+          "actual": "[0, 3, 2, 4, 4, 5, 1]",
+          "expected": "[0, 3, 2, 4, 4, 5, 1]"
+        },
+        {
+          "index": 3,
+          "status": "not_exercised",
+          "called_solution_functions": [],
+          "shadowed_solution_definitions": [
+            "CharTokenizer"
+          ],
+          "actual": "<BOS>hello<EOS>",
+          "expected": "<BOS>hello<EOS>"
+        },
+        {
+          "index": 4,
+          "status": "not_exercised",
+          "called_solution_functions": [],
+          "shadowed_solution_definitions": [
+            "CharTokenizer"
+          ],
+          "actual": "[0, 4, 2, 3, 1]",
+          "expected": "[0, 4, 2, 3, 1]"
+        },
+        {
+          "index": 5,
+          "status": "not_exercised",
+          "called_solution_functions": [],
+          "shadowed_solution_definitions": [
+            "CharTokenizer"
+          ],
+          "actual": "18\n[0, 6, 11, 17, 1]\n<BOS>fox<EOS>",
+          "expected": "18\n[0, 6, 11, 17, 1]\n<BOS>fox<EOS>"
+        },
+        {
+          "index": 6,
+          "status": "not_exercised",
+          "called_solution_functions": [],
+          "shadowed_solution_definitions": [
+            "CharTokenizer"
+          ],
+          "actual": "7\n6",
+          "expected": "7\n6"
+        }
+      ],
+      "status": "non_validating_public_examples"
+    },
+    {
+      "path": "pytorch/0375_learned_position.py",
+      "official_id": 375,
+      "sha256": "5f870ddc25e18aa4daffca87cafb52dce579bc71432bf71ed1b1f0383c257e73",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "learned_positional_encoding"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[[1.100000023841858, 2.200000047683716], [3.299999952316284, 4.400000095367432]]]",
+          "expected": "[[[1.1, 2.2], [3.3, 4.4]]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "learned_positional_encoding"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[[1.5, 2.5999999046325684]]]",
+          "expected": "[[[1.5, 2.6]]]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "learned_positional_encoding"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[[1.100000023841858, 0.10000000149011612], [0.20000000298023224, 1.2000000476837158]], [[2.0999999046325684, 2.0999999046325684], [3.200000047683716, 3.200000047683716]]]",
+          "expected": "[[[1.1, 0.1], [0.2, 1.2]], [[2.1, 2.1], [3.2, 3.2]]]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "learned_positional_encoding"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[[0.30000001192092896, 0.4000000059604645], [0.5, 0.6000000238418579], [0.699999988079071, 0.800000011920929]]]",
+          "expected": "[[[0.3, 0.4], [0.5, 0.6], [0.7, 0.8]]]"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "learned_positional_encoding"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[[0.8999999761581421, 0.0, 1.600000023841858], [2.200000047683716, 0.800000011920929, -0.10000000149011612]], [[-0.6000000238418579, 2.5, 1.100000023841858], [0.699999988079071, 0.800000011920929, 0.8999999761581421]]]",
+          "expected": "[[[0.9, 0.0, 1.6], [2.2, 0.8, -0.1]], [[-0.6, 2.5, 1.1], [0.7, 0.8, 0.9]]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0376_kv_cache_step.py",
+      "official_id": 376,
+      "sha256": "55f55e9d6d4264a604401c21c48d318dd3659783799b08da0648ac5bacb1182c",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "kv_cache_attention_step"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[1.0, 0.0]",
+          "expected": "[1.0, 0.0]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "kv_cache_attention_step"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.3302, 0.6698]",
+          "expected": "[0.3302, 0.6698]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "kv_cache_attention_step"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.7517, 0.7517]\n(3, 2)",
+          "expected": "[0.7517, 0.7517]\n(3, 2)"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "kv_cache_attention_step"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[1.0, 2.0]",
+          "expected": "[1.0, 2.0]"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "kv_cache_attention_step"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.2645, 0.2645, 0.4711]\n(3, 3)\n(3, 3)",
+          "expected": "[0.2645, 0.2645, 0.4711]\n(3, 3)\n(3, 3)"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0381_rope.py",
+      "official_id": 381,
+      "sha256": "c06f56c42256d1c761a2d667af5935cfc0d6ba5611332b83aa7ad416c250cdf4",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "apply_rope"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.0, 2.0, 3.0, 4.0]]",
+          "expected": "[[1.0, 2.0, 3.0, 4.0]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "apply_rope"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.5403, 0.8415, 0.9999, 0.01]]",
+          "expected": "[[0.5403, 0.8415, 0.9999, 0.01]]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "apply_rope"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.0, 2.0, 3.0, 4.0], [-2.3473, 7.4492, 6.9197, 8.0696]]",
+          "expected": "[[1.0, 2.0, 3.0, 4.0], [-2.3473, 7.4492, 6.9197, 8.0696]]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "apply_rope"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.0, 0.0], [-0.8415, 0.5403], [-1.3254, 0.4932]]",
+          "expected": "[[1.0, 0.0], [-0.8415, 0.5403], [-1.3254, 0.4932]]"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "apply_rope"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[-1.1311, -0.8489, 0.6598, 1.2509]]",
+          "expected": "[[-1.1311, -0.8489, 0.6598, 1.2509]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0382_dpo_loss.py",
+      "official_id": 382,
+      "sha256": "a33fe43e1dbd5b3f3d1a02de525a7ebda26cb430cc73678a007190ddf8c96eec",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "dpo_loss"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "{'loss': 0.6758, 'chosen_rewards': [0.02, 0.01], 'rejected_rewards': [-0.02, -0.02]}",
+          "expected": "{'loss': 0.6758, 'chosen_rewards': [0.02, 0.01], 'rejected_rewards': [-0.02, -0.02]}"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "dpo_loss"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "{'loss': 2.5789, 'chosen_rewards': [-1.5], 'rejected_rewards': [1.0]}",
+          "expected": "{'loss': 2.5789, 'chosen_rewards': [-1.5], 'rejected_rewards': [1.0]}"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "dpo_loss"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "{'loss': 0.3133, 'chosen_rewards': [0.5, 0.5, 0.5], 'rejected_rewards': [-0.5, -0.5, -0.5]}",
+          "expected": "{'loss': 0.3133, 'chosen_rewards': [0.5, 0.5, 0.5], 'rejected_rewards': [-0.5, -0.5, -0.5]}"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "dpo_loss"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "{'loss': 0.1269, 'chosen_rewards': [1.0], 'rejected_rewards': [-1.0]}",
+          "expected": "{'loss': 0.1269, 'chosen_rewards': [1.0], 'rejected_rewards': [-1.0]}"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "dpo_loss"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "{'loss': 0.6931, 'chosen_rewards': [0.0, 0.0], 'rejected_rewards': [0.0, 0.0]}",
+          "expected": "{'loss': 0.6931, 'chosen_rewards': [0.0, 0.0], 'rejected_rewards': [0.0, 0.0]}"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0383_top_p.py",
+      "official_id": 383,
+      "sha256": "fe4bb71f4301d1c4ad06f187a2fa406658a4146123609b1bbf714bd5e510efd2",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "top_p_sampling"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.0, 0.2689, 0.7311]",
+          "expected": "[0.0, 0.2689, 0.7311]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "top_p_sampling"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[1.0, 0.0, 0.0, 0.0]",
+          "expected": "[1.0, 0.0, 0.0, 0.0]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "top_p_sampling"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.5, 0.5, 0.0, 0.0]",
+          "expected": "[0.5, 0.5, 0.0, 0.0]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "top_p_sampling"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.25, 0.25, 0.25, 0.25]",
+          "expected": "[0.25, 0.25, 0.25, 0.25]"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "top_p_sampling"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.7311, 0.2689, 0.0]",
+          "expected": "[0.7311, 0.2689, 0.0]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0384_infonce.py",
+      "official_id": 384,
+      "sha256": "f272334abb1f8a1e4f67d6d8f7bbf0a4d7bcdc49ff37ef8719f3bb35d1883369",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "contrastive_loss"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "0.5514",
+          "expected": "0.5514"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "contrastive_loss"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "1.0986",
+          "expected": "1.0986"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "contrastive_loss"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "0.2395",
+          "expected": "0.2395"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "contrastive_loss"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "0.9048",
+          "expected": "0.9048"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "contrastive_loss"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "0.1235",
+          "expected": "0.1235"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0388_sliding_window_attention.py",
+      "official_id": 388,
+      "sha256": "eabee059fdcb3999ce10c12c2500880559717432c4b86668145db4312488f3b8",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "sliding_window_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.2689, 0.7311], [0.8827, 0.9841], [0.9526, 1.0]]",
+          "expected": "[[0.2689, 0.7311], [0.8827, 0.9841], [0.9526, 1.0]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "sliding_window_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.0, 0.0], [0.0, 1.0], [1.0, 1.0]]",
+          "expected": "[[1.0, 0.0], [0.0, 1.0], [1.0, 1.0]]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "sliding_window_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.7553, 0.91], [0.8827, 0.9841], [0.9527, 0.9976]]",
+          "expected": "[[0.7553, 0.91], [0.8827, 0.9841], [0.9527, 0.9976]]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "sliding_window_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[5.0, 6.0]]",
+          "expected": "[[5.0, 6.0]]"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "sliding_window_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.6698, 0.3302], [0.3983, 0.6017], [0.288, 0.572], [0.25, 0.25]]",
+          "expected": "[[0.6698, 0.3302], [0.3983, 0.6017], [0.288, 0.572], [0.25, 0.25]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0390_multiquery_attention.py",
+      "official_id": 390,
+      "sha256": "42ad27f50c0027387ed4638409ec0559e364f1f0c042d144e87974908670858a",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "multiquery_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.6698, 0.3302], [0.3302, 0.6698]]",
+          "expected": "[[0.6698, 0.3302], [0.3302, 0.6698]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "multiquery_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.0, 2.0]]",
+          "expected": "[[1.0, 2.0]]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "multiquery_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.7311, 0.5], [0.5, 0.7311]]",
+          "expected": "[[0.7311, 0.5], [0.5, 0.7311]]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "multiquery_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.8884, 0.1116], [0.1116, 1.8884]]",
+          "expected": "[[1.8884, 0.1116], [0.1116, 1.8884]]"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "multiquery_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.3356, 0.6751, 0.0283], [0.3196, 0.6817, 0.015], [0.3353, 0.6648, -0.0122]]",
+          "expected": "[[0.3356, 0.6751, 0.0283], [0.3196, 0.6817, 0.015], [0.3353, 0.6648, -0.0122]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0391_grouped_query_attention.py",
+      "official_id": 391,
+      "sha256": "80ba223988bb60eca7ddebe925b6256530e2418ba7d5d654960d9b98ccf452c1",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "grouped_query_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[[2.0, 3.0, 2.0, 3.0]]]",
+          "expected": "[[[2.0, 3.0, 2.0, 3.0]]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "grouped_query_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[[2.0, 3.0, 2.0, 3.0, 4.0, 5.0, 4.0, 5.0], [2.0, 3.0, 2.0, 3.0, 4.0, 5.0, 4.0, 5.0]]]",
+          "expected": "[[[2.0, 3.0, 2.0, 3.0, 4.0, 5.0, 4.0, 5.0], [2.0, 3.0, 2.0, 3.0, 4.0, 5.0, 4.0, 5.0]]]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "grouped_query_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[[3.0, 4.0, 5.0, 6.0], [3.0, 4.0, 5.0, 6.0]]]",
+          "expected": "[[[3.0, 4.0, 5.0, 6.0], [3.0, 4.0, 5.0, 6.0]]]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "grouped_query_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[[1.0, 2.0, 1.0, 2.0]], [[3.0, 4.0, 3.0, 4.0]]]",
+          "expected": "[[[1.0, 2.0, 1.0, 2.0]], [[3.0, 4.0, 3.0, 4.0]]]"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "<genexpr>",
+            "_attention",
+            "grouped_query_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[[0.6698, 0.3302, 0.3302, 0.6698], [0.3302, 0.6698, 0.6698, 0.3302]]]",
+          "expected": "[[[0.6698, 0.3302, 0.3302, 0.6698], [0.3302, 0.6698, 0.6698, 0.3302]]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0407_qk_norm_attention.py",
+      "official_id": 407,
+      "sha256": "340500389b94e0ecdea2ddb79a7b35def83172a283e97fa751b389161ba6ad7d",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "qk_norm_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.7311, 0.2689], [0.2689, 0.7311]]",
+          "expected": "[[0.7311, 0.2689], [0.2689, 0.7311]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "qk_norm_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.5379, 2.5379], [2.4621, 3.4621]]",
+          "expected": "[[1.5379, 2.5379], [2.4621, 3.4621]]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "qk_norm_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.8808, 0.1192], [0.1192, 0.8808]]\n[[1.2384, 2.2384], [2.7616, 3.7616]]",
+          "expected": "[[0.8808, 0.1192], [0.1192, 0.8808]]\n[[1.2384, 2.2384], [2.7616, 3.7616]]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "qk_norm_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.4502, 0.5498]]\n[[15.4983]]",
+          "expected": "[[0.4502, 0.5498]]\n[[15.4983]]"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "qk_norm_attention"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.7311, 0.2689]]\n[[0.7311]]",
+          "expected": "[[0.7311, 0.2689]]\n[[0.7311]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0408_pre_post_norm.py",
+      "official_id": 408,
+      "sha256": "b6c3b90752011bb691f05a7757cff1a412272db9e04a11834cc7d4ddd324edfa",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "ln",
+            "transformer_block"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.2, -1.2]]",
+          "expected": "[[1.2, -1.2]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "ln",
+            "transformer_block"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.0, -1.0]]",
+          "expected": "[[1.0, -1.0]]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "ln",
+            "transformer_block"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.0, 5.0]]",
+          "expected": "[[1.0, 5.0]]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "ln",
+            "transformer_block"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.5, -0.5]]",
+          "expected": "[[1.5, -0.5]]"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "ln",
+            "transformer_block"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[1.3674, 0.0, -1.3674], [0.0, 1.3674, -1.3674]]",
+          "expected": "[[1.3674, 0.0, -1.3674], [0.0, 1.3674, -1.3674]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0409_moe_shared_expert.py",
+      "official_id": 409,
+      "sha256": "c9ee3a299646f45ca258dcd39d9ddbc0efb7c4dbb14afa65fafc4b4785bb207a",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "moe_shared_expert_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[3.0, 0.0], [3.0, 1.0]]\n[[0], [1]]",
+          "expected": "[[3.0, 0.0], [3.0, 1.0]]\n[[0], [1]]"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "moe_shared_expert_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[0.9779000282287598, 0.18490000069141388]]\n[[3, 0]]\n[[0.5174999833106995, 0.48249998688697815]]",
+          "expected": "[[0.9779, 0.1849]]\n[[3, 0]]\n[[0.5175, 0.4825]]"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "moe_shared_expert_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[3.0, 0.0], [0.0, 3.0], [3.0, 1.0]]\n[[1.0, 0.0], [0.0, 1.0], [1.0, 1.0]]\n[[2.0, 0.0], [0.0, 2.0], [2.0, 0.0]]",
+          "expected": "[[3.0, 0.0], [0.0, 3.0], [3.0, 1.0]]\n[[1.0, 0.0], [0.0, 1.0], [1.0, 1.0]]\n[[2.0, 0.0], [0.0, 2.0], [2.0, 0.0]]"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "moe_shared_expert_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[2.5, 2.5]]\n[[0.5, 0.5]]",
+          "expected": "[[2.5, 2.5]]\n[[0.5, 0.5]]"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "moe_shared_expert_forward"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[[2.462100028991699, 0.8068000078201294], [2.19320011138916, 1.5378999710083008]]\n[[0, 1], [1, 0]]",
+          "expected": "[[2.4621, 0.8068], [2.1932, 1.5379]]\n[[0, 1], [1, 0]]"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0418_kv_cache_size.py",
+      "official_id": 418,
+      "sha256": "833d3ee91b8a9c62a160ad61372658ac7e70c9783d8f361b8ad2e103e4cc355c",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "estimate_kv_cache_size"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "{'kv_cache_elements': 9437184, 'kv_cache_size_bytes': 18874368, 'kv_cache_size_mb': 18.0, 'per_layer_size_mb': 1.5, 'per_token_size_kb': 36.0}",
+          "expected": "{'kv_cache_elements': 9437184, 'kv_cache_size_bytes': 18874368, 'kv_cache_size_mb': 18.0, 'per_layer_size_mb': 1.5, 'per_token_size_kb': 36.0}"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "estimate_kv_cache_size"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "{'kv_cache_elements': 134217728, 'kv_cache_size_bytes': 268435456, 'kv_cache_size_mb': 256.0, 'per_layer_size_mb': 8.0, 'per_token_size_kb': 128.0}",
+          "expected": "{'kv_cache_elements': 134217728, 'kv_cache_size_bytes': 268435456, 'kv_cache_size_mb': 256.0, 'per_layer_size_mb': 8.0, 'per_token_size_kb': 128.0}"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "estimate_kv_cache_size"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "{'kv_cache_elements': 6291456, 'kv_cache_size_bytes': 25165824, 'kv_cache_size_mb': 24.0, 'per_layer_size_mb': 4.0, 'per_token_size_kb': 24.0}",
+          "expected": "{'kv_cache_elements': 6291456, 'kv_cache_size_bytes': 25165824, 'kv_cache_size_mb': 24.0, 'per_layer_size_mb': 4.0, 'per_token_size_kb': 24.0}"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "estimate_kv_cache_size"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "{'kv_cache_elements': 50331648, 'kv_cache_size_bytes': 100663296, 'kv_cache_size_mb': 96.0, 'per_layer_size_mb': 4.0, 'per_token_size_kb': 12.0}",
+          "expected": "{'kv_cache_elements': 50331648, 'kv_cache_size_bytes': 100663296, 'kv_cache_size_mb': 96.0, 'per_layer_size_mb': 4.0, 'per_token_size_kb': 12.0}"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "estimate_kv_cache_size"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "{'kv_cache_elements': 204800, 'kv_cache_size_bytes': 204800, 'kv_cache_size_mb': 0.1953, 'per_layer_size_mb': 0.0488, 'per_token_size_kb': 1.0}",
+          "expected": "{'kv_cache_elements': 204800, 'kv_cache_size_bytes': 204800, 'kv_cache_size_mb': 0.1953, 'per_layer_size_mb': 0.0488, 'per_token_size_kb': 1.0}"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0419_combined_sampling.py",
+      "official_id": 419,
+      "sha256": "d461fbc6962bcbede023653391d4c36507465ec12de7ea4212c98ed2d790c5bf",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "combined_sampling"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.659, 0.2424, 0.0986]\n0",
+          "expected": "[0.659, 0.2424, 0.0986]\n0"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "combined_sampling"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.0, 1.0, 0.0]\n1",
+          "expected": "[0.0, 1.0, 0.0]\n1"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "combined_sampling"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.0, 0.7311, 0.2689, 0.0]\n1",
+          "expected": "[0.0, 0.7311, 0.2689, 0.0]\n1"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "combined_sampling"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.0, 0.0, 1.0, 0.0]\n2",
+          "expected": "[0.0, 0.0, 1.0, 0.0]\n2"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "combined_sampling"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "[0.0, 0.0, 0.8067, 0.1933, 0.0]\n2",
+          "expected": "[0.0, 0.0, 0.8067, 0.1933, 0.0]\n2"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "path": "pytorch/0429_quantization_quality.py",
+      "official_id": 429,
+      "sha256": "0a0ce2bd2cf8dd5e7fd316854d3ccb55a8c6c3e581a5c1d9ff9bd884ac650c84",
+      "tests": [
+        {
+          "index": 1,
+          "status": "pass",
+          "called_solution_functions": [
+            "quantization_quality_check"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "(0.0, 0.0, 'excellent')",
+          "expected": "(0.0, 0.0, 'excellent')"
+        },
+        {
+          "index": 2,
+          "status": "pass",
+          "called_solution_functions": [
+            "quantization_quality_check"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "(9.4877, 10.4856, 10.52, 'poor')",
+          "expected": "(9.4877, 10.4856, 10.52, 'poor')"
+        },
+        {
+          "index": 3,
+          "status": "pass",
+          "called_solution_functions": [
+            "quantization_quality_check"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "(2.7183, 2.7456, 'acceptable')",
+          "expected": "(2.7183, 2.7456, 'acceptable')"
+        },
+        {
+          "index": 4,
+          "status": "pass",
+          "called_solution_functions": [
+            "quantization_quality_check"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "(2.7183, 2.8577, 5.13, 'acceptable')",
+          "expected": "(2.7183, 2.8577, 5.13, 'acceptable')"
+        },
+        {
+          "index": 5,
+          "status": "pass",
+          "called_solution_functions": [
+            "quantization_quality_check"
+          ],
+          "shadowed_solution_definitions": [],
+          "actual": "(0.1881, 5.13, 'poor')",
+          "expected": "(0.1881, 5.13, 'poor')"
+        }
+      ],
+      "status": "pass"
+    }
+  ]
+}
